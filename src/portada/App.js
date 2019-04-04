@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
-import '../public/logo.svg';
+import '../../styles/App.css';
+import '../../public/logo.svg';
 
 class App extends Component {
   render() {
