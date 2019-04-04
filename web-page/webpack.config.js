@@ -23,9 +23,16 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|ico|json)$/,
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
         exclude: /node_modules/,
-        use: ['file-loader?name=[name].[ext]'] // ?name=[name].[ext] is only necessary to preserve the original file name
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          }
+        ]
       }
     ]
   },
@@ -36,14 +43,15 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'public/index.html',
+      template: './public/index.html',
     }),
     new FaviconsWebpackPlugin({
-      // Your source logo
       logo: './public/favicon.png',
-      // Inject the html into the html-webpack-plugin
       inject: true,
-    })
+    }),
+    new webpack.WatchIgnorePlugin([
+      path.join(__dirname, 'node_modules')
+    ]),
   ],
   devServer: {
     contentBase: './dist',
