@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-import '../../styles/App.css';
-import '../../public/img/logo.svg';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Redirect } from 'react-router';
+
 
 export default class Portada extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      btnClicked: false,
+    };
+    this.btnHandler = this.btnHandler.bind(this);
+  }
+  btnHandler() {
+    this.setState({btnClicked: true});
   }
   render() {
+    const { btnClicked } = this.state;
+    if (btnClicked) {
+      return <Redirect push to="/inicio" />;
+    }
     return (
       <div className="App">
         <div className="site-blocks-cover overlay Img-portada" data-aos="fade" id="home-section">
@@ -16,7 +26,7 @@ export default class Portada extends Component {
               <div className="col-md-6 mt-lg-5 text-center">
                 <h1>Step Sound</h1>
                 <p className="mb-5">Que somos</p>
-                <button href="#" className="btn btn-primary mr-2 mb-2">Ingresar</button>
+                <button onClick={this.btnHandler} className="btn btn-primary mr-2 mb-2">Ingresar</button>
               </div>   
             </div>
           </div>

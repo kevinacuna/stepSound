@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import '../public/img/logo.svg';
 import Portada from './portada/Portada';
+import Inicio from './inicio/inicio';
+import Participar from './participar/participar';
+import Equipo from './equipo/equipo';
+import Exclusivo from './exclusivo/exlusivo';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
-  }
-
-  Index(){
-    return <div> Index</div>
   }
 
   render() {
@@ -21,6 +21,7 @@ class App extends Component {
           <div className="nav-wrapper deep-orange darken-4">
             <Link to="/">
               <img src="logo.svg" className="App-logo" alt="logo" />
+              Portada
             </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
@@ -39,10 +40,10 @@ class App extends Component {
           </div>
         </nav>
         <Route exact path="/" component={Portada} />
-        <Route path="/inicio" component={Portada} />
-        <Route path="/participar" component={Portada} />
-        <Route path="/equipo" component={Portada} />
-        <Route path="/exclusivo" component={Portada} />
+        <Route path="/inicio" component={Inicio} />
+        <Route path="/participar" component={Participar} />
+        <Route path="/equipo" component={Equipo} />
+        <Route path="/exclusivo" component={Exclusivo} />
         <footer className="page-footer deep-orange darken-4">
             <div className="container ">
               <div className="row">
@@ -83,5 +84,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

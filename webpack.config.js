@@ -5,7 +5,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = {
   mode: 'development',
-  entry: ['@babel/polyfill', './src/index.js'],
+  entry: ['@babel/polyfill', './src/index'],
   output: {
     filename: 'bundle.js',
     publicPath: '/',
