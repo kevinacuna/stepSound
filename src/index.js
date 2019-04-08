@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../styles/index.css';
-import App from './portada/App';
+import App from './App';
 import '../public/img/favicon.ico';
 import * as serviceWorker from './serviceWorker';
 
