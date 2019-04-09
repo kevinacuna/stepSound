@@ -1,0 +1,6 @@
+/* Color Theme Swatches in Hex */
+.Copia-de-Portada-(rojos-y-blanco-y-negro)-1-hex { color: #F0F1F1; }
+.Copia-de-Portada-(rojos-y-blanco-y-negro)-2-hex { color: #A7A7A6; }
+.Copia-de-Portada-(rojos-y-blanco-y-negro)-3-hex { color: #5A5A59; }
+.Copia-de-Portada-(rojos-y-blanco-y-negro)-4-hex { color: #B85558; }
+.Copia-de-Portada-(rojos-y-blanco-y-negro)-5-hex { color: #AB2937; }

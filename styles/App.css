@@ -11,7 +11,7 @@
   width:600px;
 }
 .App-logo {
-  height: 100%;
+  height: 48px;
   pointer-events: none;
 }
 
@@ -29,3 +29,30 @@
 .App-link {
   color: #61dafb;
 }
+
+main{
+  display: block;
+}
+
+
+@media (max-width: 575px) {
+  #navbarToggler{
+    background-color: #AB2937;
+  }
+}
+
+
+.navbar-toggler-icon{
+  color: #ffffff;
+}
+
+.navbar-brand {
+  padding-left: 10px;
+  padding-top: 0px;
+}
+.navbar-toggler:focus{
+  background-color: transparent;
+  border-color: transparent;
+  outline: 1px auto white;
+}
+

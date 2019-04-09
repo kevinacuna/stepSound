@@ -25,7 +25,7 @@ export default class Portada extends Component {
             <div className="row align-items-center justify-content-center">
               <div className="col-md-6 mt-lg-5 text-center">
                 <h1>Step Sound</h1>
-                <p className="mb-5">Que somos</p>
+                <p className="mb-5">¡No pauses tus sueños!</p>
                 <button onClick={this.btnHandler} className="btn btn-primary mr-2 mb-2">Ingresar</button>
               </div>   
             </div>

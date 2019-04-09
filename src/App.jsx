@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
-import '../public/img/logo.svg';
+import '../public/img/logo.png';
 import Portada from './portada/Portada';
 import Inicio from './inicio/inicio';
 import Participar from './participar/participar';
@@ -17,34 +17,43 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App">
-        <nav>
-          <div className="nav-wrapper deep-orange darken-4">
-            <Link to="/">
-              <img src="logo.svg" className="App-logo" alt="logo" />
-              Portada
-            </Link>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li>
+        <nav className="navbar fixed-top navbar-dark navbar-expand-sm justify-content-end">
+
+
+        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <a className="navbar-brand mx-auto" href="/">
+          <img src="logo.png" className="App-logo" alt="logo" />
+        </a>
+       
+        <div className="collapse navbar-collapse" id="navbarToggler">
+            <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li className="nav-item navbar-text">
                 <Link to="/inicio">Inicio</Link>
               </li>
-              <li>
+              <li className="nav-item navbar-text">
                 <Link to="/participar">¿Cómo Participar?</Link>
               </li>
-              <li>
-                <Link to="/equipo">Quienes somos</Link>
+              <li className="nav-item navbar-text">
+                <Link to="/equipo">¿Quienes somos?</Link>
               </li>
-              <li>
+              <li className="nav-item navbar-text">
                 <Link to="/exclusivo">Contenido exclusivo</Link>
               </li>
             </ul>
           </div>
         </nav>
+        <main>
         <Route exact path="/" component={Portada} />
         <Route path="/inicio" component={Inicio} />
         <Route path="/participar" component={Participar} />
         <Route path="/equipo" component={Equipo} />
         <Route path="/exclusivo" component={Exclusivo} />
-        <footer className="page-footer deep-orange darken-4">
+        </main>
+
+        <footer className="page-footer site-footer darken-4">
             <div className="container ">
               <div className="row">
                 <div className="col l3 s12">
@@ -52,12 +61,12 @@ export default class App extends Component {
                   <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                 </div>
                 <div className="col l3 s12">
-                  <h5 className="white-text">Links</h5>
                   <ul>
-                    <li><a className="grey-text text-lighten-3">Red social 1</a></li>
-                    <li><a className="grey-text text-lighten-3">Red social 2</a></li>
-                    <li><a className="grey-text text-lighten-3">Red social 3</a></li>
-                    <li><a className="grey-text text-lighten-3">Red social 4</a></li>
+                    <li><a href="https://twitter.com/stepsound_" className="grey-text text-lighten-3"><i class="fab fa-twitter"></i></a></li>
+                    <li><a className="grey-text text-lighten-3"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/stepsound_/?hl=es" className="grey-text text-lighten-3"><i class="fab fa-instagram"></i></a></li>
+                    <li><a className="grey-text text-lighten-3"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCsI8pt7NVaGM1w2E4XXXYaA" className="grey-text text-lighten-3"><i class="fab fa-youtube"></i></a></li>
                   </ul>
                 </div>
                 <div className="col l6 s12">
@@ -65,17 +74,14 @@ export default class App extends Component {
                     <div className="gmap_canvas">
                       <iframe width="600" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=uneatlantico&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0">
                       </iframe>
-                      Google Maps Generator by 
-                      <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="footer-copyright">
+            <div className="border-top footer-copyright">
               <div className="container">
-                © 2019 Copyright Text
-                <a className="grey-text text-lighten-4 right">Step Sound 2019</a>
+                <a className="grey-text right"> ©2019 Step Sound 2019</a>
               </div>
             </div>
           </footer>
