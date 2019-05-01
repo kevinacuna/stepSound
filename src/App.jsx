@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/App.css";
 import "../public/img/logo.png";
-import Portada from "./portada/Portada";
+import Portada from "./portada/portada";
 import Inicio from "./inicio/inicio";
 import Participar from "./participar/participar";
 import Equipo from "./equipo/equipo";
@@ -78,7 +78,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fab fa-twitter" />
+                        <i className="fab fa-twitter" />
                         {` Twitter`}
                       </a>
                     </li>
@@ -89,7 +89,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fab fa-instagram" />
+                        <i className="fab fa-instagram" />
                         {` Instagram`}
                       </a>
                     </li>
@@ -100,7 +100,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fas fa-envelope" />
+                        <i className="fas fa-envelope" />
                         {` Gmail`}
                       </a>
                     </li>
@@ -111,7 +111,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fab fa-youtube" />
+                        <i className="fab fa-youtube" />
                         {` Youtube`}
                       </a>
                     </li>
