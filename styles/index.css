@@ -1652,6 +1652,8 @@ nav {
     margin: 0;
     padding: 0;
     position: relative;
+    width: 350px;
+   height: 350px;
     overflow: hidden; }
   .team-member .social {
     position: absolute;
@@ -1811,6 +1813,7 @@ nav {
 .img-portada {
   background-image: url(../public/img/look.png);
   background-size: contain;
+
   background-repeat: no-repeat;
 } 
 
@@ -1826,4 +1829,13 @@ hr.light {
 
 .text-shadow{
   text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+#team{
+  max-width:400px;
+  max-height:400px;
+}
+
+#cont-team{
+  width: 100%;
 }
