@@ -129,7 +129,7 @@ padding-bottom: 10px; }
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  padding: 4em 0 !important;
+  padding: 1em 0 !important;
   background: #333333; }
   @media (min-width: 768px) {
     .site-footer {
@@ -591,7 +591,7 @@ nav {
       bottom: 0;
       right: 0;
       top: 0;
-      background: rgba(0, 0, 0, 0.2); }
+      background: rgba(0, 0, 0, 0.1); }
   .site-blocks-cover .player {
     position: absolute;
     bottom: -250px;
@@ -1804,12 +1804,32 @@ nav {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
-.Img-portada {
+.base-portada {
   margin-top: -1em;
+  padding-top: 2.5em;
+  min-height: 700px;
+} 
+
+.img-portada {
   background-image: url(../public/img/look.png);
   background-size: contain;
 }
 
 #team{
   width:100%;
+  background-repeat: no-repeat;
+} 
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: .2rem;
+    border-color: #f4623a;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }

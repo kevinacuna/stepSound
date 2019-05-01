@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/App.css";
-import "../public/img/logo.png";
-import Portada from "./portada/Portada";
+import "../public/img/oficial_logo.png";
+import Portada from "./portada/portada";
 import Inicio from "./inicio/inicio";
 import Participar from "./participar/participar";
 import Equipo from "./equipo/equipo";
@@ -17,7 +17,7 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App">
-          <nav className="navbar fixed-top navbar-dark navbar-expand-sm justify-content-end">
+          <nav className="navbar fixed-top navbar-dark navbar-expand-sm justify-content-end" id="mainNav">
             <button
               className="navbar-toggler navbar-toggler-right"
               type="button"
@@ -31,19 +31,22 @@ export default class App extends Component {
             </button>
 
             <a className="navbar-brand mx-auto" href="/">
-              <img src="logo.png" className="App-logo" alt="logo" />
+              <img src="oficial_logo.png" className="App-logo" alt="logo" />
             </a>
 
             <div className="collapse navbar-collapse" id="navbarToggler">
               <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+                 <li className="nav-item navbar-text">
+                  <Link to="/">Inicio</Link>
+                </li>
                 <li className="nav-item navbar-text">
-                  <Link to="/inicio">Inicio</Link>
+                  <Link to="/comenzar">Comenzar</Link>
                 </li>
                 <li className="nav-item navbar-text">
                   <Link to="/participar">¿Cómo Participar?</Link>
                 </li>
                 <li className="nav-item navbar-text">
-                  <Link to="/equipo">¿Quienes somos?</Link>
+                  <Link to="/equipo">¿Quiénes somos?</Link>
                 </li>
                 <li className="nav-item navbar-text">
                   <Link to="/exclusivo">Contenido exclusivo</Link>
@@ -53,7 +56,7 @@ export default class App extends Component {
           </nav>
           <main>
             <Route exact path="/" component={Portada} />
-            <Route path="/inicio" component={Inicio} />
+            <Route path="/comenzar" component={Inicio} />
             <Route path="/participar" component={Participar} />
             <Route path="/equipo" component={Equipo} />
             <Route path="/exclusivo" component={Exclusivo} />
@@ -78,7 +81,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fab fa-twitter" />
+                        <i className="fab fa-twitter" />
                         {` Twitter`}
                       </a>
                     </li>
@@ -89,7 +92,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fab fa-instagram" />
+                        <i className="fab fa-instagram" />
                         {` Instagram`}
                       </a>
                     </li>
@@ -100,7 +103,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fas fa-envelope" />
+                        <i className="fas fa-envelope" />
                         {` Gmail`}
                       </a>
                     </li>
@@ -111,7 +114,7 @@ export default class App extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fab fa-youtube" />
+                        <i className="fab fa-youtube" />
                         {` Youtube`}
                       </a>
                     </li>
