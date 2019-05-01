@@ -1652,6 +1652,8 @@ nav {
     margin: 0;
     padding: 0;
     position: relative;
+    width: 350px;
+   height: 350px;
     overflow: hidden; }
   .team-member .social {
     position: absolute;
@@ -1806,4 +1808,13 @@ nav {
   margin-top: -1em;
   background-image: url(../public/img/look.png);
   background-size: contain;
-} 
+}
+
+#team{
+  max-width:400px;
+  max-height:400px;
+}
+
+#cont-team{
+  width: 100%;
+}
