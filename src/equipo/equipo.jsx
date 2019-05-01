@@ -88,9 +88,9 @@ export default class Equipo extends Component {
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 mb-5">
+          <div class="col-md-7 col-lg-4 mb-5">
           </div>
-          <div class="col-md-4 col-lg-4 mb-5">
+          <div class="col-md-7 col-lg-4 mb-5">
             <div class="team-member">
               <figure>
                 <img id="team" src="mar.jpg" alt="Image" class="img-fluid"/>

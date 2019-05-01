@@ -1811,10 +1811,5 @@ nav {
 }
 
 #team{
-  max-width:400px;
-  max-height:400px;
-}
-
-#cont-team{
-  width: 100%;
+  width:100%;
 }
