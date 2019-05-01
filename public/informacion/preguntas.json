@@ -1,0 +1,83 @@
+{
+  "preguntas": [
+    {
+      "id":1,
+      "titulo": "Pregunta 1",
+      "video": {
+        "url": "dirección de prueba",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "url": "direccion de foto",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "url": "direccion de foto 2",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "la direccion del audio",
+      "opciones": [
+        {
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "30/04/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":2,
+      "titulo": "Pregunta 2",
+      "video": {
+        "url": "dirección de prueba",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "url": "direccion de foto",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "url": "direccion de foto 2",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "la direccion del audio",
+      "opciones": [
+        {
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    }
+  ],
+  "total": 10
+}
