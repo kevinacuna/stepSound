@@ -129,7 +129,7 @@ padding-bottom: 10px; }
   border-top: 1px solid #edf0f5 !important; }
 
 .site-footer {
-  padding: 4em 0 !important;
+  padding: 1em 0 !important;
   background: #333333; }
   @media (min-width: 768px) {
     .site-footer {

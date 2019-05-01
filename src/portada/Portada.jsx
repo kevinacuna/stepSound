@@ -33,6 +33,7 @@ export default class Portada extends Component {
                 <hr className="divider my-4" />
               </div>
               <div className="col-lg-8 align-self-baseline">
+                <p className="text-white-75 font-weight-light mb-5">Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web- Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web- Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web -Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web Aquí habrá una pequeña descripción de la pagina web - Aquí habrá una pequeña descripción de la pagina web</p>
                 <p className="text-white-75 font-weight-light mb-5">
                   ¡No pauses tus sueños!
                 </p>
