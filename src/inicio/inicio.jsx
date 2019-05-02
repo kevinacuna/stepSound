@@ -22,13 +22,19 @@ export default class Inicio extends Component {
   }
 
   seleccionarRespuesta(idOpcion) {
-    console.log(idOpcion);
+    const { preguntas } = Preguntas;
+    const { preguntaSeleccionadaId } = this.state;
+    // Obtener el detalle de la pregunta seleccionada
+    const respuesta = preguntas.find(elementoPregunta => elementoPregunta.id == preguntaSeleccionadaId);
+    // True si era la respuesta correcta; False si es incorrecta
+    const correcta = respuesta.opciones.find( opcion => opcion.id == idOpcion).correcta;
+    console.log(correcta);
   }
 
-  seleccionarPregunta(id){
+  seleccionarPregunta(idPregunta){
       const { preguntas } = Preguntas;
-      const dataPregunta = preguntas.find((e => e.id == id));
-      this.setState({ mostrarModalFlag: true, preguntaSeleccionadaId: id, dataPregunta:dataPregunta });
+      const dataPregunta = preguntas.find( elementoPregunta => elementoPregunta.id == idPregunta);
+      this.setState({ mostrarModalFlag: true, preguntaSeleccionadaId: idPregunta, dataPregunta:dataPregunta });
   }
   
   render() {
