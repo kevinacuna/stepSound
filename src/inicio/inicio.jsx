@@ -9,6 +9,8 @@ export default class Inicio extends Component {
     super(props);
     this.state={
         mostrarModalFlag: false,
+        preguntaSeleccionadaId: 0,
+        dataPregunta: {}
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModalPregunta = this.cerrarModalPregunta.bind(this);
@@ -18,18 +20,21 @@ export default class Inicio extends Component {
       this.setState({ mostrarModalFlag : false });
   }
 
-  seleccionarPregunta(){
-      this.setState({ mostrarModalFlag: true });
+  seleccionarPregunta(id){
+      const { preguntas } = Preguntas;
+      const dataPregunta = preguntas.find((e => e.id == id));
+      this.setState({ mostrarModalFlag: true, preguntaSeleccionadaId: id, dataPregunta:dataPregunta });
   }
   
   render() {
     const { preguntas } = Preguntas;
-    const { mostrarModalFlag } = this.state;
+    const { mostrarModalFlag, dataPregunta } = this.state;
     if ( mostrarModalFlag ) {
         return (
             <Modal>
                 <ModalPregunta
                     hideModal={this.cerrarModalPregunta}
+                    data={dataPregunta}
                 />
             </Modal>
         );
@@ -44,7 +49,7 @@ export default class Inicio extends Component {
                             id, titulo
                         }) => (
                             <div className="timeline" key={id}>
-                                <a href={`#${id}`} onClick={this.seleccionarPregunta} className="timeline-content">
+                                <a href={`#${id}`} onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
                                     <span className="timeline-year">{titulo}</span>
                                     <div className="timeline-icon">
                                         <i className="fa fa-rocket"></i>
