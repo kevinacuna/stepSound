@@ -15,7 +15,7 @@ export default class Portada extends Component {
   render() {
     const { btnClicked } = this.state;
     if (btnClicked) {
-      return <Redirect push to="/inicio" />;
+      return <Redirect push from="/" to="/comenzar" />;
     }
     return (
       <div className="masthead">
