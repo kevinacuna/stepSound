@@ -9,10 +9,12 @@
       },
       "fotos": [
         {
+          "id": 1,
           "url": "direccion de foto",
           "descripcion": "detalle de la foto"
         },
         {
+          "id": 2,
           "url": "direccion de foto 2",
           "descripcion": "detalle de la foto 2"
         }
@@ -20,18 +22,22 @@
       "audio": "la direccion del audio",
       "opciones": [
         {
+          "id": 1,
           "descripcion": "esta es la opcion 1",
           "correcta": false
         },
         {
+          "id": 2,
           "descripcion": "esta es la opcion 2",
           "correcta": false
         },
         {
+          "id": 3,
           "descripcion": "esta es la opcion 3",
           "correcta": false
         },
         {
+          "id": 4,
           "descripcion": "esta es la opcion 4",
           "correcta": true
         }
@@ -48,10 +54,12 @@
       },
       "fotos": [
         {
+          "id": 1,
           "url": "direccion de foto",
           "descripcion": "detalle de la foto"
         },
         {
+          "id": 2,
           "url": "direccion de foto 2",
           "descripcion": "detalle de la foto 2"
         }
@@ -59,18 +67,22 @@
       "audio": "la direccion del audio",
       "opciones": [
         {
+          "id": 1,
           "descripcion": "esta es la opcion 1",
           "correcta": false
         },
         {
+          "id": 2,
           "descripcion": "esta es la opcion 2",
           "correcta": false
         },
         {
+          "id": 3,
           "descripcion": "esta es la opcion 3",
           "correcta": false
         },
         {
+          "id": 4,
           "descripcion": "esta es la opcion 4",
           "correcta": true
         }

@@ -14,10 +14,15 @@ export default class Inicio extends Component {
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModalPregunta = this.cerrarModalPregunta.bind(this);
+    this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
   }
 
   cerrarModalPregunta(){
       this.setState({ mostrarModalFlag : false });
+  }
+
+  seleccionarRespuesta(idOpcion) {
+    console.log(idOpcion);
   }
 
   seleccionarPregunta(id){
@@ -29,16 +34,16 @@ export default class Inicio extends Component {
   render() {
     const { preguntas } = Preguntas;
     const { mostrarModalFlag, dataPregunta } = this.state;
-    if ( mostrarModalFlag ) {
-        return (
-            <Modal>
+
+    const modal = mostrarModalFlag ? (
+        <Modal>
                 <ModalPregunta
+                    seleccionarRespuesta={this.seleccionarRespuesta}
                     hideModal={this.cerrarModalPregunta}
                     data={dataPregunta}
                 />
             </Modal>
-        );
-    }
+    ) : null;
     return (
     <div className="container">
         <div className="row" key="0">
@@ -49,17 +54,14 @@ export default class Inicio extends Component {
                             id, titulo
                         }) => (
                             <div className="timeline" key={id}>
-                                <a href={`#${id}`} onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
+                                <a href="#" onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
                                     <span className="timeline-year">{titulo}</span>
                                     <div className="timeline-icon">
                                         <i className="fa fa-rocket"></i>
                                     </div>
-                                    <div className="content">
-                                        <p className="description">
-                                            sdf
-                                        </p>
-                                    </div>
+                                    <div className="content"/>
                                 </a>
+                                {modal}
                             </div>
                         ))
                     }
