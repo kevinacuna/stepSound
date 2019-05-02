@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../../public/audios/lord-huron-the-night-we-met.mp3';
+import '../../../public/img/guitar.png';
 
 export default ({ hideModal, data, seleccionarRespuesta }) => (
   <div className="modal fade show" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -54,7 +56,7 @@ export default ({ hideModal, data, seleccionarRespuesta }) => (
           </div>
         </div>
         <div className="modal-footer">
-          <button type="button" className="btn btn-primary mr-auto" data-dismiss="modal">Cerrar</button>
+          <button type="button" className="btn btn-primary mr-auto" onClick={hideModal} data-dismiss="modal">Cerrar</button>
           <button type="button" className="btn btn-primary" onClick={hideModal}>¿Ayuda?</button>
         </div>
       </div>
