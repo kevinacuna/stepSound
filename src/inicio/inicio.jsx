@@ -18,6 +18,19 @@ export default class Inicio extends Component {
     this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
   }
 
+  componentDidMount() {
+    if (typeof(Storage)!== 'undefined') {
+        console.log("soporta local storage");
+    } else {
+        console.log("no soporta local storage");
+    }
+  }
+
+  componentWillUnmount() {
+    const { historialPreguntasRespondidas } = this.state;
+    localStorage.setItem('historialPreguntasRespondidas', JSON.stringify(historialPreguntasRespondidas));
+  }
+
   /*
     Funcion que se encarga de obtener la data de la pregunta 
     que se mostrará en el modal
