@@ -11,6 +11,7 @@ export default class Inicio extends Component {
         mostrarModalFlag: false,
         preguntaSeleccionadaId: 0,
         dataPregunta: {},
+        respuestasSeleccionadas: [],
         historialPreguntasRespondidas: []
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
@@ -19,17 +20,24 @@ export default class Inicio extends Component {
   }
 
   componentDidMount() {
-    if (typeof(Storage)!== 'undefined') {
-        console.log("soporta local storage");
-    } else {
-        console.log("no soporta local storage");
+    try {
+        const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
+        if (historialPreguntasRespondidas != null) this.setState({historialPreguntasRespondidas});
+    } catch (error) {
+        console.error(error, " error al montar la iformacion desde localStorage");
     }
   }
 
+  // Cada que se desmonte el descomponente se almacena en el local Storage
   componentWillUnmount() {
+    this.setHistorialLocalStorage();
+  }
+
+  setHistorialLocalStorage() {
     const { historialPreguntasRespondidas } = this.state;
     localStorage.setItem('historialPreguntasRespondidas', JSON.stringify(historialPreguntasRespondidas));
   }
+  
 
   /*
     Funcion que se encarga de obtener la data de la pregunta 
@@ -58,6 +66,9 @@ export default class Inicio extends Component {
 
     /*
     agrega una respuesta al historial 
+    TODO: respuestasSeleccionadas deben mandarse al modal de pregunta para
+    desabilitar estas opciones, se prentende guardarlas en un estado local
+    ver, opcion para desmontarla cada que se cierra el modal pero obtenerla cuando se abre
   */
     agregarRespuesta(respuestaObjeto) {
         const { preguntaSeleccionadaId } = this.state;
@@ -69,6 +80,7 @@ export default class Inicio extends Component {
             };
             this.setState(prevState => ({
                 historialPreguntasRespondidas: [...prevState.historialPreguntasRespondidas, nuevaRespuesta],
+                respuestasSeleccionadas: [respuestaObjeto.id]
             }));
         } else {
             // Es necesario el setState para que se vuelva a renderizar el componente
@@ -80,9 +92,13 @@ export default class Inicio extends Component {
                 // Si la opcion no ha sido usada se le agrega al listado de respuestas dadas
                 if (!preguntaHistorial.idRespuestas.includes(respuestaObjeto.id)) preguntaHistorial.idRespuestas.push(respuestaObjeto.id);
                 // Regresamos el nuevo historial de preguntas respondidas
-                return({ historialPreguntasRespondidas: newHistorialPreguntasRespondidas });
+                return({
+                    historialPreguntasRespondidas: newHistorialPreguntasRespondidas,
+                    respuestasSeleccionadas: [...prevState.respuestasSeleccionadas, respuestaObjeto.id]
+                });
             });
         }
+        this.setHistorialLocalStorage();
     }
 
   /*
@@ -118,7 +134,6 @@ export default class Inicio extends Component {
                     seleccionarRespuesta={this.seleccionarRespuesta}
                     hideModal={this.cerrarModalPregunta}
                     data={dataPregunta}
-                    disabled=""
                 />
             </Modal>
     ) : null;
