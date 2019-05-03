@@ -24,7 +24,6 @@ export default class Modal extends Component {
   }
   
   render() {
-    {console.log("renderizado")}
     // Use a portal to render the children into the element
     return ReactDOM.createPortal(
       // Any valid React child: JSX, strings, arrays, etc.

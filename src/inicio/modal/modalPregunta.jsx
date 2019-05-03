@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../public/audios/lord-huron-the-night-we-met.mp3';
 import '../../../public/img/guitar.png';
 
-export default ({ hideModal, data, seleccionarRespuesta }) => (
+export default ({ hideModal, data, seleccionarRespuesta, disabled="" }) => (
   <div className="modal fade show" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
@@ -47,7 +47,7 @@ export default ({ hideModal, data, seleccionarRespuesta }) => (
                 {
                   data.opciones.map( ({ descripcion, id }) => (
                     <div key={id} className="col-md-5 col-lg-5 mb-5">
-                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className="btn btn-primary btn-lg btn-block">{descripcion}</button>
+                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className={`btn btn-primary btn-lg btn-block ${disabled}`}>{descripcion}</button>
                     </div>
                   ))
                 }
