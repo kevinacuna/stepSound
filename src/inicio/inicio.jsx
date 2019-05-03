@@ -67,10 +67,10 @@ export default class Inicio extends Component {
                                     </div>
                                     <div className="content"/>
                                 </a>
-                                {modal}
                             </div>
                         ))
                     }
+                    {modal}
                 </div>
             </div>
         </div>
