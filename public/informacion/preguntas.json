@@ -4,34 +4,40 @@
       "id":1,
       "titulo": "Pregunta 1",
       "video": {
-        "url": "dirección de prueba",
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
         {
-          "url": "direccion de foto",
+          "id": 1,
+          "url": "guitar.png",
           "descripcion": "detalle de la foto"
         },
         {
-          "url": "direccion de foto 2",
+          "id": 2,
+          "url": "look.png",
           "descripcion": "detalle de la foto 2"
         }
       ],
-      "audio": "la direccion del audio",
+      "audio": "lord-huron-the-night-we-met.mp3",
       "opciones": [
         {
+          "id": 1,
           "descripcion": "esta es la opcion 1",
           "correcta": false
         },
         {
+          "id": 2,
           "descripcion": "esta es la opcion 2",
           "correcta": false
         },
         {
+          "id": 3,
           "descripcion": "esta es la opcion 3",
           "correcta": false
         },
         {
+          "id": 4,
           "descripcion": "esta es la opcion 4",
           "correcta": true
         }
@@ -43,34 +49,400 @@
       "id":2,
       "titulo": "Pregunta 2",
       "video": {
-        "url": "dirección de prueba",
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
         {
-          "url": "direccion de foto",
+          "id": 1,
+          "url": "guitar.png",
           "descripcion": "detalle de la foto"
         },
         {
-          "url": "direccion de foto 2",
+          "id": 2,
+          "url": "look.png",
           "descripcion": "detalle de la foto 2"
         }
       ],
-      "audio": "la direccion del audio",
+      "audio": "lord-huron-the-night-we-met.mp3",
       "opciones": [
         {
+          "id": 1,
           "descripcion": "esta es la opcion 1",
           "correcta": false
         },
         {
+          "id": 2,
           "descripcion": "esta es la opcion 2",
           "correcta": false
         },
         {
+          "id": 3,
           "descripcion": "esta es la opcion 3",
           "correcta": false
         },
         {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":3,
+      "titulo": "Pregunta 3",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":4,
+      "titulo": "Pregunta 4",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":5,
+      "titulo": "Pregunta 5",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":6,
+      "titulo": "Pregunta 6",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":7,
+      "titulo": "Pregunta 7",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":8,
+      "titulo": "Pregunta 8",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":9,
+      "titulo": "Pregunta 9",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "esta es la opcion 4",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "15/05/2019",
+      "pista": "url de enlace a la pista"
+    },
+    {
+      "id":10,
+      "titulo": "Pregunta 10",
+      "video": {
+        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "descripcion": "escripcion del video que se mostrara abajo del coso"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "esta es la opcion 1",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "esta es la opcion 2",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "esta es la opcion 3",
+          "correcta": false
+        },
+        {
+          "id": 4,
           "descripcion": "esta es la opcion 4",
           "correcta": true
         }

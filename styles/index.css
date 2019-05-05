@@ -1811,7 +1811,13 @@ nav {
 } 
 
 .img-portada {
+  background-image: url(../public/img/look.png);
+  background-size: contain;
+}
 
+#team{
+  width:100%;
+  background-repeat: no-repeat;
 } 
 
 hr.divider {
@@ -1825,7 +1831,6 @@ hr.light {
 }
 
 .text-shadow{
-
 }
 
 #team{
