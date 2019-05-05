@@ -14,7 +14,7 @@ export default class Equipo extends Component {
   
   render() {
     return (
-      <div className="container">
+      <div className="container mt-5 animated fadeIn slower">
         <div className="row mb-5">
           <div className="col-md-5 text-left">
             <h2 className="section-title mb-3">Equipo StepSound</h2>

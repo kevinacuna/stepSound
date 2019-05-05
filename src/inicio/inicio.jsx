@@ -139,9 +139,9 @@ export default class Inicio extends Component {
     ) : null;
     return (
     <div className="container">
-        <div className="row" key="0">
+        <div className="row mt-5" key="0">
             <div className="col-md-12" key="0">
-                <div className="main-timeline">
+                <div className="main-timeline animated slideInDown slow">
                     {
                         preguntas.map( ({
                             id, titulo
