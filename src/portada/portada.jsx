@@ -6,7 +6,7 @@ export default class Portada extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      btnClicked: false
+      btnClicked: false,
     };
     this.btnHandler = this.btnHandler.bind(this);
   }
