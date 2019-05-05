@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { Redirect } from 'react-router';
+import React, { Component } from "react";
+import { Redirect } from "react-router";
+import '../../public/img/look.png';
 
 export default class Portada extends Component {
   constructor(props) {
@@ -22,16 +23,20 @@ export default class Portada extends Component {
         <div
           className="site-blocks-cover overlay base-portada"
           data-aos="fade"
-          id="home-section"
-        >
+          id="home-section">
           <div className="container">
-            <div className="row h-100 align-items-center justify-content-center text-center img-portada">
-              <div className="col-lg-10 align-self-end">
+            <div className="row h-100 align-items-center justify-content-center text-center">
+
+              <div className="col-lg-12 align-self-end">
                 <h1 className="text-uppercase blue-grey-text text-darken-4 font-weight-bold">
                   Step Sound
                 </h1>
                 <hr className="divider my-4" />
               </div>
+
+            <div className="col-lg-4 align-self-end">
+              <img className="img-fluid img-portada" src="look.png"/>
+             </div>
 
               <div className="col-lg-6 justify-content-center text-center">
                 <p className="font-weight-light mb-5 blue-grey-text text-darken-3 text-shadow">
