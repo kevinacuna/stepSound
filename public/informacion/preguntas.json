@@ -43,7 +43,7 @@
         }
       ],
       "fechaPublicacion": "30/04/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":2,
@@ -88,7 +88,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":3,
@@ -133,7 +133,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":4,
@@ -178,7 +178,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":5,
@@ -223,7 +223,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":6,
@@ -268,7 +268,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":7,
@@ -313,7 +313,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":8,
@@ -358,7 +358,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":9,
@@ -403,7 +403,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":10,
@@ -448,7 +448,7 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     }
   ],
   "total": 10

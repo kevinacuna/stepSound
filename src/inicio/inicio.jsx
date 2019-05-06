@@ -17,7 +17,7 @@ export default class Inicio extends Component {
         historialPreguntasRespondidas: []
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
-    this.cerrarModalPregunta = this.cerrarModalPregunta.bind(this);
+    this.cerrarModal = this.cerrarModal.bind(this);
     this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
     this.getListaRespuetas = this.getListaRespuetas.bind(this);
     this.getEstadoPregunta = this.getEstadoPregunta.bind(this);
@@ -55,7 +55,8 @@ export default class Inicio extends Component {
     seleccionarPregunta(idPregunta) {
         const { preguntas } = Preguntas;
         const dataPregunta = preguntas.find( elementoPregunta => elementoPregunta.id == idPregunta);
-        this.setState({ mostrarModalPreguntaFlag: true, preguntaSeleccionadaId: idPregunta, dataPregunta:dataPregunta });
+
+        this.setState({ [this.getEstadoPregunta(idPregunta) == true ? 'mostrarModalPreguntaFlag' : 'mostrarModalNoDisponibleFlag']: true, preguntaSeleccionadaId: idPregunta, dataPregunta });
     }
 
     
@@ -160,7 +161,7 @@ export default class Inicio extends Component {
   }
 
   // Cambiar estado para cerrar modal
-  cerrarModalPregunta(event) {
+  cerrarModal(event) {
     const nombreModal = event.target.id;
     this.setState({ [nombreModal] : false });
   }
@@ -174,16 +175,18 @@ export default class Inicio extends Component {
         <Modal>
                 <ModalPregunta
                     seleccionarRespuesta={this.seleccionarRespuesta}
-                    hideModal={this.cerrarModalPregunta}
+                    hideModal={this.cerrarModal}
                     data={dataPregunta}
                     respuestasHechas={this.getListaRespuetas()}
                 />
             </Modal>
     ) : null;
-
     const modalNoDisponible = mostrarModalNoDisponibleFlag ? (
       <Modal>
           <ModalNoDisponible
+            id={dataPregunta.id}
+            fecha={dataPregunta.fechaPublicacion}
+            hideModal={this.cerrarModal}
           />
       </Modal>
   ) : null;
@@ -197,7 +200,7 @@ export default class Inicio extends Component {
                             id, titulo
                         }) => (
                             <div className="timeline" key={id}>
-                                <a href="#" onClick={this.getEstadoPregunta(id) == true ? () => this.seleccionarPregunta(id) : () => this.setState({mostrarModalNoDisponibleFlag: true})} className={`timeline-content ${this.getEstadoPregunta(id) == true ? '' : 'disabled'}`}>
+                                <a href="#" onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
                                     <span className="timeline-year">{titulo}</span>
                                     <div className="timeline-icon">
                                         <i className="fa fa-rocket"></i>
