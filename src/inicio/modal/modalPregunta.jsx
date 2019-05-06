@@ -4,7 +4,7 @@ import '../../../public/img/guitar.png';
 
 const disabled = 'disabled';
 
-export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas }) => (
+export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas, ayudaClick, idRespuestas }) => (
   <div className="modal fade show" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
@@ -49,7 +49,7 @@ export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas }) => 
                 {
                   data.opciones.map( ({ descripcion, id }) => (
                     <div key={id} className="col-md-5 col-lg-5 mb-5">
-                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className={`btn btn-primary btn-lg btn-block ${respuestasHechas.bloqueada == true ? disabled : ''}`}>{descripcion}</button>
+                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className={`btn btn-primary btn-lg btn-block ${respuestasHechas.bloqueada == true ? disabled : ''} ${idRespuestas.includes(id) ? disabled : ''}`}>{descripcion}</button>
                     </div>
                   ))
                 }
@@ -58,8 +58,8 @@ export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas }) => 
           </div>
         </div>
         <div className="modal-footer">
-          <button type="button" id="mostrarModalPreguntaFlag" className="btn btn-primary mr-auto" onClick={hideModal} data-dismiss="modal">Cerrar</button>
-          <button type="button" className="btn btn-primary" onClick={hideModal}>¿Ayuda?</button>
+          <a type="button" id="mostrarModalPreguntaFlag" className="btn btn-primary mr-auto" onClick={hideModal} data-dismiss="modal">Cerrar</a>
+          <a type="button" target="_blank" rel="noopener noreferrer" href={data.ayuda} className={`btn btn-primary ${respuestasHechas.correcta ? disabled : '' }`} onClick={ayudaClick}>¿Ayuda?</a>
         </div>
       </div>
     </div>

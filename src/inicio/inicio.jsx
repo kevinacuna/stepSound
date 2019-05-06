@@ -18,7 +18,8 @@ export default class Inicio extends Component {
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModal = this.cerrarModal.bind(this);
     this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
-    this.getEstadoPregunta = this.getEstadoPregunta.bind(this);
+    this.getEstadoPublicacion = this.getEstadoPublicacion.bind(this);
+    this.ayudaBtnClick = this.ayudaBtnClick.bind(this);
   }
 
   componentDidMount() {
@@ -54,7 +55,7 @@ export default class Inicio extends Component {
         const { preguntas } = Preguntas;
         const dataPregunta = preguntas.find( elementoPregunta => elementoPregunta.id == idPregunta);
 
-        this.setState({ [this.getEstadoPregunta(idPregunta) == true ? 'mostrarModalPreguntaFlag' : 'mostrarModalNoDisponibleFlag']: true, preguntaSeleccionadaId: idPregunta, dataPregunta });
+        this.setState({ [this.getEstadoPublicacion(idPregunta) == true ? 'mostrarModalPreguntaFlag' : 'mostrarModalNoDisponibleFlag']: true, preguntaSeleccionadaId: idPregunta, dataPregunta });
     }
 
     
@@ -67,20 +68,17 @@ export default class Inicio extends Component {
     this.agregarRespuesta(opcionSeleccionada);
   }
 
-    /*
-    agrega una respuesta al historial 
-    TODO: respuestasSeleccionadas deben mandarse al modal de pregunta para
-    desabilitar estas opciones, se prentende guardarlas en un estado local
-    ver, opcion para desmontarla cada que se cierra el modal pero obtenerla cuando se abre
-  */
     agregarRespuesta(respuestaObjeto) {
-        const { preguntaSeleccionadaId } = this.state;
+        const { preguntaSeleccionadaId, dataPregunta } = this.state;
         const preguntaDetalle = this.buscarPreguntasRespondidas();
+        const { correcta } = dataPregunta.opciones.find(opcion => opcion.id == respuestaObjeto.id);
+
         if ( preguntaDetalle == -1) {
             const nuevaRespuesta = {
                 idPregunta: preguntaSeleccionadaId,
                 idRespuestas: [respuestaObjeto.id],
-                bloqueada: true
+                bloqueada: true,
+                correcta
             };
             this.setState(prevState => ({
                 historialPreguntasRespondidas: [...prevState.historialPreguntasRespondidas, nuevaRespuesta],
@@ -94,6 +92,8 @@ export default class Inicio extends Component {
                 const preguntaHistorial = newHistorialPreguntasRespondidas.find( respuesta => respuesta.idPregunta == preguntaSeleccionadaId);
                 // Bloqueamos la pregunta para que los botones se deshabiliten
                 preguntaHistorial.bloqueada = true;
+                // seteamos sobre si la respuesta que se decidio es la correcta
+                preguntaHistorial.correcta = correcta;
                 // Si la opcion no ha sido usada se le agrega al listado de respuestas dadas
                 if (!preguntaHistorial.idRespuestas.includes(respuestaObjeto.id)) preguntaHistorial.idRespuestas.push(respuestaObjeto.id);
                 // Regresamos el nuevo historial de preguntas respondidas
@@ -127,7 +127,7 @@ export default class Inicio extends Component {
     True, pregunta lista para publicarse, fecha menor al día de hoy
     False, pregunta bloqueada, fecha mayor al día de publicacion
   */
-  getEstadoPregunta(idPregunta) {
+  getEstadoPublicacion(idPregunta) {
     const { preguntas } = Preguntas;
     const elementoPregunta = preguntas.find( elemento => elemento.id == idPregunta);
     const { fechaPublicacion } = elementoPregunta;
@@ -140,6 +140,33 @@ export default class Inicio extends Component {
     const fechaFormato = new Date(elementos[2], elementos[1]-1, elementos[0]);
     const fechaActual = new Date();
     return fechaFormato <= fechaActual;
+  }
+
+  /*
+    agrega una respuesta al historial 
+    TODO: Llamar al renderizar para que funcione de forma correcta
+  */
+  ayudaBtnClick() {
+    const { preguntaSeleccionadaId } = this.state;
+    const pregunta = this.buscarPreguntasRespondidas();
+    
+    if(pregunta != -1) {
+      // Es necesario el setState para que se vuelva a renderizar el componente
+      this.setState(prevState => {
+        // Creamos una varibale que sea la referencia al historial de preguntas respondidas
+        const newHistorialPreguntasRespondidas = prevState.historialPreguntasRespondidas;
+        // Obtenes solo el historial de la pregunta seleccionada
+        const preguntaHistorial = newHistorialPreguntasRespondidas.find( respuesta => respuesta.idPregunta == preguntaSeleccionadaId);
+        // Bloqueamos la pregunta para que los botones se deshabiliten
+        preguntaHistorial.bloqueada = false;
+        // Regresamos el nuevo historial de preguntas respondidas
+        return({
+            historialPreguntasRespondidas: newHistorialPreguntasRespondidas,
+        });
+    });
+    };
+    // usado para llamar al render
+    this.setState({});
   }
 
   // Cambiar estado para cerrar modal
@@ -160,6 +187,8 @@ export default class Inicio extends Component {
               hideModal={this.cerrarModal}
               data={dataPregunta}
               respuestasHechas={this.buscarPreguntasRespondidas()}
+              idRespuestas={this.buscarPreguntasRespondidas().idRespuestas||[]}
+              ayudaClick={this.ayudaBtnClick}
           />
       </Modal>
     ) : null;
