@@ -49,7 +49,7 @@ export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas }) => 
                 {
                   data.opciones.map( ({ descripcion, id }) => (
                     <div key={id} className="col-md-5 col-lg-5 mb-5">
-                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className={`btn btn-primary btn-lg btn-block`}>{descripcion}</button>
+                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className={`btn btn-primary btn-lg btn-block ${respuestasHechas.bloqueada == true ? disabled : ''}`}>{descripcion}</button>
                     </div>
                   ))
                 }

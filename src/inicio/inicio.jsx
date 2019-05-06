@@ -13,13 +13,11 @@ export default class Inicio extends Component {
         mostrarModalNoDisponibleFlag: false,
         preguntaSeleccionadaId: 0,
         dataPregunta: {},
-        respuestasSeleccionadas: [],
         historialPreguntasRespondidas: []
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModal = this.cerrarModal.bind(this);
     this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
-    this.getListaRespuetas = this.getListaRespuetas.bind(this);
     this.getEstadoPregunta = this.getEstadoPregunta.bind(this);
   }
 
@@ -77,7 +75,7 @@ export default class Inicio extends Component {
   */
     agregarRespuesta(respuestaObjeto) {
         const { preguntaSeleccionadaId } = this.state;
-        const preguntaDetalle = this.buscarPreguntasRespondidas(preguntaSeleccionadaId);
+        const preguntaDetalle = this.buscarPreguntasRespondidas();
         if ( preguntaDetalle == -1) {
             const nuevaRespuesta = {
                 idPregunta: preguntaSeleccionadaId,
@@ -86,7 +84,6 @@ export default class Inicio extends Component {
             };
             this.setState(prevState => ({
                 historialPreguntasRespondidas: [...prevState.historialPreguntasRespondidas, nuevaRespuesta],
-                respuestasSeleccionadas: [respuestaObjeto.id]
             }));
         } else {
             // Es necesario el setState para que se vuelva a renderizar el componente
@@ -102,7 +99,6 @@ export default class Inicio extends Component {
                 // Regresamos el nuevo historial de preguntas respondidas
                 return({
                     historialPreguntasRespondidas: newHistorialPreguntasRespondidas,
-                    respuestasSeleccionadas: [...prevState.respuestasSeleccionadas, respuestaObjeto.id]
                 });
             });
         }
@@ -120,24 +116,10 @@ export default class Inicio extends Component {
             correcta: si la respuesta es correcta o no
         }
   */
-  buscarPreguntasRespondidas(idPregunta){
-    const { historialPreguntasRespondidas } = this.state;
-    const resultado = historialPreguntasRespondidas.find(pregunta => pregunta.idPregunta == idPregunta);
+  buscarPreguntasRespondidas(){
+    const { historialPreguntasRespondidas, preguntaSeleccionadaId } = this.state;
+    const resultado = historialPreguntasRespondidas.find(pregunta => pregunta.idPregunta == preguntaSeleccionadaId);
     return resultado == undefined ? -1 : resultado;
-  }
-
-  getListaRespuetas() {
-    const { preguntaSeleccionadaId } = this.state;
-    const { idRespuestas } = this.buscarPreguntasRespondidas(preguntaSeleccionadaId);
-    return idRespuestas == undefined ? [] : idRespuestas;
-  }
-
-  // True, pregunta bloqueada porque ya ha respondido y no tiene otra oportunidad
-  // False, pregunta desbloqueada por ser el primer intento o por otra oportunidad
-  getEstadoPregunta(){
-    const { preguntaSeleccionadaId } = this.state;
-    const { bloqueada } = this.buscarPreguntasRespondidas(preguntaSeleccionadaId);
-    return bloqueada == undefined ? false : bloqueada;
   }
 
   /*
@@ -172,14 +154,14 @@ export default class Inicio extends Component {
     const { mostrarModalPreguntaFlag, dataPregunta, mostrarModalNoDisponibleFlag } = this.state;
 
     const modalPregunta = mostrarModalPreguntaFlag ? (
-        <Modal>
-                <ModalPregunta
-                    seleccionarRespuesta={this.seleccionarRespuesta}
-                    hideModal={this.cerrarModal}
-                    data={dataPregunta}
-                    respuestasHechas={this.getListaRespuetas()}
-                />
-            </Modal>
+      <Modal>
+          <ModalPregunta
+              seleccionarRespuesta={this.seleccionarRespuesta}
+              hideModal={this.cerrarModal}
+              data={dataPregunta}
+              respuestasHechas={this.buscarPreguntasRespondidas()}
+          />
+      </Modal>
     ) : null;
     const modalNoDisponible = mostrarModalNoDisponibleFlag ? (
       <Modal>
