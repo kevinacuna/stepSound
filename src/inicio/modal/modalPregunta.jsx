@@ -4,13 +4,14 @@ import '../../../public/img/guitar.png';
 
 const disabled = 'disabled';
 
-export default ({ hideModal, data, seleccionarRespuesta }) => (
+export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas }) => (
   <div className="modal fade show" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div className="modal-dialog modal-lg" role="document">
+      {console.log("respuestas hechas", respuestasHechas)}
       <div className="modal-content">
         <div className="modal-header">
           <h5 className="modal-title" id="exampleModal">{data.titulo}</h5>
-          <button type="button" onClick={hideModal} className="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" onClick={hideModal} id="mostrarModalPreguntaFlag" className="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -58,7 +59,7 @@ export default ({ hideModal, data, seleccionarRespuesta }) => (
           </div>
         </div>
         <div className="modal-footer">
-          <button type="button" className="btn btn-primary mr-auto" onClick={hideModal} data-dismiss="modal">Cerrar</button>
+          <button type="button" id="mostrarModalPreguntaFlag" className="btn btn-primary mr-auto" onClick={hideModal} data-dismiss="modal">Cerrar</button>
           <button type="button" className="btn btn-primary" onClick={hideModal}>¿Ayuda?</button>
         </div>
       </div>

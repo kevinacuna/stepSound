@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './modal/modal';
 import ModalPregunta from './modal/modalPregunta';
+import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
 
@@ -8,7 +9,8 @@ export default class Inicio extends Component {
   constructor(props) {
     super(props);
     this.state={
-        mostrarModalFlag: false,
+        mostrarModalPreguntaFlag: false,
+        mostrarModalNoDisponibleFlag: false,
         preguntaSeleccionadaId: 0,
         dataPregunta: {},
         respuestasSeleccionadas: [],
@@ -17,6 +19,8 @@ export default class Inicio extends Component {
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModalPregunta = this.cerrarModalPregunta.bind(this);
     this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
+    this.getListaRespuetas = this.getListaRespuetas.bind(this);
+    this.getEstadoPregunta = this.getEstadoPregunta.bind(this);
   }
 
   componentDidMount() {
@@ -43,7 +47,7 @@ export default class Inicio extends Component {
     Funcion que se encarga de obtener la data de la pregunta 
     que se mostrará en el modal
     SetState{
-        mostrarModalFlag: True = mostrar el modal,
+        mostrarModalPreguntaFlag: True = mostrar el modal,
         preguntaSeleccionadaId: id de la pregunta seleccionada,
         dataPregunta: data que se mostrará en el modal
     }
@@ -51,7 +55,7 @@ export default class Inicio extends Component {
     seleccionarPregunta(idPregunta) {
         const { preguntas } = Preguntas;
         const dataPregunta = preguntas.find( elementoPregunta => elementoPregunta.id == idPregunta);
-        this.setState({ mostrarModalFlag: true, preguntaSeleccionadaId: idPregunta, dataPregunta:dataPregunta });
+        this.setState({ mostrarModalPreguntaFlag: true, preguntaSeleccionadaId: idPregunta, dataPregunta:dataPregunta });
     }
 
     
@@ -76,7 +80,8 @@ export default class Inicio extends Component {
         if ( preguntaDetalle == -1) {
             const nuevaRespuesta = {
                 idPregunta: preguntaSeleccionadaId,
-                idRespuestas: [respuestaObjeto.id]
+                idRespuestas: [respuestaObjeto.id],
+                bloqueada: true
             };
             this.setState(prevState => ({
                 historialPreguntasRespondidas: [...prevState.historialPreguntasRespondidas, nuevaRespuesta],
@@ -89,6 +94,8 @@ export default class Inicio extends Component {
                 const newHistorialPreguntasRespondidas = prevState.historialPreguntasRespondidas;
                 // Obtenes solo el historial de la pregunta seleccionada
                 const preguntaHistorial = newHistorialPreguntasRespondidas.find( respuesta => respuesta.idPregunta == preguntaSeleccionadaId);
+                // Bloqueamos la pregunta para que los botones se deshabiliten
+                preguntaHistorial.bloqueada = true;
                 // Si la opcion no ha sido usada se le agrega al listado de respuestas dadas
                 if (!preguntaHistorial.idRespuestas.includes(respuestaObjeto.id)) preguntaHistorial.idRespuestas.push(respuestaObjeto.id);
                 // Regresamos el nuevo historial de preguntas respondidas
@@ -118,25 +125,68 @@ export default class Inicio extends Component {
     return resultado == undefined ? -1 : resultado;
   }
 
+  getListaRespuetas() {
+    const { preguntaSeleccionadaId } = this.state;
+    const { idRespuestas } = this.buscarPreguntasRespondidas(preguntaSeleccionadaId);
+    return idRespuestas == undefined ? [] : idRespuestas;
+  }
+
+  // True, pregunta bloqueada porque ya ha respondido y no tiene otra oportunidad
+  // False, pregunta desbloqueada por ser el primer intento o por otra oportunidad
+  getEstadoPregunta(){
+    const { preguntaSeleccionadaId } = this.state;
+    const { bloqueada } = this.buscarPreguntasRespondidas(preguntaSeleccionadaId);
+    return bloqueada == undefined ? false : bloqueada;
+  }
+
+  /*
+    Obtener el estado de la pregunta
+    True, pregunta lista para publicarse, fecha menor al día de hoy
+    False, pregunta bloqueada, fecha mayor al día de publicacion
+  */
+  getEstadoPregunta(idPregunta) {
+    const { preguntas } = Preguntas;
+    const elementoPregunta = preguntas.find( elemento => elemento.id == idPregunta);
+    const { fechaPublicacion } = elementoPregunta;
+    /*
+      elemento[0] día
+      elemento[1] mes
+      elemento[2] año
+    */
+    const elementos = fechaPublicacion.split('/');
+    const fechaFormato = new Date(elementos[2], elementos[1]-1, elementos[0]);
+    const fechaActual = new Date();
+    return fechaFormato <= fechaActual;
+  }
+
   // Cambiar estado para cerrar modal
-  cerrarModalPregunta() {
-    this.setState({ mostrarModalFlag : false });
+  cerrarModalPregunta(event) {
+    const nombreModal = event.target.id;
+    this.setState({ [nombreModal] : false });
   }
 
   
   render() {
     const { preguntas } = Preguntas;
-    const { mostrarModalFlag, dataPregunta } = this.state;
+    const { mostrarModalPreguntaFlag, dataPregunta, mostrarModalNoDisponibleFlag } = this.state;
 
-    const modal = mostrarModalFlag ? (
+    const modalPregunta = mostrarModalPreguntaFlag ? (
         <Modal>
                 <ModalPregunta
                     seleccionarRespuesta={this.seleccionarRespuesta}
                     hideModal={this.cerrarModalPregunta}
                     data={dataPregunta}
+                    respuestasHechas={this.getListaRespuetas()}
                 />
             </Modal>
     ) : null;
+
+    const modalNoDisponible = mostrarModalNoDisponibleFlag ? (
+      <Modal>
+          <ModalNoDisponible
+          />
+      </Modal>
+  ) : null;
     return (
     <div className="container">
         <div className="row" key="0">
@@ -147,7 +197,7 @@ export default class Inicio extends Component {
                             id, titulo
                         }) => (
                             <div className="timeline" key={id}>
-                                <a href="#" onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
+                                <a href="#" onClick={this.getEstadoPregunta(id) == true ? () => this.seleccionarPregunta(id) : () => this.setState({mostrarModalNoDisponibleFlag: true})} className={`timeline-content ${this.getEstadoPregunta(id) == true ? '' : 'disabled'}`}>
                                     <span className="timeline-year">{titulo}</span>
                                     <div className="timeline-icon">
                                         <i className="fa fa-rocket"></i>
@@ -157,7 +207,8 @@ export default class Inicio extends Component {
                             </div>
                         ))
                     }
-                    {modal}
+                    {modalPregunta}
+                    {modalNoDisponible}
                 </div>
             </div>
         </div>
