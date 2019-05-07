@@ -17,7 +17,7 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App">
-          <nav className="navbar fixed-top navbar-dark navbar-expand-sm justify-content-end" id="mainNav">
+          <nav className="navbar fixed-top navbar-dark navbar-expand-lg justify-content-end" id="mainNav">
             <button
               className="navbar-toggler navbar-toggler-right"
               type="button"
@@ -66,10 +66,9 @@ export default class App extends Component {
             <div className="container ">
               <div className="row">
                 <div className="col l3 s12">
-                  <h5 className="white-text">Footer Content</h5>
+                  <h5 className="white-text">Step Sound</h5>
                   <p className="grey-text text-lighten-4">
-                    You can use rows and columns here to organize your footer
-                    content.
+                   ¡No pauses tus sueños!
                   </p>
                 </div>
                 <div className="col l3 s12">

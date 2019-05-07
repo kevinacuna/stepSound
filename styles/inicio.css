@@ -52,7 +52,7 @@
 .main-timeline .timeline-content:hover{ text-decoration: none; }
 .main-timeline .timeline-year{
     color: #65C7D0;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
     display: inline-block;
     transform:translateY(-50%);
@@ -62,11 +62,11 @@
 }
 .main-timeline .timeline-icon{
     color: #65C7D0;
-    font-size: 80px;
+    font-size: 40px;
     display: inline-block;
     transform: translateY(-50%);
     position: absolute;
-    left: 34%;
+    left: 30%;
     top: 50%;
 }
 .main-timeline .content{
@@ -162,12 +162,12 @@
         top: 9px;
         right: 9px;
     }
-    .main-timeline .timeline-icon{ font-size: 60px; }
-    .main-timeline .timeline-year{ font-size: 40px; }
+    .main-timeline .timeline-icon{ font-size: 40px; }
+    .main-timeline .timeline-year{ font-size: 25px; }
 }
 @media screen and (max-width:479px){
     .main-timeline .timeline-icon{
-        font-size: 50px;
+        font-size: 40px;
         transform:translateY(0);
         top: 25%;
         left: 10%;
@@ -175,8 +175,8 @@
     .main-timeline .timeline-year{
         font-size: 25px;
         transform:translateY(0);
-        top: 65%;
-        left: 9%;
+        top: 33%;
+        left: 20%;
     }
     .main-timeline .content{
         width: 68%;

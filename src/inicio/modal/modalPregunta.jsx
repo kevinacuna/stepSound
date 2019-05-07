@@ -1,11 +1,10 @@
 import React from 'react';
-import '../../../public/audios/lord-huron-the-night-we-met.mp3';
 import '../../../public/img/guitar.png';
 
 const disabled = 'disabled';
 
 export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas, ayudaClick, idRespuestas }) => (
-  <div className="modal fade show" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div className="modal fade show animated slideInLeft" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
         <div className="modal-header">

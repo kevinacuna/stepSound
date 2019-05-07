@@ -8,7 +8,7 @@ export default class Exclusivo extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row mb-5">
+        <div className="row mb-5 mt-5 animated fadeIn slow">
           <div className="col-md-5 text-left">
             <h2 className="section-title mb-3">Contenido Exclusivo</h2>
             <p className="lead">Making Off.</p>

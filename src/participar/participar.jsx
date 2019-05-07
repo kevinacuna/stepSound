@@ -7,7 +7,7 @@ export default class Participar extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container mt-5 animated fadeIn slow">
         <h2 className="text-center section-title mb-3">¿Cómo participar?</h2>
         <hr className="divider my-4" />
         <div className="row">
