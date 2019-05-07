@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import '../../public/img/lara.jpg';
-import '../../public/img/kevin.jpg';
+import '../../public/img/LaraBN.jpg';
+import '../../public/img/KevinBN.jpg';
 import '../../public/img/ines.jpg';
-import '../../public/img/elder.jpg';
-import '../../public/img/rodrigo.jpg';
-import '../../public/img/mar.jpg';
-import '../../public/img/alexa.jpg';
+import '../../public/img/ElderBN.jpg';
+import '../../public/img/RodrigoBN.jpg';
+import '../../public/img/MarBN.jpg';
+import '../../public/img/AlexandraBN.jpg';
  
 export default class Equipo extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ export default class Equipo extends Component {
           <div className="col-md-7 col-lg-4 mb-5">
             <div className="team-member">
               <figure>
-                <img id="team" src="lara.jpg" alt="Image" className="rounded-circle"/>
+                <img id="team" src="LaraBN.jpg" alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
@@ -38,11 +38,11 @@ export default class Equipo extends Component {
           <div className="col-md-7 col-lg-4 mb-5">
             <div className="team-member">
               <figure>
-                <img id="team" src="kevin.jpg" alt="Image" className="rounded-circle"/>
+                <img id="team" src="RodrigoBN.jpg" alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
-                  <h3>Kevin Acuña</h3>
+                  <h3>Rodrigo Zaldaña</h3>
                   <span className="position">Estudiante de informatica</span>
                 </center>
               </div>
@@ -64,7 +64,7 @@ export default class Equipo extends Component {
           <div className="col-md-7 col-lg-4 mb-5">
             <div className="team-member">
               <figure>
-                <img id="team" src="elder.jpg" alt="Image" className="rounded-circle"/>
+                <img id="team" src="ElderBN.jpg" alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
@@ -77,12 +77,12 @@ export default class Equipo extends Component {
           <div className="col-md-7 col-lg-4 mb-5">
             <div className="team-member">
               <figure>
-                <img id="team" src="rodrigo.jpg" alt="Image" className="rounded-circle"/>
+                <img id="team" src="MarBN.jpg" alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
-                  <h3>Rodrigo Zaldaña</h3>
-                  <span className="position">Estudiante de informatica</span>
+                  <h3>Mar Horna</h3>
+                  <span className="position">Estudiante de publicidad</span>
                 </center>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default class Equipo extends Component {
           <div className="col-md-7 col-lg-4 mb-5">
             <div className="team-member">
               <figure>
-                <img id="team" src="alexa.jpg" alt="Image" className="rounded-circle"/>
+                <img id="team" src="AlexandraBN.jpg" alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
@@ -105,12 +105,12 @@ export default class Equipo extends Component {
           <div className="col-md-7 col-lg-4 mb-5">
             <div className="team-member">
               <figure>
-                <img id="team" src="mar.jpg" alt="Image" className="rounded-circle"/>
+                <img id="team" src="KevinBN.jpg" alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
-                  <h3>Mar Horna</h3>
-                  <span className="position">Estudiante de publicidad</span>
+                  <h3>Kevin Acuña</h3>
+                  <span className="position">Estudiante de informatica</span>
                 </center>
               </div>
             </div>
