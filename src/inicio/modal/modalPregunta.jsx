@@ -7,14 +7,21 @@ export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas, ayuda
   <div className="modal fade show animated slideInLeft" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
-        <div className="modal-header">
-          <h5 className="modal-title" id="exampleModal">{data.titulo}</h5>
+        <div className="modal-header text-center">
+          <h5 className="modal-title w-100" id="exampleModal">{`Pregunta ${data.id}`}</h5>
           <button type="button" onClick={hideModal} id="mostrarModalPreguntaFlag" className="close" data-dismiss="modal" aria-label="Close">
             &times;
           </button>
         </div>
         <div className="modal-body">
           <div id="contenedorVideo">
+            <p>
+              <center>
+                <b>
+                  {data.titulo}
+                </b>
+              </center>
+            </p>
             <iframe
               style={{ width:420, height:315 }}
               src={data.video.url}

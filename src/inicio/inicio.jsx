@@ -207,19 +207,17 @@ export default class Inicio extends Component {
             <div className="col-md-12" key="0">
                 <div className="main-timeline animated slideInDown slow">
                     {
-                        preguntas.map( ({
-                            id, titulo
-                        }) => (
-                            <div className="timeline" key={id}>
-                                <a href="#" onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
-                                    <span className="timeline-year">{titulo}</span>
-                                    <div className="timeline-icon">
-                                        <i className="fa fa-rocket"></i>
-                                    </div>
-                                    <div className="content"/>
-                                </a>
-                            </div>
-                        ))
+                      preguntas.map( ({ id }) => (
+                          <div className="timeline" key={id}>
+                              <a href="#" onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
+                                  <span className="timeline-year">{`Pregunta ${id}`}</span>
+                                  <div className="timeline-icon">
+                                      <i className="fa fa-rocket"></i>
+                                  </div>
+                                  <div className="content"/>
+                              </a>
+                          </div>
+                      ))
                     }
                     {modalPregunta}
                     {modalNoDisponible}
