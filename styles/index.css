@@ -1649,7 +1649,7 @@ nav {
     margin-bottom: 0; }
 
 .team-member {
-  background: #f0f0f0; }
+  background: transparent; }
   .team-member figure {
     margin: 0;
     padding: 0;
