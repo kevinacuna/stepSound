@@ -2,10 +2,10 @@
   "preguntas": [
     {
       "id":1,
-      "titulo": "Pregunta 1",
+      "titulo": "¿Quien compuso “Para Elisa”?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
+        "url": "https://www.youtube.com/embed/tIaoih-kHJU",
+        "descripcion": "descripcion del video"
       },
       "fotos": [
         {
@@ -23,33 +23,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "The Beatles",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
-          "correcta": false
+          "descripcion": "Ludwig van Beethoven",
+          "correcta": true
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "Johann Sebastian Bach",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "Queen",
+          "correcta": false
         }
       ],
       "fechaPublicacion": "30/04/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":2,
-      "titulo": "Pregunta 2",
+      "titulo": "¿Cúal es el verdadero nombre del cantante de esta canción? ",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/m5UcZ9thgPI”",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -68,33 +68,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "Alejandro Sanz",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "Alex Ubago",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
-          "correcta": false
+          "descripcion": "Andrea Bocelli",
+          "correcta": true
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "Chayanne",
+          "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "fechaPublicacion": "5/05/2019",
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":3,
-      "titulo": "Pregunta 3",
+      "titulo": "¿Cúal es el nombre de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/wuCK-oiE3rM",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -113,33 +113,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
-          "correcta": false
+          "descripcion": "Sunset Lover",
+          "correcta": true
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "Summer",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "Firestone",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "My Way",
+          "correcta": false
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":4,
-      "titulo": "Pregunta 4",
+      "titulo": "¿Con qué palabra termina la canción “prometo” Melendi?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/xEu9lyn_rrg",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -158,33 +158,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "Quererte",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "Prometer",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
-          "correcta": false
+          "descripcion": "Envejecer",
+          "correcta": true
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "Tocarte",
+          "correcta": false
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":5,
-      "titulo": "Pregunta 5",
+      "titulo": "¿Qué cantantes cantan la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/zLxXqEZ5OoA",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -203,33 +203,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "David Guetta ft.Calvin Harris",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "Katy Perry ft. David Guetta",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
-          "correcta": false
+          "descripcion": "Macklemore ft. Ray Dalton",
+          "correcta": true
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "Ludacris ft. Pitbull",
+          "correcta": false
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":6,
-      "titulo": "Pregunta 6",
+      "titulo": "¿Con qué frase inicia la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/Yn6w6sbyzug",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -248,33 +248,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "“I had a dream”",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "“I really love you”",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "“You push me out”",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
+          "descripcion": "“You say you love me”",
           "correcta": true
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":7,
-      "titulo": "Pregunta 7",
+      "titulo": "¿Cúal es la frase que se menciona más a lo largo de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/-gCe4WrmOIk",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -293,33 +293,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "“Y no te voy a negar”",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
-          "correcta": false
+          "descripcion": "“Cucara Macara Di que fue”",
+          "correcta": true
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "“Un camino y un destino asegurado”",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "“Se preparó se puso linda”",
+          "correcta": false
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":8,
-      "titulo": "Pregunta 8",
+      "titulo": "¿Cúal es el nombre de la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/2idJRTd1tVc",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -338,33 +338,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "Con alegría",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "Con desesperación",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "Con valor",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
+          "descripcion": "Con Altura",
           "correcta": true
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":9,
-      "titulo": "Pregunta 9",
+      "titulo": "¿Qué música motiva más a Pablo a llegar a la meta?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/Vy52v1v8B4o",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -383,33 +383,33 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "Safari",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
-          "correcta": false
+          "descripcion": "Bola Rebola",
+          "correcta": true
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "Peligro",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
-          "correcta": true
+          "descripcion": "Hasta que se seque el malecón",
+          "correcta": false
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     },
     {
       "id":10,
-      "titulo": "Pregunta 10",
+      "titulo": "“Money's the motivation, money's the conversation” es el principio de una canción que fue añadida en la película Fast & Furious. ¿Sabes de cual?",
       "video": {
-        "url": "https://www.youtube.com/embed/KtlgYxa6BMU",
+        "url": "https://www.youtube.com/embed/tYQ1Okyi3g4",
         "descripcion": "escripcion del video que se mostrara abajo del coso"
       },
       "fotos": [
@@ -428,27 +428,27 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "esta es la opcion 1",
+          "descripcion": "Go Hard or go Home",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "esta es la opcion 2",
+          "descripcion": "In da club",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "esta es la opcion 3",
+          "descripcion": "Club Can't Handle me",
           "correcta": false
         },
         {
           "id": 4,
-          "descripcion": "esta es la opcion 4",
+          "descripcion": "We Own It",
           "correcta": true
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "pista": "url de enlace a la pista"
+      "ayuda": "url de enlace a la pista"
     }
   ],
   "total": 10

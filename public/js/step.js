@@ -1,4 +1,4 @@
-var navbarCollapse = function() {
+const navbarCollapse = () => {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
     } else {
