@@ -82,15 +82,24 @@ padding-bottom: 20px; }
     box-shadow: none !important; }
   .btn.btn-primary {
     background: #FBB03B;
-    border-color: #FBB03B;
+    border-color: #000000;
     color: #fff; }
     .btn.btn-primary:hover {
       background: #fff;
       border-color: #fff;
-      color: #F599FF; }
+      color: #000000; }
     .btn.btn-primary.btn-black--hover:hover {
       background: #666666;
       color: #fff; }
+  
+  .btn-pregunta-correcta.disabled {
+    background-color: #4CAF50 !important;
+    color: #000000 !important;
+  }
+  .btn-pregunta-incorrecta.disabled {
+    background-color: #f00 !important;
+    color: #000000 !important;
+  }
 
 .line-height-1 {
   line-height: 1 !important; }

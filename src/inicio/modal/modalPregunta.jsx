@@ -1,71 +1,120 @@
-import React from 'react';
-import '../../../public/img/guitar.png';
+import React from "react";
+import "../../../public/img/guitar.png";
 
-const disabled = 'disabled';
+const disabled = "disabled";
 
-export default ({ hideModal, data, seleccionarRespuesta, respuestasHechas, ayudaClick, idRespuestas }) => (
-  <div className="modal fade show animated slideInLeft" style={{ display: 'flex', overflow: 'scroll', maxHeight: '100%' }} id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+export default ({
+  hideModal,
+  data,
+  seleccionarRespuesta,
+  respuestasHechas,
+  ayudaClick,
+  idRespuestas,
+  esCorrecta
+}) => (
+  <div
+    className="modal fade show animated slideInLeft"
+    style={{ display: "flex", overflow: "scroll", maxHeight: "100%" }}
+    id="exampleModalCenter"
+    tabIndex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true"
+  >
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
         <div className="modal-header text-center">
-          <h5 className="modal-title w-100" id="exampleModal">{`Pregunta ${data.id}`}</h5>
-          <button type="button" onClick={hideModal} id="mostrarModalPreguntaFlag" className="close" data-dismiss="modal" aria-label="Close">
+          <h5 className="modal-title w-100" id="exampleModal">{`Pregunta ${
+            data.id
+          }`}</h5>
+          <button
+            type="button"
+            onClick={hideModal}
+            id="mostrarModalPreguntaFlag"
+            className="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
             &times;
           </button>
         </div>
         <div className="modal-body">
           <div id="contenedorVideo">
-            <p>
-              <center>
-                <b>
-                  {data.titulo}
-                </b>
-              </center>
-            </p>
-            <iframe
-              style={{ width:420, height:315 }}
-              src={data.video.url}
-            />
-            <p>
-              {data.video.descripcion}
-            </p>
+            <center>
+              <p>
+                <b>{data.titulo}</b>
+              </p>
+            </center>
+            <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
+            <p>{data.video.descripcion}</p>
           </div>
           <div className="row" id="contenendorFotos">
-            <div className="col-md-1 col-lg-1 mb-1"/>
-            {
-              data.fotos.map( ({ url, descripcion, id }) => (
-                <div key={id} className="col-md-5 col-lg-5 mb-5">
-                  <div className="team-member">
-                    <figure style={{ maxHeight: '250px' }}>
-                      <img id="team" src={url} alt="Image" className="img-fluid"/>
-                    </figure>
-                    <div className="p-3">
-                      <span className="position">{descripcion}</span>
-                    </div>
+            <div className="col-md-1 col-lg-1 mb-1" />
+            {data.fotos.map(({ url, descripcion, id }) => (
+              <div key={id} className="col-md-5 col-lg-5 mb-5">
+                <div className="team-member">
+                  <figure style={{ maxHeight: "250px" }}>
+                    <img
+                      id="team"
+                      src={url}
+                      alt="Image"
+                      className="img-fluid"
+                    />
+                  </figure>
+                  <div className="p-3">
+                    <span className="position">{descripcion}</span>
                   </div>
                 </div>
-              ))
-            }
-            <div className="col-md-1 col-lg-1 mb-1"/>
+              </div>
+            ))}
+            <div className="col-md-1 col-lg-1 mb-1" />
             <div id="contenendorAudio">
               <audio src={data.audio} preload="auto" controls />
             </div>
             <div id="contenedorOpciones">
               <div className="row">
-                {
-                  data.opciones.map( ({ descripcion, id }) => (
-                    <div key={id} className="col-md-5 col-lg-5 mb-5">
-                      <button onClick={() => seleccionarRespuesta(id)} type="button" key={id} className={`btn btn-primary btn-lg btn-block ${respuestasHechas.bloqueada == true ? disabled : ''} ${idRespuestas.includes(id) ? disabled : ''}`}>{descripcion}</button>
-                    </div>
-                  ))
-                }
+                {data.opciones.map(({ descripcion, id }) => (
+                  <div key={id} className="col-md-5 col-lg-5 mb-5">
+                    <button
+                      onClick={() => seleccionarRespuesta(id)}
+                      type="button"
+                      key={id}
+                      className={`btn btn-primary btn-lg btn-block ${
+                        respuestasHechas.bloqueada ? disabled : ""
+                      } ${
+                        idRespuestas.includes(id) ? disabled : ""
+                      } ${esCorrecta(id)}`}
+                    >
+                      {descripcion}
+                    </button>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
         <div className="modal-footer">
-          <a type="button" id="mostrarModalPreguntaFlag" className="btn btn-primary mr-auto" onClick={hideModal} data-dismiss="modal">Cerrar</a>
-          <a type="button" target="_blank" rel="noopener noreferrer" href={data.ayuda} className={`btn btn-primary ${respuestasHechas.correcta ? disabled : '' }`} onClick={ayudaClick}>¿Ayuda?</a>
+          <a
+            type="button"
+            id="mostrarModalPreguntaFlag"
+            className="btn btn-primary mr-auto"
+            onClick={hideModal}
+            data-dismiss="modal"
+          >
+            Cerrar
+          </a>
+          <a
+            type="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={data.ayuda}
+            className={`btn btn-primary ${
+              respuestasHechas.correcta ? disabled : ""
+            }`}
+            onClick={ayudaClick}
+          >
+            ¿Ayuda?
+          </a>
         </div>
       </div>
     </div>

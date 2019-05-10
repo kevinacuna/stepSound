@@ -20,6 +20,7 @@ export default class Inicio extends Component {
     this.seleccionarRespuesta = this.seleccionarRespuesta.bind(this);
     this.getEstadoPublicacion = this.getEstadoPublicacion.bind(this);
     this.ayudaBtnClick = this.ayudaBtnClick.bind(this);
+    this.esCorrecta = this.esCorrecta.bind(this);
   }
 
   componentDidMount() {
@@ -175,6 +176,22 @@ export default class Inicio extends Component {
     this.setState({ [nombreModal] : false });
   }
 
+  /*
+    Funcion que identifica si la pregunta es correcta o no; solo sirve para 
+    colocar estilo en modalPregunta
+  */
+  esCorrecta(id) {
+    const { dataPregunta } = this.state;
+    const esCorrecta = dataPregunta.opciones.find(opcion => opcion.id == id).correcta;
+    const historialPreguntas = this.buscarPreguntasRespondidas().idRespuestas||[];
+    if (historialPreguntas.includes(id) && esCorrecta) {
+      return 'btn-pregunta-correcta';
+    } else if (historialPreguntas.includes(id) && !esCorrecta) {
+      return 'btn-pregunta-incorrecta';
+    }
+    return '';
+  }
+
   
   render() {
     const { preguntas } = Preguntas;
@@ -189,6 +206,7 @@ export default class Inicio extends Component {
               respuestasHechas={this.buscarPreguntasRespondidas()}
               idRespuestas={this.buscarPreguntasRespondidas().idRespuestas||[]}
               ayudaClick={this.ayudaBtnClick}
+              esCorrecta={this.esCorrecta}
           />
       </Modal>
     ) : null;
