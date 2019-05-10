@@ -66,7 +66,10 @@ h1, h2, h3, h4, h5,
 
 
     
-
+.btn-hide {
+  background-color: transparent !important;
+  border: transparent;
+}
 
 
 
@@ -81,7 +84,7 @@ padding-bottom: 20px; }
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-primary {
-    background: #FBB03B;
+    background: #2a1c8d;
     border-color: #000000;
     color: #fff; }
     .btn.btn-primary:hover {

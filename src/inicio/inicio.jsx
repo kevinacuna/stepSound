@@ -13,7 +13,8 @@ export default class Inicio extends Component {
         mostrarModalNoDisponibleFlag: false,
         preguntaSeleccionadaId: 0,
         dataPregunta: {},
-        historialPreguntasRespondidas: []
+        historialPreguntasRespondidas: [],
+        posicionTablero: 0
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModal = this.cerrarModal.bind(this);
@@ -26,7 +27,7 @@ export default class Inicio extends Component {
   componentDidMount() {
     try {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
-        if (historialPreguntasRespondidas != null) this.setState({historialPreguntasRespondidas});
+        if (historialPreguntasRespondidas != null) this.setState({historialPreguntasRespondidas, posicionTablero: historialPreguntasRespondidas.length-1||0});
     } catch (error) {
         console.error(error, " error al montar la iformacion desde localStorage");
     }
@@ -67,6 +68,8 @@ export default class Inicio extends Component {
     const opcionSeleccionada = dataPregunta.opciones.find( opcion => opcion.id == idOpcion);
 
     this.agregarRespuesta(opcionSeleccionada);
+    const esCorrecta = this.esCorrecta(idOpcion, 'estado');
+    if (esCorrecta) this.setState( prevStates => ({posicionTablero: prevStates.posicionTablero+1}));
   }
 
     agregarRespuesta(respuestaObjeto) {
@@ -143,10 +146,6 @@ export default class Inicio extends Component {
     return fechaFormato <= fechaActual;
   }
 
-  /*
-    agrega una respuesta al historial 
-    TODO: Llamar al renderizar para que funcione de forma correcta
-  */
   ayudaBtnClick() {
     const { preguntaSeleccionadaId } = this.state;
     const pregunta = this.buscarPreguntasRespondidas();
@@ -166,8 +165,7 @@ export default class Inicio extends Component {
         });
     });
     };
-    // usado para llamar al render
-    this.setState({});
+
   }
 
   // Cambiar estado para cerrar modal
@@ -180,22 +178,30 @@ export default class Inicio extends Component {
     Funcion que identifica si la pregunta es correcta o no; solo sirve para 
     colocar estilo en modalPregunta
   */
-  esCorrecta(id) {
+  esCorrecta(id, tipo='estilo') {
     const { dataPregunta } = this.state;
     const esCorrecta = dataPregunta.opciones.find(opcion => opcion.id == id).correcta;
     const historialPreguntas = this.buscarPreguntasRespondidas().idRespuestas||[];
-    if (historialPreguntas.includes(id) && esCorrecta) {
-      return 'btn-pregunta-correcta';
-    } else if (historialPreguntas.includes(id) && !esCorrecta) {
-      return 'btn-pregunta-incorrecta';
+    switch (tipo) {
+      case 'estilo':
+        if (historialPreguntas.includes(id) && esCorrecta) {
+          return 'btn-pregunta-correcta';
+        } else if (historialPreguntas.includes(id) && !esCorrecta) {
+          return 'btn-pregunta-incorrecta';
+        }
+        return '';
+      case 'estado' :
+        return esCorrecta;
+      default :
+        return esCorrecta;
     }
-    return '';
+    
   }
 
   
   render() {
     const { preguntas } = Preguntas;
-    const { mostrarModalPreguntaFlag, dataPregunta, mostrarModalNoDisponibleFlag } = this.state;
+    const { mostrarModalPreguntaFlag, dataPregunta, mostrarModalNoDisponibleFlag, posicionTablero } = this.state;
 
     const modalPregunta = mostrarModalPreguntaFlag ? (
       <Modal>
@@ -225,15 +231,18 @@ export default class Inicio extends Component {
             <div className="col-md-12" key="0">
                 <div className="main-timeline animated slideInDown slow">
                     {
-                      preguntas.map( ({ id }) => (
+                      preguntas.map( ({ id }, index) => (
                           <div className="timeline" key={id}>
-                              <a href="#" onClick={() => this.seleccionarPregunta(id)} className="timeline-content">
+                              <button onClick={() => this.seleccionarPregunta(id)}
+                                disabled={index > posicionTablero ? true : false}
+                                className="timeline-content btn-hide"
+                              >
                                   <span className="timeline-year">{`Pregunta ${id}`}</span>
                                   <div className="timeline-icon">
                                       <i className="fa fa-rocket"></i>
                                   </div>
                                   <div className="content"/>
-                              </a>
+                              </button>
                           </div>
                       ))
                     }
