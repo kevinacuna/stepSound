@@ -99,7 +99,6 @@ export default ({
             id="mostrarModalPreguntaFlag"
             className="btn btn-primary mr-auto"
             onClick={hideModal}
-            style={{color:'white'}}
             data-dismiss="modal"
           >
             Cerrar

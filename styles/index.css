@@ -1587,7 +1587,8 @@ nav {
 .section-title {
   color: #e81050;
   font-size: 40px;
-  font-weight: 900; }
+  /*font-weight: 900;*/
+}
   @media (max-width: 991.98px) {
     .section-title {
       font-size: 30px; } }
@@ -1835,7 +1836,7 @@ nav {
 
 hr.divider {
     max-width: 6rem;
-    border-width: .2rem;
+    /*border-width: .2rem;*/
     border-color: #F0D4FF;
 }
 
