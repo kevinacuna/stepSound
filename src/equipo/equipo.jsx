@@ -25,15 +25,23 @@ export default class Equipo extends Component {
         <div className="row mb-5">
           <div className="col-md-12 text-center">
             <center>
-              <h2 className="section-title mb-3">Equipo StepSound</h2>
-              <p className="lead">Somos estudiantes de la Universidad Europea del Atlantico en las carreras de publicidad e informatica.</p>
+              <h1 className="section-title mb-3">EQUIPO STEP SOUND</h1>
+              <hr className="divider my-4" />
               <p className="lead">
-                Step sound es una historia creada para un proyecto de la Universidad Europea del Atlántico por alumnos de Publicidad
-                y Relaciones Públicas e Ingeniería Informática en la asignatura de Creación de Productos Audiovisuales y Multimedia.
+                Step sound es una historia ficticia creada por alumnos de Publicidad y Relaciones
+                Públicas e Ingeniería Informática de la Universidad Europea del Atlántico
+                para la asignatura de Creación de Productos Audiovisuales y Multimedia.
               </p>
               <p className="lead">
-                Con el fin de crear un producto genérico, en este caso, unos auriculares a transmedia. El cual ha sido desarrollado
-                a través de una historia interactiva y divertida.
+                Step sound surge con el fin de crear un producto transmedia y para ello hemos
+                desarrollado en nuestra página web un juego interactivo en base a una historia.
+              </p>
+              <p className="lead">
+                Toda la información necesaria la podréis encontrar en nuestra página web.
+                Además podréis seguir los avances a través de nuestras redes sociales de Twitter,
+                Instagram y Youtube en las que también encontrareis contenido exclusivo.
+                No olvidéis contactar con nosotros en caso de cualquier duda a la hora de
+                seguir el juego de nuestra página web.
               </p>
             </center>
           </div>
@@ -47,7 +55,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Lara Fernández</h3>
-                  <span className="position">Estudiante de publicidad</span>
+                  <span className="position">Estudiante de Publicidad y RRPP</span>
                 </center>
               </div>
             </div>
@@ -60,7 +68,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Rodrigo Zaldaña</h3>
-                  <span className="position">Estudiante de informatica</span>
+                  <span className="position">Estudiante de Informática</span>
                 </center>
               </div>
             </div>
@@ -73,7 +81,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Inés Beteta</h3>
-                  <span className="position">Estudiante de publicidad</span>
+                  <span className="position">Estudiante de Publicidad y RRPP</span>
                 </center>
               </div>
             </div>
@@ -86,7 +94,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Elder Bol</h3>
-                  <span className="position">Estudiante de informatica</span>
+                  <span className="position">Estudiante de Informática</span>
                 </center>
               </div>
             </div>
@@ -99,7 +107,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Mar Horna</h3>
-                  <span className="position">Estudiante de publicidad</span>
+                  <span className="position">Estudiante de Publicidad y RRPP</span>
                 </center>
               </div>
             </div>
@@ -112,7 +120,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Alexandra Velásquez</h3>
-                  <span className="position">Estudiante de publicidad</span>
+                  <span className="position">Estudiante de Publicidad y RRPP</span>
                 </center>
               </div>
             </div>
@@ -127,7 +135,7 @@ export default class Equipo extends Component {
               <div className="p-3">
                 <center>
                   <h3>Kevin Acuña</h3>
-                  <span className="position">Estudiante de informatica</span>
+                  <span className="position">Estudiante de Informática</span>
                 </center>
               </div>
             </div>
