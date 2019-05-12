@@ -40,7 +40,7 @@ export default class Equipo extends Component {
         </div>
         <div className="row">
           <div className="col-md-7 col-lg-4 mb-5">
-            <div className="team-member">
+            <div className="team-member rounded-circle">
               <figure>
                 <img id="team" src="LaraBN.jpg" onMouseOver={e => e.currentTarget.src = "lara2.jpg"} onMouseOut={e => e.currentTarget.src = "LaraBN.jpg"} alt="Image" className="rounded-circle"/>
               </figure>

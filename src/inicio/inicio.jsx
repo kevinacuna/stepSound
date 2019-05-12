@@ -227,20 +227,18 @@ export default class Inicio extends Component {
   ) : null;
     return (
     <div className="container">
-        <div className="row mt-5" key="0">
-            <div className="col-md-12" key="0">
+        <div className="row align-items-center justify-content-center text-center mt-5" key="0">
+            <div className="col-md-8" key="0">
                 <div className="main-timeline animated slideInDown slow">
                     {
                       preguntas.map( ({ id }, index) => (
-                          <div className="timeline" key={id}>
+                          <div className={"timeline " + (index > posicionTablero ? 'desabilitado' : '') } key={id}>
                               <button onClick={() => this.seleccionarPregunta(id)}
                                 disabled={index > posicionTablero ? true : false}
-                                className="timeline-content btn-hide"
+                                className="timeline-content btn-hide "
                               >
                                   <span className="timeline-year">{`Pregunta ${id}`}</span>
-                                  <div className="timeline-icon">
-                                      <i className="fa fa-rocket"></i>
-                                  </div>
+                          
                                   <div className="content"/>
                               </button>
                           </div>
