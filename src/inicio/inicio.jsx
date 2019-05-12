@@ -27,7 +27,14 @@ export default class Inicio extends Component {
   componentDidMount() {
     try {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
-        if (historialPreguntasRespondidas != null) this.setState({historialPreguntasRespondidas, posicionTablero: historialPreguntasRespondidas.length-1||0});
+        if (historialPreguntasRespondidas != null) {
+          const posicionTablero = (historialPreguntasRespondidas.length == 0 || undefined) ? 0 : historialPreguntasRespondidas.length -1;
+
+          this.setState({
+            historialPreguntasRespondidas,
+            posicionTablero
+          });
+        }
     } catch (error) {
         console.error(error, " error al montar la iformacion desde localStorage");
     }
