@@ -18,8 +18,10 @@ export default class Participar extends Component {
           </h2>
           <p className="lead">
             <br/>
+            <center>
             Acabas de unirte a una nueva aventura en la que descubrirás una apasionante historia llena de música 
             y lugares extraordinarios. Para ello deberás seguir los pasos que se mencionan a continuación:
+            </center>
           </p>
           <div class="col" id="c1">
           <div id="p1">
@@ -56,7 +58,7 @@ export default class Participar extends Component {
           <p className="lead">
           Para acertar la respuesta no hay tiempo límite. Así que tomate tu tiempo. No te preocupes si te equivocas 
           siempre habrá una segunda oportunidad para poder continuar. Una vez acertada deberás de dar a la 
-          opción de “siguiente” y te dirigirá a la “Pregunta 2”. 
+          opción de “siguiente” y te dirigirá a la <strong>“Pregunta 2”.</strong> 
           </p>
           <p className="lead">
           Recuerda que es un camino el que has de recorrer y sin la Pregunta 1 no podrás avanzar a la siguiente.
@@ -81,8 +83,10 @@ export default class Participar extends Component {
           </div>
           </div>
           <p className="lead">
-          No olvides echar un vistazo en la opción “contenido exclusivo” puesto que incluirá contenido interesante acerca de 
+          <center>
+          No olvides echar un vistazo en la opción<strong>“contenido exclusivo”</strong> puesto que incluirá contenido interesante acerca de 
           cantantes y grupos de música que pueden servirte de inspiración.
+          </center>
           </p>
         </div>
       </div>
