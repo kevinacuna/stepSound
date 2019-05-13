@@ -1669,17 +1669,11 @@ nav {
     margin: 0;
     padding: 0;
     position: relative;
-    width: 250px;
+    width: 215px;
     /*
     height: 350px;
     */
     overflow: hidden; }
-    #informaticaCont {
-      text-align:center;
-    }
-    #informaticaCont > .row {
-      /*margin:auto;*/
-    }
   .team-member .social {
     position: absolute;
     margin: 0;

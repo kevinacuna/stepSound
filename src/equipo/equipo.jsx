@@ -101,7 +101,7 @@ export default class Equipo extends Component {
             </div>
           </div>
           </div>
-          <div id="informaticaCont" className="row">
+          <div className="row">
             <div className="col"/>
             <div className="col">
               <div className="team-member">
