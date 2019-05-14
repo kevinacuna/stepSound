@@ -4,6 +4,7 @@ import ModalPregunta from './modal/modalPregunta';
 import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
+import '../../public/audios/audiosImport.jsx';
 
 export default class Inicio extends Component {
   constructor(props) {
@@ -14,7 +15,8 @@ export default class Inicio extends Component {
         preguntaSeleccionadaId: 0,
         dataPregunta: {},
         historialPreguntasRespondidas: [],
-        posicionTablero: 0
+        posicionTablero: 0,
+        audio: null
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModal = this.cerrarModal.bind(this);
@@ -22,6 +24,8 @@ export default class Inicio extends Component {
     this.getEstadoPublicacion = this.getEstadoPublicacion.bind(this);
     this.ayudaBtnClick = this.ayudaBtnClick.bind(this);
     this.esCorrecta = this.esCorrecta.bind(this);
+    this.playSong = this.playSong.bind(this);
+    this.stopSong = this.stopSong.bind(this);
   }
 
   componentDidMount() {
@@ -181,6 +185,18 @@ export default class Inicio extends Component {
 
   }
 
+  playSong(srcSong) {
+    const audio = new Audio(srcSong);
+    this.setState({audio});
+    audio.play();
+  }
+
+  stopSong() {
+    const { audio } = this.state;
+    audio.pause();
+    audio.currentTime = 0;
+  }
+
   // Cambiar estado para cerrar modal
   cerrarModal(event) {
     const nombreModal = event.target.id;
@@ -226,6 +242,8 @@ export default class Inicio extends Component {
               idRespuestas={this.buscarPreguntasRespondidas().idRespuestas||[]}
               ayudaClick={this.ayudaBtnClick}
               esCorrecta={this.esCorrecta}
+              playSong={this.playSong}
+              stopSong={this.stopSong}
           />
       </Modal>
     ) : null;
