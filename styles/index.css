@@ -1667,8 +1667,10 @@ nav {
     margin: 0;
     padding: 0;
     position: relative;
-    width: 350px;
-   height: 350px;
+    width: 215px;
+    /*
+    height: 350px;
+    */
     overflow: hidden; }
   .team-member .social {
     position: absolute;

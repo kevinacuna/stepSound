@@ -47,7 +47,7 @@ export default class Equipo extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-7 col-lg-4 mb-5">
+          <div className="col">
             <div className="team-member">
               <figure>
                 <img id="team" src="LaraBN.jpg" onMouseOver={e => e.currentTarget.src = "lara2.jpg"} onMouseOut={e => e.currentTarget.src = "LaraBN.jpg"} alt="Image" className="rounded-circle"/>
@@ -60,59 +60,8 @@ export default class Equipo extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-7 col-lg-4 mb-5">
-            <div className="team-member">
-              <figure>
-                <img id="team" src="RodrigoBN.jpg" onMouseOver={e => e.currentTarget.src = "rodrigo2.jpg"} onMouseOut={e => e.currentTarget.src = "RodrigoBN.jpg"} alt="Image" className="rounded-circle"/>
-              </figure>
-              <div className="p-3">
-                <center>
-                  <h3>Rodrigo Zaldaña</h3>
-                  <span className="position">Estudiante de Informática</span>
-                </center>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7 col-lg-4 mb-5">
-            <div className="team-member">
-              <figure>
-                <img id="team" src="ines.jpg" onMouseOver={e => e.currentTarget.src = "ines2.jpg"} onMouseOut={e => e.currentTarget.src = "ines.jpg"} alt="Image" className="rounded-circle"/>
-              </figure>
-              <div className="p-3">
-                <center>
-                  <h3>Inés Beteta</h3>
-                  <span className="position">Estudiante de Publicidad y RRPP</span>
-                </center>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7 col-lg-4 mb-5">
-            <div className="team-member">
-              <figure>
-                <img id="team" src="ElderBN.jpg" onMouseOver={e => e.currentTarget.src = "elder2.jpg"} onMouseOut={e => e.currentTarget.src = "ElderBN.jpg"} alt="Image" className="rounded-circle"/>
-              </figure>
-              <div className="p-3">
-                <center>
-                  <h3>Elder Bol</h3>
-                  <span className="position">Estudiante de Informática</span>
-                </center>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7 col-lg-4 mb-5">
-            <div className="team-member">
-              <figure>
-                <img id="team" src="MarBN.jpg" onMouseOver={e => e.currentTarget.src = "mar2.jpg"} onMouseOut={e => e.currentTarget.src = "MarBN.jpg"} alt="Image" className="rounded-circle"/>
-              </figure>
-              <div className="p-3">
-                <center>
-                  <h3>Mar Horna</h3>
-                  <span className="position">Estudiante de Publicidad y RRPP</span>
-                </center>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-7 col-lg-4 mb-5">
+          
+          <div className="col">
             <div className="team-member">
               <figure>
                 <img id="team" src="AlexandraBN.jpg" onMouseOver={e => e.currentTarget.src = "alexandra2.jpg"} onMouseOut={e => e.currentTarget.src = "AlexandraBN.jpg"} alt="Image" className="rounded-circle"/>
@@ -125,22 +74,76 @@ export default class Equipo extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-7 col-lg-4 mb-5">
-          </div>
-          <div className="col-md-7 col-lg-4 mb-5">
+          <div className="col">
             <div className="team-member">
               <figure>
-                <img id="team" src="KevinBN.jpg" onMouseOver={e => e.currentTarget.src = "kevin2.jpg"} onMouseOut={e => e.currentTarget.src = "KevinBN.jpg"} alt="Image" className="rounded-circle"/>
+                <img id="team" src="ines.jpg" onMouseOver={e => e.currentTarget.src = "ines2.jpg"} onMouseOut={e => e.currentTarget.src = "ines.jpg"} alt="Image" className="rounded-circle"/>
               </figure>
               <div className="p-3">
                 <center>
-                  <h3>Kevin Acuña</h3>
-                  <span className="position">Estudiante de Informática</span>
+                  <h3>Inés Beteta</h3>
+                  <span className="position">Estudiante de Publicidad y RRPP</span>
                 </center>
               </div>
             </div>
           </div>
-        </div>
+          <div className="col">
+            <div className="team-member">
+              <figure>
+                <img id="team" src="MarBN.jpg" onMouseOver={e => e.currentTarget.src = "mar2.jpg"} onMouseOut={e => e.currentTarget.src = "MarBN.jpg"} alt="Image" className="rounded-circle"/>
+              </figure>
+              <div className="p-3">
+                <center>
+                  <h3>Mar Horna</h3>
+                  <span className="position">Estudiante de Publicidad y RRPP</span>
+                </center>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div className="row">
+            <div className="col"/>
+            <div className="col">
+              <div className="team-member">
+                <figure>
+                  <img id="team" src="ElderBN.jpg" onMouseOver={e => e.currentTarget.src = "elder2.jpg"} onMouseOut={e => e.currentTarget.src = "ElderBN.jpg"} alt="Image" className="rounded-circle"/>
+                </figure>
+                <div className="p-3">
+                  <center>
+                    <h3>Elder Bol</h3>
+                    <span className="position">Estudiante de Informática</span>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="team-member">
+                <figure>
+                  <img id="team" src="RodrigoBN.jpg" onMouseOver={e => e.currentTarget.src = "rodrigo2.jpg"} onMouseOut={e => e.currentTarget.src = "RodrigoBN.jpg"} alt="Image" className="rounded-circle"/>
+                </figure>
+                <div className="p-3">
+                  <center>
+                    <h3>Rodrigo Zaldaña</h3>
+                    <span className="position">Estudiante de Informática</span>
+                  </center>
+                </div>
+              </div>
+            </div>            
+            <div className="col">
+              <div className="team-member">
+                <figure>
+                  <img id="team" src="KevinBN.jpg" onMouseOver={e => e.currentTarget.src = "kevin2.jpg"} onMouseOut={e => e.currentTarget.src = "KevinBN.jpg"} alt="Image" className="rounded-circle"/>
+                </figure>
+                <div className="p-3">
+                  <center>
+                    <h3>Kevin Acuña</h3>
+                    <span className="position">Estudiante de Informática</span>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div className="col"/>
+          </div>
       </div>
     );
   }
