@@ -46,34 +46,33 @@ export default ({
               <p>{data.video.descripcion}</p>
             </center>
           </div>
-          <div className="row" id="contenendorFotos">
+          <div className="row fila" id="contenendorFotos">
             {data.fotos.map(({ url, descripcion, id }) => (
-              <div key={id} className="col-md-5 col-lg-5 mb-5">
-                <div className="team-member">
-                  <figure style={{ maxHeight: "250px" }}>
-                    <img
-                      id="team"
-                      src={url}
-                      alt="Image"
-                      className="img-fluid"
-                    />
-                  </figure>
-                  <div className="p-3">
-                    <span className="position">{descripcion}</span>
-                  </div>
+              <div key={id} className="fotoElemento">
+                <figure>
+                  <img
+                    id="foto"
+                    src={url}
+                    alt="Image"
+                    className="img-fluid fotoElemento"
+                  />
+                </figure>
+                <div className="p-3">
+                  <span className="position">{descripcion}</span>
                 </div>
               </div>
             ))}
-            <div id="contenendorAudio">
-              <audio src={data.audio} preload="auto" controls />
             </div>
-            <div id="contenedorOpciones">
+            <div id="contenendorAudio">
+              <audio src={data.audio} style={{width: '423px'}} preload="auto" controls />
+            </div>
+            <div id="contenedorOpcionesGeneral">
               <center>
                 <p>
                   <b>{data.titulo}</b>
                 </p>
               </center>
-              <div className="row">
+              <div className="row" id="contenedorOpciones">
                 {data.opciones.map(({ descripcion, id }) => (
                   <div key={id} className="col-md-5 col-lg-5 mb-5">
                     <button
@@ -92,7 +91,7 @@ export default ({
                 ))}
               </div>
             </div>
-          </div>
+          
         </div>
         <div className="modal-footer">
           <a
@@ -100,7 +99,7 @@ export default ({
             target="_blank"
             rel="noopener noreferrer"
             href={data.ayuda}
-            className={`btn btn-primary mr-auto ${
+            className={`btn btn-success mr-auto ${
               respuestasHechas.correcta ? disabled : ""
             }`}
             onClick={ayudaClick}
@@ -110,7 +109,8 @@ export default ({
           <a
             type="button"
             id="mostrarModalPreguntaFlag"
-            className="btn btn-primary"
+            className="btn btn-danger"
+            style={{color:'black'}}
             onClick={hideModal}
             data-dismiss="modal"
           >

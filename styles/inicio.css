@@ -213,3 +213,17 @@
 #Publicidad {
     justify-content: space-evenly;
 }
+
+#contenedorOpciones, #contenendorAudio, #contenendorFotos {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    Elementos css necesarios para mostrar las fotos 
+    de las preguntas
+*/
+.fotoElemento {
+    max-width: 250px;
+    max-height: 250px;
+}

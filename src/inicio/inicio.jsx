@@ -28,8 +28,14 @@ export default class Inicio extends Component {
     try {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
         if (historialPreguntasRespondidas != null) {
-          const posicionTablero = (historialPreguntasRespondidas.length == 0 || undefined) ? 0 : historialPreguntasRespondidas.length -1;
-
+          let posicionTablero = 0;
+          if (!(historialPreguntasRespondidas.length == 0 || undefined)) {
+            if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta) {
+              posicionTablero = historialPreguntasRespondidas.length;
+            } else {
+              posicionTablero = historialPreguntasRespondidas.length -1;
+            }
+          }
           this.setState({
             historialPreguntasRespondidas,
             posicionTablero
@@ -245,7 +251,6 @@ export default class Inicio extends Component {
                                 className="timeline-content btn-hide "
                               >
                                   <span className="timeline-year">{`Lugar ${id}`}</span>
-                          
                                   <div className="content"/>
                               </button>
                           </div>
