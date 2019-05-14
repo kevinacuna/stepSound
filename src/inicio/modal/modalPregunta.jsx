@@ -45,8 +45,10 @@ export default ({
                 <b>{data.titulo}</b>
               </p>
             </center>
-            <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
-            <p>{data.video.descripcion}</p>
+            <center>
+              <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
+              <p>{data.video.descripcion}</p>
+            </center>
           </div>
           <div className="row" id="contenendorFotos">
             <div className="col-md-1 col-lg-1 mb-1" />
