@@ -44,19 +44,15 @@ export default class Portada extends Component {
                   <div className="col-lg-12 align-self-end">
 
                      <p className="font-weight-light blue-grey-text text-justify text-darken-3 mt-4">
-                      Teodoro regala un libro a su nieto Pablo por su vigésimo cumpleaños. Al cogerlo, 
-                      se cae una foto donde aparece Teodoro en un misterioso lugar. 
-                      Al indagar un poco más acerca de ese lugar, 
-                      Pablo descubre que se trata del sitio preferido de su abuelo. 
+                      La historia comienza cuando el abuelo recuerda que tenía que dejar un libro a su nieto.
+                      Resulta que en ese libro había una foto donde aparece el abuelo en un misterioso lugar
+                      cuando era jóven, concretamente su lugar favorito.
                       </p>
                       <p className="font-weight-light mb-5 blue-grey-text text-justify text-darken-3">
-                      A modo de sorpresa, el nieto pone en marcha una aventura para encontrar el lugar 
-                      y poder fotografiarse allí, como un día lo hizo su abuelo. 
-                      Desde el momento que emprende la búsqueda lo hace acompañado de música...
-                     
-                     </p>
-
-
+                        A modo de sorpresa, el nieto pone en marcha una aventura para encontrar el lugar
+                        y poder fotografiarse allí, como un día lo hizo su abuelo.
+                        Desde el momento que emprende la búsqueda lo hace acompañado de sus cascos...
+                      </p>
                   </div>
                    <div className="col-lg-6 align-self-baseline">
                       <p className="blue-grey-text text-darken-3 font-weight-light mb-5">
