@@ -1906,3 +1906,7 @@ hr.light {
   color: #000;
   width:100%;
 }
+
+.lead{
+  padding-left: 10px;
+}
