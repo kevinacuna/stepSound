@@ -49,7 +49,7 @@ export default class Equipo extends Component {
             </center>
           </div>
         </div>
-        <div id="publicidad" className="row">
+        <div id="Publicidad" className="row fila">
           <div className="team-member">
             <figure>
               <img
@@ -132,7 +132,7 @@ export default class Equipo extends Component {
             </div>
           </div>
         </div>
-        <div id="informatica" className="row">
+        <div id="informatica" className="row fila">
           <div className="team-member">
             <figure>
               <img

@@ -192,17 +192,18 @@
 }
 
 #informatica {
+    justify-content: center;
+}
+
+.fila {
     display:flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 #informatica > .team-member {
     margin: 20px;
 }
 
-#publicidad {
-    display:flex !important;
-    flex-direction: row;
+#Publicidad {
     justify-content: space-evenly;
 }
