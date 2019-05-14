@@ -25,9 +25,8 @@ export default ({
       <div className="modal-content">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
-            {`Lugar ${
-            data.id
-          }`}</h5>
+          {data.titulo}
+          </h5>
           <button
             type="button"
             onClick={hideModal}
@@ -67,11 +66,6 @@ export default ({
               <audio src={data.audio} style={{width: '423px'}} preload="auto" controls />
             </div>
             <div id="contenedorOpcionesGeneral">
-              <center>
-                <p>
-                  <b>{data.titulo}</b>
-                </p>
-              </center>
               <div className="row" id="contenedorOpciones">
                 {data.opciones.map(({ descripcion, id }) => (
                   <div key={id} className="col-md-5 col-lg-5 mb-5">
