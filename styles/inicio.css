@@ -190,3 +190,19 @@
         right: 9%;
     }
 }
+
+#informatica {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#informatica > .team-member {
+    margin: 20px;
+}
+
+#publicidad {
+    display:flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
