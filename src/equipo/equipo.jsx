@@ -34,7 +34,7 @@ export default class Equipo extends Component {
                 de Productos Audiovisuales y Multimedia.
               </p>
               <p className="lead">
-                Step sound surge con el fin de crear un producto transmedia y
+                Step Sound surge con el fin de crear un producto transmedia y
                 para ello hemos desarrollado en nuestra página web un juego
                 interactivo en base a una historia.
               </p>
