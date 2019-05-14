@@ -24,7 +24,8 @@ export default ({
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
         <div className="modal-header text-center">
-          <h5 className="modal-title w-100" id="exampleModal">{`Pregunta ${
+          <h5 className="modal-title w-100" id="exampleModal">
+            {`Lugar ${
             data.id
           }`}</h5>
           <button
@@ -41,17 +42,11 @@ export default ({
         <div className="modal-body">
           <div id="contenedorVideo">
             <center>
-              <p>
-                <b>{data.titulo}</b>
-              </p>
-            </center>
-            <center>
               <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
               <p>{data.video.descripcion}</p>
             </center>
           </div>
           <div className="row" id="contenendorFotos">
-            <div className="col-md-1 col-lg-1 mb-1" />
             {data.fotos.map(({ url, descripcion, id }) => (
               <div key={id} className="col-md-5 col-lg-5 mb-5">
                 <div className="team-member">
@@ -69,11 +64,15 @@ export default ({
                 </div>
               </div>
             ))}
-            <div className="col-md-1 col-lg-1 mb-1" />
             <div id="contenendorAudio">
               <audio src={data.audio} preload="auto" controls />
             </div>
             <div id="contenedorOpciones">
+              <center>
+                <p>
+                  <b>{data.titulo}</b>
+                </p>
+              </center>
               <div className="row">
                 {data.opciones.map(({ descripcion, id }) => (
                   <div key={id} className="col-md-5 col-lg-5 mb-5">
@@ -98,24 +97,24 @@ export default ({
         <div className="modal-footer">
           <a
             type="button"
-            id="mostrarModalPreguntaFlag"
-            className="btn btn-primary mr-auto"
-            onClick={hideModal}
-            data-dismiss="modal"
-          >
-            Cerrar
-          </a>
-          <a
-            type="button"
             target="_blank"
             rel="noopener noreferrer"
             href={data.ayuda}
-            className={`btn btn-primary ${
+            className={`btn btn-primary mr-auto ${
               respuestasHechas.correcta ? disabled : ""
             }`}
             onClick={ayudaClick}
           >
-            ¿Ayuda?
+            Pistas
+          </a>
+          <a
+            type="button"
+            id="mostrarModalPreguntaFlag"
+            className="btn btn-primary"
+            onClick={hideModal}
+            data-dismiss="modal"
+          >
+            Cerrar
           </a>
         </div>
       </div>
