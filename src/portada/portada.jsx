@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
 import { Player } from 'video-react';
-import '../../public/videos/introduccion/Intro.mp4';
+import '../../public/informacion/introduccion/Intro.mp4';
 
 export default class Portada extends Component {
   constructor(props) {
