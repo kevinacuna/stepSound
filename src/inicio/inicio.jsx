@@ -5,7 +5,6 @@ import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
 import '../../public/audios/audiosImport.jsx';
-import '../../public/informacion/preguntasImport';
 
 export default class Inicio extends Component {
   constructor(props) {
@@ -34,7 +33,7 @@ export default class Inicio extends Component {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
         if (historialPreguntasRespondidas != null) {
           let posicionTablero = 0;
-          if (!(historialPreguntasRespondidas.length == 0 || undefined)) {
+          if (!(historialPreguntasRespondidas.length == 0 || historialPreguntasRespondidas.length == undefined)) {
             if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta) {
               posicionTablero = historialPreguntasRespondidas.length;
               if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
