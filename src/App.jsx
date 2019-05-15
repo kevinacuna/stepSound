@@ -17,6 +17,17 @@ export default class App extends Component {
     }
   }
 
+  componentDidMount() {
+    try {
+      const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
+      if (historialPreguntasRespondidas != null && historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
+        this.setState({exclusivoDisabled:false});
+      }
+  } catch (error) {
+      console.error(error, " error al montar la iformacion desde localStorage");
+  }
+}
+
   render() {
     const { exclusivoDisabled } = this.state;
     return (
