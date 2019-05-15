@@ -1910,3 +1910,14 @@ hr.light {
 .lead {
   padding-left: 10px;
 }
+
+#exclusivoDisabled {
+  display: flex;
+  height: 600px;
+  text-align: center;
+}
+
+#exclusivoDisabled > h1 {
+  margin: auto; /* Important */
+  text-align: center;
+}
