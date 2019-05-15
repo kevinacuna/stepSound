@@ -33,9 +33,13 @@ export default class Inicio extends Component {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
         if (historialPreguntasRespondidas != null) {
           let posicionTablero = 0;
-          if (!(historialPreguntasRespondidas.length == 0 || undefined)) {
+          if (!(historialPreguntasRespondidas.length == 0 || historialPreguntasRespondidas.length == undefined)) {
             if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta) {
               posicionTablero = historialPreguntasRespondidas.length;
+              if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
+                const { showExclusivo } = this.props;
+                showExclusivo();
+              }
             } else {
               posicionTablero = historialPreguntasRespondidas.length -1;
             }
@@ -79,14 +83,20 @@ export default class Inicio extends Component {
 
     
   seleccionarRespuesta(idOpcion) {
-    const { dataPregunta } = this.state;
+    const { dataPregunta, posicionTablero } = this.state;
 
     // objeto pregunta seleccionada
     const opcionSeleccionada = dataPregunta.opciones.find( opcion => opcion.id == idOpcion);
 
     this.agregarRespuesta(opcionSeleccionada);
     const esCorrecta = this.esCorrecta(idOpcion, 'estado');
-    if (esCorrecta) this.setState( prevStates => ({posicionTablero: prevStates.posicionTablero+1}));
+    if (esCorrecta) {
+      this.setState( prevStates => ({posicionTablero: prevStates.posicionTablero+1}));
+      if (posicionTablero === 9) {
+        const { showExclusivo } = this.props;
+        showExclusivo();
+      }
+    }
   }
 
     agregarRespuesta(respuestaObjeto) {

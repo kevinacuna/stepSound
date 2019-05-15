@@ -36,10 +36,10 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
-    "react-flip-page": "^1.5.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-spotify-player": "^1.0.4"
+    "react-spotify-player": "^1.0.4",
+    "video-react": "^0.13.7"
   }
 }

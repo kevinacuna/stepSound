@@ -1,5 +1,7 @@
 import React from "react";
+import { Player } from 'video-react';
 import "../../../public/img/guitar.png";
+import '../../../public/informacion/preguntasImport';
 
 const disabled = "disabled";
 
@@ -27,7 +29,7 @@ export default ({
       <div className="modal-content">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
-          {data.titulo}
+          {`LUGAR ${data.id}`}
           </h5>
           <button
             type="button"
@@ -43,10 +45,15 @@ export default ({
         <div className="modal-body">
           <div id="contenedorVideo">
             <center>
-              <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
+              <Player>
+                <source src={data.video.url} />
+              </Player>
               <p>{data.video.descripcion}</p>
             </center>
           </div>
+          <div className="contenendorAudio">
+              <audio src={data.audio} style={{width: '423px'}} preload="auto" controls />
+            </div>
           <div className="row fila" id="contenendorFotos">
             {data.fotos.map(({ url, descripcion, id }) => (
               <div key={id} className="fotoElemento">
@@ -64,8 +71,13 @@ export default ({
               </div>
             ))}
             </div>
-            <div id="contenendorAudio">
-              <audio src={data.audio} style={{width: '423px'}} preload="auto" controls />
+            <div id="tituloPregunta">
+                <h2>
+                {data.titulo}
+                </h2>
+            </div>
+            <div className="contenendorAudio">
+              <audio src={data.cancion} style={{width: '423px'}} preload="auto" controls />
             </div>
             <div id="contenedorOpcionesGeneral">
               <div className="row" id="contenedorOpciones">
