@@ -51,6 +51,9 @@ export default ({
               <p>{data.video.descripcion}</p>
             </center>
           </div>
+          <div className="contenendorAudio">
+              <audio src={data.audio} style={{width: '423px'}} preload="auto" controls />
+            </div>
           <div className="row fila" id="contenendorFotos">
             {data.fotos.map(({ url, descripcion, id }) => (
               <div key={id} className="fotoElemento">
@@ -73,7 +76,7 @@ export default ({
                 {data.titulo}
                 </h2>
             </div>
-            <div id="contenendorAudio">
+            <div className="contenendorAudio">
               <audio src={data.cancion} style={{width: '423px'}} preload="auto" controls />
             </div>
             <div id="contenedorOpcionesGeneral">
