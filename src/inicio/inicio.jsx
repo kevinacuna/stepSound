@@ -59,6 +59,7 @@ export default class Inicio extends Component {
 
   setHistorialLocalStorage() {
     const { historialPreguntasRespondidas } = this.state;
+    console.log(historialPreguntasRespondidas);
     localStorage.setItem('historialPreguntasRespondidas', JSON.stringify(historialPreguntasRespondidas));
   }
   
@@ -97,7 +98,7 @@ export default class Inicio extends Component {
     }
   }
 
-    agregarRespuesta(respuestaObjeto) {
+    async agregarRespuesta(respuestaObjeto) {
         const { preguntaSeleccionadaId, dataPregunta } = this.state;
         const preguntaDetalle = this.buscarPreguntasRespondidas();
         const { correcta } = dataPregunta.opciones.find(opcion => opcion.id == respuestaObjeto.id);
@@ -109,12 +110,12 @@ export default class Inicio extends Component {
                 bloqueada: true,
                 correcta
             };
-            this.setState(prevState => ({
+            await this.setState(prevState => ({
                 historialPreguntasRespondidas: [...prevState.historialPreguntasRespondidas, nuevaRespuesta],
             }));
         } else {
             // Es necesario el setState para que se vuelva a renderizar el componente
-            this.setState(prevState => {
+            await this.setState(prevState => {
                 // Creamos una varibale que sea la referencia al historial de preguntas respondidas
                 const newHistorialPreguntasRespondidas = prevState.historialPreguntasRespondidas;
                 // Obtenes solo el historial de la pregunta seleccionada
