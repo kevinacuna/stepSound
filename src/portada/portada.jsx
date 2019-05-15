@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import '../../public/img/look.png';
+import { Player } from 'video-react';
+import '../../public/videos/introduccion/Intro.mp4';
 
 export default class Portada extends Component {
   constructor(props) {
@@ -25,16 +26,13 @@ export default class Portada extends Component {
           id="home-section">
           <div className="container">
             <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
-
-
-            <div className="col-lg-4 align-self-end">
-              <img className="img-fluid img-portada" src="look.png"/>
+            <div className="col-lg-6">
+              <Player>
+                <source src="Intro.mp4" />
+              </Player>
              </div>
-
               <div className="col-lg-6 justify-content-center text-center">
-
                 <div className="row h-100 align-items-center justify-content-center">
-
                   <div className="col-lg-12 align-self-end">
                     <h1 className="text-uppercase blue-grey-text text-darken-4 font-weight-bold">
                       Step Sound
@@ -42,7 +40,6 @@ export default class Portada extends Component {
                     <hr className="divider my-3" />
                   </div>
                   <div className="col-lg-12 align-self-end">
-
                      <p className="font-weight-light blue-grey-text text-justify text-darken-3 mt-4">
                       La historia comienza cuando el abuelo recuerda que tenía que dejar un libro a su nieto.
                       Resulta que en ese libro había una foto donde aparece el abuelo en un misterioso lugar
@@ -64,16 +61,8 @@ export default class Portada extends Component {
                         Empezar el viaje
                       </button>
                     </div>
-
-                </div>
-
-               
+                </div>               
               </div>
-
-             
-              
-
-              
             </div>
           </div>
         </div>
