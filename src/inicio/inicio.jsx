@@ -24,8 +24,6 @@ export default class Inicio extends Component {
     this.getEstadoPublicacion = this.getEstadoPublicacion.bind(this);
     this.ayudaBtnClick = this.ayudaBtnClick.bind(this);
     this.esCorrecta = this.esCorrecta.bind(this);
-    this.playSong = this.playSong.bind(this);
-    this.stopSong = this.stopSong.bind(this);
   }
 
   componentDidMount() {
@@ -195,18 +193,6 @@ export default class Inicio extends Component {
 
   }
 
-  playSong(srcSong) {
-    const audio = new Audio(srcSong);
-    this.setState({audio});
-    audio.play();
-  }
-
-  stopSong() {
-    const { audio } = this.state;
-    audio.pause();
-    audio.currentTime = 0;
-  }
-
   // Cambiar estado para cerrar modal
   cerrarModal(event) {
     const nombreModal = event.target.id;
@@ -252,8 +238,6 @@ export default class Inicio extends Component {
               idRespuestas={this.buscarPreguntasRespondidas().idRespuestas||[]}
               ayudaClick={this.ayudaBtnClick}
               esCorrecta={this.esCorrecta}
-              playSong={this.playSong}
-              stopSong={this.stopSong}
           />
       </Modal>
     ) : null;

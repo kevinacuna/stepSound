@@ -13,8 +13,6 @@ export default ({
   ayudaClick,
   idRespuestas,
   esCorrecta,
-  playSong,
-  stopSong
 }) => (
   <div
     className="modal fade show animated slideInLeft"
@@ -60,7 +58,6 @@ export default ({
                     src={url}
                     alt="Image"
                     className="img-fluid fotoImagen"
-                    onMouseOver={() => playSong('lord-huron-the-night-we-met.mp3')} onMouseLeave={stopSong}
                   />
                 </figure>
                 <center>
