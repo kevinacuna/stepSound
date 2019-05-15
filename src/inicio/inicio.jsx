@@ -5,6 +5,7 @@ import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
 import '../../public/audios/audiosImport.jsx';
+import '../../public/informacion/preguntasImport';
 
 export default class Inicio extends Component {
   constructor(props) {
