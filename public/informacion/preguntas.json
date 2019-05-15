@@ -1,25 +1,26 @@
 {
   "preguntas": [
     {
-      "id":1,
+      "id": 1,
       "titulo": "¿Quien compuso “Para Elisa”?",
       "video": {
         "url": "https://www.youtube.com/embed/wuCK-oiE3rM",
-        "descripcion": "descripcion del video"
+        "descripcion": "..."
       },
       "fotos": [
         {
           "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
+          "url": "p1f1.jpg",
+          "descripcion": "..."
         },
         {
           "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
+          "url": "p1f2.jpg",
+          "descripcion": "..."
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -42,11 +43,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "30/04/2019",
+      "fechaPublicacion": "15/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":2,
+      "id": 2,
       "titulo": "¿Qué cantantes cantan la siguiente canción?",
       "video": {
         "url": "https://www.youtube.com/embed/m5UcZ9thgPI”",
@@ -65,6 +66,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -87,11 +89,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "5/05/2019",
+      "fechaPublicacion": "17/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":3,
+      "id": 3,
       "titulo": "“Money's the motivation, money's the conversation” es el principio de una canción que fue añadida en una famosa película. ¿Sabes de cual?",
       "video": {
         "url": "https://www.youtube.com/embed/wuCK-oiE3rM",
@@ -110,6 +112,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -132,11 +135,11 @@
           "correcta": true
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "18/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":4,
+      "id": 4,
       "titulo": "¿Quién es el autor (y no cantante) de esta canción?",
       "video": {
         "url": "https://www.youtube.com/embed/xEu9lyn_rrg",
@@ -155,6 +158,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -177,11 +181,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "19/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":5,
+      "id": 5,
       "titulo": "Otra pregunta sobre autores en la sombra… ¿Quién es el autor (y no cantante) de esta canción?",
       "video": {
         "url": "https://www.youtube.com/embed/zLxXqEZ5OoA",
@@ -200,6 +204,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -222,11 +227,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "20/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":6,
+      "id": 6,
       "titulo": "¿Cuál es el verdadero nombre del autor de esta canción?",
       "video": {
         "url": "https://www.youtube.com/embed/Yn6w6sbyzug",
@@ -245,6 +250,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -267,11 +273,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "21/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":7,
+      "id": 7,
       "titulo": "¿Original o remix? ¿Quién compuso la siguiente canción?",
       "video": {
         "url": "https://www.youtube.com/embed/-gCe4WrmOIk",
@@ -290,6 +296,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -312,11 +319,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "22/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":8,
+      "id": 8,
       "titulo": "“In the town where I was born, lived a man who sailed to sea” es el principio de una famosa canción… ¿Adivinas de cuál?",
       "video": {
         "url": "https://www.youtube.com/embed/2idJRTd1tVc",
@@ -335,6 +342,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -357,11 +365,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "23/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":9,
+      "id": 9,
       "titulo": "¿A quién está dedicada la siguiente canción?",
       "video": {
         "url": "https://www.youtube.com/embed/Vy52v1v8B4o",
@@ -380,6 +388,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -402,11 +411,11 @@
           "correcta": true
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "24/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":10,
+      "id": 10,
       "titulo": "La siguiente canción surge de la unión de dos hits de los 70… ¿Sabes de cuáles?",
       "video": {
         "url": "https://www.youtube.com/embed/tYQ1Okyi3g4",
@@ -425,6 +434,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -447,7 +457,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "25/05/2019",
       "ayuda": "url de enlace a la pista"
     }
   ],
