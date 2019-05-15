@@ -1921,3 +1921,13 @@ hr.light {
   margin: auto; /* Important */
   text-align: center;
 }
+
+#preguntaNoDisponible {
+  display: flex;
+  text-align: center;
+}
+
+#preguntaNoDisponible > .modal-dialog {
+  margin: auto; /* Important */
+  text-align: center;
+}
