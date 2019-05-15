@@ -1836,11 +1836,7 @@ nav {
 #team{
   width:100%;
   background-repeat: no-repeat;
-
 } 
-#team1{
-  background-image: url('../public/img/LaraBN.jpg');
-}
 
 hr.divider {
     max-width: 6rem;
@@ -1853,10 +1849,6 @@ hr.light {
 }
 
 .text-shadow{
-}
-
-#team{
-  width:100%;
 }
 
 #cont-team{
