@@ -214,9 +214,15 @@
     justify-content: space-evenly;
 }
 
-#contenedorOpciones, #contenendorAudio, #contenendorFotos {
+#contenedorOpciones, #contenendorAudio {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
+}
+
+#contenendorFotos {
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 30px;
 }
 
