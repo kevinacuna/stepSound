@@ -4,7 +4,7 @@
       "id": 1,
       "titulo": "¿Cúal es el nombre de esta canción?",
       "video": {
-        "url": "p1v.mp4",
+        "url": "https://www.youtube.com/embed/DuTtbIcTSgE",
         "descripcion": "..."
       },
       "fotos": [

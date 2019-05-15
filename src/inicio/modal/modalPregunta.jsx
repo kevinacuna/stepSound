@@ -45,14 +45,12 @@ export default ({
         <div className="modal-body">
           <div id="contenedorVideo">
             <center>
-              <Player>
-                <source src={data.video.url} />
-              </Player>
+              <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
               <p>{data.video.descripcion}</p>
             </center>
           </div>
           <div className="contenendorAudio">
-              <audio src={data.audio} style={{width: '423px'}} preload="auto" controls />
+              <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
             </div>
           <div className="row fila" id="contenendorFotos">
             {data.fotos.map(({ url, descripcion, id }) => (
@@ -77,7 +75,7 @@ export default ({
                 </h2>
             </div>
             <div className="contenendorAudio">
-              <audio src={data.cancion} style={{width: '423px'}} preload="auto" controls />
+              <audio src={data.cancion} style={{width: '420px'}} preload="auto" controls />
             </div>
             <div id="contenedorOpcionesGeneral">
               <div className="row" id="contenedorOpciones">
