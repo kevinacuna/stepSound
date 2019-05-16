@@ -7,27 +7,38 @@ export default class Portada extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      btnClicked: false
+      btnClicked: false,
+      down: ''      
     };
     this.btnHandler = this.btnHandler.bind(this);
+    this.introduccionOnclick = this.introduccionOnclick.bind(this);
   }
   btnHandler() {
     this.setState({ btnClicked: true });
   }
+  introduccionOnclick(e) {
+    
+    this.setState({down:''});
+    setTimeout(() => {
+      this.setState({down:'animated pulse'});
+    }, 100);
+  }
   render() {
-    const { btnClicked } = this.state;
+    const { btnClicked, down } = this.state;
     if (btnClicked) {
       return <Redirect push from="/" to="/comenzar" />;
     }
     return (
-      <div className="overlay base-portada" data-aos="fade" id="home-section">
+      <div className="overlay base-portada animated slideInDown" data-aos="fade" id="home-section">
             <header className="main-header" id="header">
               <div className="container text-center">
-                  <button className='zoom'>
-                    v
-                  </button>
+              <form action="#move" className="animated bounce delay-2s" onClick={this.introduccionOnclick}>
+                  <input type="submit" value="V" className="zoom"/>
+              </form>
               </div>
             </header>
+      <section id="move"/>
+      <section className={down}>
         <div className="container">
           <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
             <div className="col-lg-6 justify-content-center text-center" style={{paddingTop: '25px'}}>
@@ -72,7 +83,8 @@ export default class Portada extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </div>
     );
   }
 }
