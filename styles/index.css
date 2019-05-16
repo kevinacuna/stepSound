@@ -1823,7 +1823,6 @@ nav {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
-<<<<<<< HEAD
 .base-portada {
   margin-top: -1em;
   /*padding-top: 3.5em;*/
@@ -1834,8 +1833,6 @@ nav {
   height: 400px;
 }
 
-=======
->>>>>>> yoyi
 #team{
   width:100%;
   background-repeat: no-repeat;
@@ -1937,4 +1934,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
 }
