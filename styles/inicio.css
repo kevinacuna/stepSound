@@ -222,8 +222,17 @@
 
 #contenedorAudiolibro{
     text-align: center;
-    padding-left: 54px;
     padding-top: 13%;
+}
+
+#modalContenido {
+    background-image: url('../public/img/marcoPregunta.jpg');
+}
+
+#preguntaElemento{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /*

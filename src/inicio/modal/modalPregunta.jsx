@@ -23,7 +23,8 @@ export default ({
     aria-hidden="true"
   >
     <div id="modalPreguntaContenedor" className="modal-dialog modal-lg" role="document">
-      <div className="modal-content">
+      <div id="modalContenido" className="modal-content">
+      <div id="preguntaElemento">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
           {`PREGUNTA ${data.id}`}
@@ -103,6 +104,7 @@ export default ({
             Cerrar
           </a>
         </div>
+      </div>
       </div>
     </div>
   </div>
