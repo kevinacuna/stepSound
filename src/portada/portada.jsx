@@ -1,7 +1,5 @@
-import '../../styles/video-react.css';
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import { Player } from 'video-react';
 import '../../public/informacion/introduccion/Intro.mp4';
 
 export default class Portada extends Component {
@@ -28,9 +26,9 @@ export default class Portada extends Component {
           <div className="container">
             <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
             <div className="col-lg-6">
-              <Player>
-                <source src="Intro.mp4" />
-              </Player>
+              <video class="responsive-video" controls>
+                <source src="Intro.mp4" type="video/mp4"/>
+              </video>
              </div>
               <div className="col-lg-6 justify-content-center text-center">
                 <div className="row h-100 align-items-center justify-content-center">
