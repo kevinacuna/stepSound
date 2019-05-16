@@ -21,7 +21,9 @@ export default class Portada extends Component {
     }
     return (
       <div className="overlay base-portada" data-aos="fade" id="home-section">
-        <img src="portada.jpg" className="img-fluid" alt="Responsive image" />
+        <header className="masthead">
+          <img src="portada.jpg" className="img-fluid" alt="Responsive image"/>
+        </header>
         <div className="container">
           <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
             <div className="col-lg-12 align-self-end">
