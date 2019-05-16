@@ -1823,19 +1823,6 @@ nav {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
-<<<<<<< HEAD
-.base-portada {
-  margin-top: -1em;
-  /*padding-top: 3.5em;*/
-  min-height: 600px;
-} 
-
-.img-portada {
-  height: 400px;
-}
-
-=======
->>>>>>> yoyi
 #team{
   width:100%;
   background-repeat: no-repeat;
@@ -1932,9 +1919,18 @@ hr.light {
   text-align: center;
 }
 
-header.masthead {
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+.main-header {
+  background: url(../public/img/portada.jpg) no-repeat;
   background-size: cover;
+  min-height: 680px;
+  text-align:center;
+  color:#fff;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position:center center;
+  background-size:cover;
+}
+
+.bg-color {
+  background-color: RGBA(0, 0, 0, 0.41);
 }
