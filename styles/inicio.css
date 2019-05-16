@@ -214,7 +214,7 @@
     justify-content: space-evenly;
 }
 
-#contenedorOpciones, .contenendorAudio, #tituloPregunta {
+#contenedorOpciones, .contenendorAudio, #contenedorVideo, #contenedorAudio, #tituloPregunta {
     display: flex;
     justify-content: center;
     padding-top: 30px;
