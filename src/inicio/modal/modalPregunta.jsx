@@ -26,7 +26,7 @@ export default ({
       <div className="modal-content">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
-          {`LUGAR ${data.id}`}
+          {`PREGUNTA ${data.id}`}
           </h5>
           <button
             type="button"
