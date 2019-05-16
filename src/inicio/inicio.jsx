@@ -4,6 +4,7 @@ import ModalPregunta from './modal/modalPregunta';
 import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
+import '../../public/audios/audiosImport.jsx';
 
 export default class Inicio extends Component {
   constructor(props) {
@@ -14,7 +15,8 @@ export default class Inicio extends Component {
         preguntaSeleccionadaId: 0,
         dataPregunta: {},
         historialPreguntasRespondidas: [],
-        posicionTablero: 0
+        posicionTablero: 0,
+        audio: null
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModal = this.cerrarModal.bind(this);
@@ -28,8 +30,18 @@ export default class Inicio extends Component {
     try {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
         if (historialPreguntasRespondidas != null) {
-          const posicionTablero = (historialPreguntasRespondidas.length == 0 || undefined) ? 0 : historialPreguntasRespondidas.length -1;
-
+          let posicionTablero = 0;
+          if (!(historialPreguntasRespondidas.length == 0 || historialPreguntasRespondidas.length == undefined)) {
+            if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta) {
+              posicionTablero = historialPreguntasRespondidas.length;
+              if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
+                const { showExclusivo } = this.props;
+                showExclusivo();
+              }
+            } else {
+              posicionTablero = historialPreguntasRespondidas.length -1;
+            }
+          }
           this.setState({
             historialPreguntasRespondidas,
             posicionTablero
@@ -69,17 +81,23 @@ export default class Inicio extends Component {
 
     
   seleccionarRespuesta(idOpcion) {
-    const { dataPregunta } = this.state;
+    const { dataPregunta, posicionTablero } = this.state;
 
     // objeto pregunta seleccionada
     const opcionSeleccionada = dataPregunta.opciones.find( opcion => opcion.id == idOpcion);
 
     this.agregarRespuesta(opcionSeleccionada);
     const esCorrecta = this.esCorrecta(idOpcion, 'estado');
-    if (esCorrecta) this.setState( prevStates => ({posicionTablero: prevStates.posicionTablero+1}));
+    if (esCorrecta) {
+      this.setState( prevStates => ({posicionTablero: prevStates.posicionTablero+1}));
+      if (posicionTablero === 9) {
+        const { showExclusivo } = this.props;
+        showExclusivo();
+      }
+    }
   }
 
-    agregarRespuesta(respuestaObjeto) {
+    async agregarRespuesta(respuestaObjeto) {
         const { preguntaSeleccionadaId, dataPregunta } = this.state;
         const preguntaDetalle = this.buscarPreguntasRespondidas();
         const { correcta } = dataPregunta.opciones.find(opcion => opcion.id == respuestaObjeto.id);
@@ -91,12 +109,12 @@ export default class Inicio extends Component {
                 bloqueada: true,
                 correcta
             };
-            this.setState(prevState => ({
+            await this.setState(prevState => ({
                 historialPreguntasRespondidas: [...prevState.historialPreguntasRespondidas, nuevaRespuesta],
             }));
         } else {
             // Es necesario el setState para que se vuelva a renderizar el componente
-            this.setState(prevState => {
+            await this.setState(prevState => {
                 // Creamos una varibale que sea la referencia al historial de preguntas respondidas
                 const newHistorialPreguntasRespondidas = prevState.historialPreguntasRespondidas;
                 // Obtenes solo el historial de la pregunta seleccionada
@@ -234,20 +252,17 @@ export default class Inicio extends Component {
   ) : null;
     return (
     <div className="container">
-        <div className="row mt-5" key="0">
-            <div className="col-md-12" key="0">
+        <div className="row align-items-center justify-content-center text-center mt-5" key="0">
+            <div className="col-md-8" key="0">
                 <div className="main-timeline animated slideInDown slow">
                     {
                       preguntas.map( ({ id }, index) => (
-                          <div className="timeline" key={id}>
+                          <div className={"timeline " + (index > posicionTablero ? 'desabilitado' : '') } key={id}>
                               <button onClick={() => this.seleccionarPregunta(id)}
                                 disabled={index > posicionTablero ? true : false}
-                                className="timeline-content btn-hide"
+                                className="timeline-content btn-hide "
                               >
-                                  <span className="timeline-year">{`Pregunta ${id}`}</span>
-                                  <div className="timeline-icon">
-                                      <i className="fa fa-rocket"></i>
-                                  </div>
+                                  <span className="timeline-year">{`Lugar ${id}`}</span>
                                   <div className="content"/>
                               </button>
                           </div>

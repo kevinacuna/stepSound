@@ -13,7 +13,7 @@ export default class Exclusivo extends Component {
           <div className="col-md-5 text-left">
             <h2 className="section-title mb-3">Contenido Exclusivo</h2>
             <hr className="divider my-4"/>
-            <p className="lead">Making Off.</p>
+            <p className="lead">Making Of.</p>
             <div>
               <p className="lead">Lista de Reproducciones.</p>
               <SpotifyPlayer

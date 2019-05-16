@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import '../../public/img/look.png';
+import '../../public/informacion/introduccion/Intro.mp4';
+import '../../public/img/portada.jpg';
 
 export default class Portada extends Component {
   constructor(props) {
@@ -24,17 +25,17 @@ export default class Portada extends Component {
           data-aos="fade"
           id="home-section">
           <div className="container">
+          <header className="masthead">
+            <img src="portada.jpg" className="img-fluid" alt="Responsive image"/>
+          </header>
             <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
-
-
-            <div className="col-lg-4 align-self-end">
-              <img className="img-fluid img-portada" src="look.png"/>
+            <div className="col-lg-6">
+              <video class="responsive-video" controls>
+                <source src="Intro.mp4" type="video/mp4"/>
+              </video>
              </div>
-
               <div className="col-lg-6 justify-content-center text-center">
-
                 <div className="row h-100 align-items-center justify-content-center">
-
                   <div className="col-lg-12 align-self-end">
                     <h1 className="text-uppercase blue-grey-text text-darken-4 font-weight-bold">
                       Step Sound
@@ -42,21 +43,16 @@ export default class Portada extends Component {
                     <hr className="divider my-3" />
                   </div>
                   <div className="col-lg-12 align-self-end">
-
                      <p className="font-weight-light blue-grey-text text-justify text-darken-3 mt-4">
-                      Teodoro regala un libro a su nieto Pablo por su vigésimo cumpleaños. Al cogerlo, 
-                      se cae una foto donde aparece Teodoro en un misterioso lugar. 
-                      Al indagar un poco más acerca de ese lugar, 
-                      Pablo descubre que se trata del sitio preferido de su abuelo. 
+                      La historia comienza cuando el abuelo recuerda que tenía que dejar un libro a su nieto.
+                      Resulta que en ese libro había una foto donde aparece el abuelo en un misterioso lugar
+                      cuando era jóven, concretamente su lugar favorito.
                       </p>
                       <p className="font-weight-light mb-5 blue-grey-text text-justify text-darken-3">
-                      A modo de sorpresa, el nieto pone en marcha una aventura para encontrar el lugar 
-                      y poder fotografiarse allí, como un día lo hizo su abuelo. 
-                      Desde el momento que emprende la búsqueda lo hace acompañado de música...
-                     
-                     </p>
-
-
+                        A modo de sorpresa, el nieto pone en marcha una aventura para encontrar el lugar
+                        y poder fotografiarse allí, como un día lo hizo su abuelo.
+                        Desde el momento que emprende la búsqueda lo hace acompañado de sus cascos...
+                      </p>
                   </div>
                    <div className="col-lg-6 align-self-baseline">
                       <p className="blue-grey-text text-darken-3 font-weight-light mb-5">
@@ -68,16 +64,8 @@ export default class Portada extends Component {
                         Empezar el viaje
                       </button>
                     </div>
-
-                </div>
-
-               
+                </div>               
               </div>
-
-             
-              
-
-              
             </div>
           </div>
         </div>

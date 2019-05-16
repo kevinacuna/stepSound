@@ -1,115 +1,26 @@
 {
   "preguntas": [
     {
-      "id":1,
-      "titulo": "¿Quien compuso “Para Elisa”?",
-      "video": {
-        "url": "https://www.youtube.com/embed/tIaoih-kHJU",
-        "descripcion": "descripcion del video"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "The Beatles",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "Ludwig van Beethoven",
-          "correcta": true
-        },
-        {
-          "id": 3,
-          "descripcion": "Johann Sebastian Bach",
-          "correcta": false
-        },
-        {
-          "id": 4,
-          "descripcion": "Queen",
-          "correcta": false
-        }
-      ],
-      "fechaPublicacion": "30/04/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":2,
-      "titulo": "¿Cúal es el verdadero nombre del cantante de esta canción? ",
-      "video": {
-        "url": "https://www.youtube.com/embed/m5UcZ9thgPI”",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "Alejandro Sanz",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "Alex Ubago",
-          "correcta": false
-        },
-        {
-          "id": 3,
-          "descripcion": "Andrea Bocelli",
-          "correcta": true
-        },
-        {
-          "id": 4,
-          "descripcion": "Chayanne",
-          "correcta": false
-        }
-      ],
-      "fechaPublicacion": "5/05/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":3,
+      "id": 1,
       "titulo": "¿Cúal es el nombre de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/wuCK-oiE3rM",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
+        "url": "https://www.youtube.com/embed/DuTtbIcTSgE",
+        "descripcion": "..."
       },
       "fotos": [
         {
           "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
+          "url": "p1f1.jpg",
+          "descripcion": "..."
         },
         {
           "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
+          "url": "p1f2.jpg",
+          "descripcion": "..."
         }
       ],
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p1a.mp3",
+      "cancion": "p1c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -136,56 +47,11 @@
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":4,
-      "titulo": "¿Con qué palabra termina la canción “prometo” Melendi?",
-      "video": {
-        "url": "https://www.youtube.com/embed/xEu9lyn_rrg",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "Quererte",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "Prometer",
-          "correcta": false
-        },
-        {
-          "id": 3,
-          "descripcion": "Envejecer",
-          "correcta": true
-        },
-        {
-          "id": 4,
-          "descripcion": "Tocarte",
-          "correcta": false
-        }
-      ],
-      "fechaPublicacion": "15/05/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":5,
+      "id": 2,
       "titulo": "¿Qué cantantes cantan la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/zLxXqEZ5OoA",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
+        "url": "https://www.youtube.com/embed/m5UcZ9thgPI”",
+        "descripcion": "descripcion del video"
       },
       "fotos": [
         {
@@ -200,6 +66,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -213,7 +80,7 @@
         },
         {
           "id": 3,
-          "descripcion": "Macklemore ft. Ray Dalton",
+          "descripcion": "Macklemore ft. Ryan Lewis",
           "correcta": true
         },
         {
@@ -222,15 +89,15 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "17/05/2019",
       "ayuda": "url de enlace a la pista"
     },
     {
-      "id":6,
-      "titulo": "¿Con qué frase inicia la siguiente canción?",
+      "id": 3,
+      "titulo": "“Money's the motivation, money's the conversation” es el principio de una canción que fue añadida en una famosa película. ¿Sabes de cual?",
       "video": {
-        "url": "https://www.youtube.com/embed/Yn6w6sbyzug",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
+        "url": "https://www.youtube.com/embed/wuCK-oiE3rM",
+        "descripcion": "descripcion del video"
       },
       "fotos": [
         {
@@ -245,186 +112,7 @@
         }
       ],
       "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "“I had a dream”",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "“I really love you”",
-          "correcta": false
-        },
-        {
-          "id": 3,
-          "descripcion": "“You push me out”",
-          "correcta": false
-        },
-        {
-          "id": 4,
-          "descripcion": "“You say you love me”",
-          "correcta": true
-        }
-      ],
-      "fechaPublicacion": "15/05/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":7,
-      "titulo": "¿Cúal es la frase que se menciona más a lo largo de esta canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/-gCe4WrmOIk",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "“Y no te voy a negar”",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "“Cucara Macara Di que fue”",
-          "correcta": true
-        },
-        {
-          "id": 3,
-          "descripcion": "“Un camino y un destino asegurado”",
-          "correcta": false
-        },
-        {
-          "id": 4,
-          "descripcion": "“Se preparó se puso linda”",
-          "correcta": false
-        }
-      ],
-      "fechaPublicacion": "15/05/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":8,
-      "titulo": "¿Cúal es el nombre de la siguiente canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/2idJRTd1tVc",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "Con alegría",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "Con desesperación",
-          "correcta": false
-        },
-        {
-          "id": 3,
-          "descripcion": "Con valor",
-          "correcta": false
-        },
-        {
-          "id": 4,
-          "descripcion": "Con Altura",
-          "correcta": true
-        }
-      ],
-      "fechaPublicacion": "15/05/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":9,
-      "titulo": "¿Qué música motiva más a Pablo a llegar a la meta?",
-      "video": {
-        "url": "https://www.youtube.com/embed/Vy52v1v8B4o",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
-      "opciones": [
-        {
-          "id": 1,
-          "descripcion": "Safari",
-          "correcta": false
-        },
-        {
-          "id": 2,
-          "descripcion": "Bola Rebola",
-          "correcta": true
-        },
-        {
-          "id": 3,
-          "descripcion": "Peligro",
-          "correcta": false
-        },
-        {
-          "id": 4,
-          "descripcion": "Hasta que se seque el malecón",
-          "correcta": false
-        }
-      ],
-      "fechaPublicacion": "15/05/2019",
-      "ayuda": "url de enlace a la pista"
-    },
-    {
-      "id":10,
-      "titulo": "“Money's the motivation, money's the conversation” es el principio de una canción que fue añadida en la película Fast & Furious. ¿Sabes de cual?",
-      "video": {
-        "url": "https://www.youtube.com/embed/tYQ1Okyi3g4",
-        "descripcion": "escripcion del video que se mostrara abajo del coso"
-      },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
       "opciones": [
         {
           "id": 1,
@@ -433,7 +121,7 @@
         },
         {
           "id": 2,
-          "descripcion": "In da club",
+          "descripcion": "In Da Club",
           "correcta": false
         },
         {
@@ -447,7 +135,329 @@
           "correcta": true
         }
       ],
-      "fechaPublicacion": "15/05/2019",
+      "fechaPublicacion": "18/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 4,
+      "titulo": "¿Quién es el autor (y no cantante) de esta canción?",
+      "video": {
+        "url": "https://www.youtube.com/embed/xEu9lyn_rrg",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Taylor Swift",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "Ed Sheeran",
+          "correcta": true
+        },
+        {
+          "id": 3,
+          "descripcion": "Harry Styles",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "James Arthur",
+          "correcta": false
+        }
+      ],
+      "fechaPublicacion": "19/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 5,
+      "titulo": "Otra pregunta sobre autores en la sombra… ¿Quién es el autor (y no cantante) de esta canción?",
+      "video": {
+        "url": "https://www.youtube.com/embed/zLxXqEZ5OoA",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Lady Gaga",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "Rihanna",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "Sia",
+          "correcta": true
+        },
+        {
+          "id": 4,
+          "descripcion": "Christina Perri",
+          "correcta": false
+        }
+      ],
+      "fechaPublicacion": "20/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 6,
+      "titulo": "¿Cuál es el verdadero nombre del autor de esta canción?",
+      "video": {
+        "url": "https://www.youtube.com/embed/Yn6w6sbyzug",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Onika Tanya Maraj (Nicki Minaj)",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "Stefani Joanne Angelina Germanotta (Lady Gaga)",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "Elizabeth Woolridge Grant (Lana del Rey)",
+          "correcta": true
+        },
+        {
+          "id": 4,
+          "descripcion": "Destiny Hope Cyrus (Miley Cyrus)",
+          "correcta": false
+        }
+      ],
+      "fechaPublicacion": "21/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 7,
+      "titulo": "¿Original o remix? ¿Quién compuso la siguiente canción?",
+      "video": {
+        "url": "https://www.youtube.com/embed/-gCe4WrmOIk",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Jonas Blue",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "Tracy Chapman",
+          "correcta": true
+        },
+        {
+          "id": 3,
+          "descripcion": "Martin Garrix",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "Calvin Harris",
+          "correcta": false
+        }
+      ],
+      "fechaPublicacion": "22/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 8,
+      "titulo": "“In the town where I was born, lived a man who sailed to sea” es el principio de una famosa canción… ¿Adivinas de cuál?",
+      "video": {
+        "url": "https://www.youtube.com/embed/2idJRTd1tVc",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Dust in the wind - Kansas",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "What a Wonderful World -  Louis Armstrong",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "Yellow Submarine - The Beatles",
+          "correcta": true
+        },
+        {
+          "id": 4,
+          "descripcion": "Who wants to live forever? - Queen",
+          "correcta": false
+        }
+      ],
+      "fechaPublicacion": "23/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 9,
+      "titulo": "¿A quién está dedicada la siguiente canción?",
+      "video": {
+        "url": "https://www.youtube.com/embed/Vy52v1v8B4o",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Pattie Boyd (George Harrison)",
+          "correcta": false
+        },
+        {
+          "id": 2,
+          "descripcion": "Cindy Breakspeare (Bob Marley)",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "Yoko Ono (John Lennon)",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "Erin Everly",
+          "correcta": true
+        }
+      ],
+      "fechaPublicacion": "24/05/2019",
+      "ayuda": "url de enlace a la pista"
+    },
+    {
+      "id": 10,
+      "titulo": "La siguiente canción surge de la unión de dos hits de los 70… ¿Sabes de cuáles?",
+      "video": {
+        "url": "https://www.youtube.com/embed/tYQ1Okyi3g4",
+        "descripcion": "descripcion del video"
+      },
+      "fotos": [
+        {
+          "id": 1,
+          "url": "guitar.png",
+          "descripcion": "detalle de la foto"
+        },
+        {
+          "id": 2,
+          "url": "look.png",
+          "descripcion": "detalle de la foto 2"
+        }
+      ],
+      "audio": "lord-huron-the-night-we-met.mp3",
+      "cancion": "",
+      "opciones": [
+        {
+          "id": 1,
+          "descripcion": "Werewolves of London + Sweet Home Alabama",
+          "correcta": true
+        },
+        {
+          "id": 2,
+          "descripcion": "Walk on the Wild Side + Sultans of Swing ",
+          "correcta": false
+        },
+        {
+          "id": 3,
+          "descripcion": "Stayin’ Alive + My Sharona",
+          "correcta": false
+        },
+        {
+          "id": 4,
+          "descripcion": "You’re So Vain + Bohemian Raphsody",
+          "correcta": false
+        }
+      ],
+      "fechaPublicacion": "25/05/2019",
       "ayuda": "url de enlace a la pista"
     }
   ],

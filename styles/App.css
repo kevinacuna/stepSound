@@ -15,13 +15,13 @@
 {
   background-color: #F90; 
   background-image: -webkit-linear-gradient(90deg,
-                                            rgba(255, 255, 255, .2) 25%,
-                        transparent 25%,
-                        transparent 50%,
-                        rgba(255, 255, 255, .2) 50%,
-                        rgba(255, 255, 255, .2) 75%,
-                        transparent 75%,
-                        transparent)
+  rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+  rgba(255, 255, 255, .2) 50%,
+  rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
 }
 
 
@@ -66,11 +66,14 @@ main{
 
 @media (max-width: 575px) {
   #navbarToggler{
-    background-color: #AB2937;
+    background-color: transparent;
   }
 }
 
-
+ #navbarToggler{
+    background-color: transparent;
+  }
+  
 .navbar-toggler-icon{
   color: #ffffff;
 }
@@ -85,3 +88,6 @@ main{
   outline: 1px auto white;
 }
 
+.modal .modal-footer {
+  background-color: #ffffff;
+}

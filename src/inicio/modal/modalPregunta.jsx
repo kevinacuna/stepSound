@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../public/img/guitar.png";
+import '../../../public/informacion/preguntasImport';
 
 const disabled = "disabled";
 
@@ -10,7 +11,7 @@ export default ({
   respuestasHechas,
   ayudaClick,
   idRespuestas,
-  esCorrecta
+  esCorrecta,
 }) => (
   <div
     className="modal fade show animated slideInLeft"
@@ -24,9 +25,9 @@ export default ({
     <div className="modal-dialog modal-lg" role="document">
       <div className="modal-content">
         <div className="modal-header text-center">
-          <h5 className="modal-title w-100" id="exampleModal">{`Pregunta ${
-            data.id
-          }`}</h5>
+          <h5 className="modal-title w-100" id="exampleModal">
+          {`LUGAR ${data.id}`}
+          </h5>
           <button
             type="button"
             onClick={hideModal}
@@ -41,38 +42,39 @@ export default ({
         <div className="modal-body">
           <div id="contenedorVideo">
             <center>
-              <p>
-                <b>{data.titulo}</b>
-              </p>
+              <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
+              <p>{data.video.descripcion}</p>
             </center>
-            <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
-            <p>{data.video.descripcion}</p>
           </div>
-          <div className="row" id="contenendorFotos">
-            <div className="col-md-1 col-lg-1 mb-1" />
+          <div className="contenendorAudio">
+              <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
+            </div>
+          <div className="row fila" id="contenendorFotos">
             {data.fotos.map(({ url, descripcion, id }) => (
-              <div key={id} className="col-md-5 col-lg-5 mb-5">
-                <div className="team-member">
-                  <figure style={{ maxHeight: "250px" }}>
-                    <img
-                      id="team"
-                      src={url}
-                      alt="Image"
-                      className="img-fluid"
-                    />
-                  </figure>
-                  <div className="p-3">
-                    <span className="position">{descripcion}</span>
-                  </div>
-                </div>
+              <div key={id} className="fotoElemento">
+                <figure>
+                  <img
+                    src={url}
+                    alt="Image"
+                    className="img-fluid fotoImagen"
+                  />
+                </figure>
+                <center>
+                  <span className="position">{descripcion}</span>
+                </center>
               </div>
             ))}
-            <div className="col-md-1 col-lg-1 mb-1" />
-            <div id="contenendorAudio">
-              <audio src={data.audio} preload="auto" controls />
             </div>
-            <div id="contenedorOpciones">
-              <div className="row">
+            <div id="tituloPregunta">
+                <h2>
+                {data.titulo}
+                </h2>
+            </div>
+            <div className="contenendorAudio">
+              <audio src={data.cancion} style={{width: '420px'}} preload="auto" controls />
+            </div>
+            <div id="contenedorOpcionesGeneral">
+              <div className="row" id="contenedorOpciones">
                 {data.opciones.map(({ descripcion, id }) => (
                   <div key={id} className="col-md-5 col-lg-5 mb-5">
                     <button
@@ -91,29 +93,30 @@ export default ({
                 ))}
               </div>
             </div>
-          </div>
+          
         </div>
         <div className="modal-footer">
-          <a
-            type="button"
-            id="mostrarModalPreguntaFlag"
-            className="btn btn-primary mr-auto"
-            onClick={hideModal}
-            data-dismiss="modal"
-          >
-            Cerrar
-          </a>
           <a
             type="button"
             target="_blank"
             rel="noopener noreferrer"
             href={data.ayuda}
-            className={`btn btn-primary ${
+            className={`btn btn-success mr-auto ${
               respuestasHechas.correcta ? disabled : ""
             }`}
             onClick={ayudaClick}
           >
-            ¿Ayuda?
+            Pistas
+          </a>
+          <a
+            type="button"
+            id="mostrarModalPreguntaFlag"
+            className="btn btn-danger"
+            style={{color:'black'}}
+            onClick={hideModal}
+            data-dismiss="modal"
+          >
+            Cerrar
           </a>
         </div>
       </div>

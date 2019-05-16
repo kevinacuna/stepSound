@@ -1,19 +1,39 @@
-import React, { Component } from "react";
-import "../styles/App.css";
-import "../public/img/oficial_logo.png";
-import Portada from "./portada/portada";
-import Inicio from "./inicio/inicio";
-import Participar from "./participar/participar";
-import Equipo from "./equipo/equipo";
-import Exclusivo from "./exclusivo/exlusivo";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import '../styles/App.css';
+import '../public/img/oficial_logo.png';
+import Portada from './portada/portada';
+import Inicio from './inicio/inicio';
+import Participar from './participar/participar';
+import Equipo from './equipo/equipo';
+import Exclusivo from './exclusivo/exlusivo';
+import ExclusivoDisabled from './exclusivo/exclusivoDisabled';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      exclusivoDisabled : true
+    }
   }
 
+  componentDidMount() {
+    try {
+      const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
+      if (historialPreguntasRespondidas != null) {
+        if (!(historialPreguntasRespondidas.length == 0 || historialPreguntasRespondidas.length == undefined)) {
+          if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
+            this.setState({exclusivoDisabled:false});
+          }
+        }
+      }
+  } catch (error) {
+      console.error(error, " error al montar la iformacion desde localStorage");
+  }
+}
+
   render() {
+    const { exclusivoDisabled } = this.state;
     return (
       <Router>
         <div className="App">
@@ -56,10 +76,12 @@ export default class App extends Component {
           </nav>
           <main>
             <Route exact path="/" component={Portada} />
-            <Route path="/comenzar" component={Inicio} />
+            <Route path="/comenzar" render={() => <Inicio showExclusivo={() => this.setState({exclusivoDisabled: false})}/>} />
             <Route path="/participar" component={Participar} />
             <Route path="/equipo" component={Equipo} />
-            <Route path="/exclusivo" component={Exclusivo} />
+            {
+              exclusivoDisabled ? <Route path="/exclusivo" component={ExclusivoDisabled}/> : <Route path="/exclusivo" component={Exclusivo} />
+            }
           </main>
 
           <footer className="page-footer site-footer darken-4">
