@@ -21,10 +21,11 @@ export default class Portada extends Component {
     }
     return (
       <div className="overlay base-portada" data-aos="fade" id="home-section">
-            <header class="main-header" id="header">
-              <div class="bg-color">
-                <div class="container text-center">
-                </div>
+            <header className="main-header" id="header">
+              <div className="container text-center">
+                  <button className='zoom'>
+                    v
+                  </button>
               </div>
             </header>
         <div className="container">

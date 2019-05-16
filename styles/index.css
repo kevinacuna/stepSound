@@ -76,9 +76,11 @@ h1, h2, h3, h4, h5,
 .btn {
   font-size: 16px;
   border-radius: 30px;
-padding-left: 30px;
-padding-right: 30px;
-padding-bottom: 20px; }
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px; 
+}
+
   .btn:hover, .btn:active, .btn:focus {
     outline: none;
     -webkit-box-shadow: none !important;
@@ -1931,6 +1933,32 @@ hr.light {
   background-size:cover;
 }
 
-.bg-color {
-  background-color: RGBA(0, 0, 0, 0.41);
+.zoom {
+  background-color: rgba(83, 83, 83, 0.452) !important;
+  border: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: x-large;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  margin-top: 45%;
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.zoom:hover {
+  background-color:rgba(83, 83, 83, 0.452) !important;
+  border: transparent;
+  font-size: xx-large;
+  color: #c7b6bc;
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  width: 75px;
+  height: 75px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
 }
