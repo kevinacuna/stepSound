@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
 import '../../public/informacion/introduccion/Intro.mp4';
+import '../../public/img/portada.jpg';
 
 export default class Portada extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ export default class Portada extends Component {
           data-aos="fade"
           id="home-section">
           <div className="container">
+          <img src="portada.jpg" className="img-fluid" alt="Responsive image"/>
             <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
             <div className="col-lg-6">
               <video class="responsive-video" controls>
