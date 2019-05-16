@@ -214,10 +214,16 @@
     justify-content: space-evenly;
 }
 
-#contenedorOpciones, .contenendorAudio, #tituloPregunta {
+#contenedorOpciones, .contenendorAudio, #contenedorVideo, #tituloPregunta {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+}
+
+#contenedorAudiolibro{
+    text-align: center;
+    padding-left: 54px;
+    padding-top: 13%;
 }
 
 /*
