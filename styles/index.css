@@ -1825,7 +1825,7 @@ nav {
 
 .base-portada {
   margin-top: -1em;
-  padding-top: 3.5em;
+  /*padding-top: 3.5em;*/
   min-height: 600px;
 } 
 
