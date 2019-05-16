@@ -59,7 +59,6 @@ export default class Inicio extends Component {
 
   setHistorialLocalStorage() {
     const { historialPreguntasRespondidas } = this.state;
-    console.log(historialPreguntasRespondidas);
     localStorage.setItem('historialPreguntasRespondidas', JSON.stringify(historialPreguntasRespondidas));
   }
   

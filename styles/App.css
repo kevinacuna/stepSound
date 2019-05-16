@@ -66,12 +66,12 @@ main{
 
 @media (max-width: 575px) {
   #navbarToggler{
-    background-color: #37229B;
+    background-color: transparent;
   }
 }
 
  #navbarToggler{
-    background-color: #37229B;
+    background-color: transparent;
   }
   
 .navbar-toggler-icon{
