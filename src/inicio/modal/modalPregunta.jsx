@@ -22,11 +22,12 @@ export default ({
     aria-labelledby="exampleModalLongTitle"
     aria-hidden="true"
   >
-    <div className="modal-dialog modal-lg" role="document">
-      <div className="modal-content">
+    <div id="modalPreguntaContenedor" className="modal-dialog modal-lg" role="document">
+      <div id="modalContenido" className="modal-content">
+        <div id="preguntaElemento">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
-          {`LUGAR ${data.id}`}
+          {`PREGUNTA ${data.id}`}
           </h5>
           <button
             type="button"
@@ -41,30 +42,11 @@ export default ({
         </div>
         <div className="modal-body">
           <div id="contenedorVideo">
-            <center>
               <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
-              <p>{data.video.descripcion}</p>
-            </center>
           </div>
-          <div className="contenendorAudio">
-              <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
-            </div>
-          <div className="row fila" id="contenendorFotos">
-            {data.fotos.map(({ url, descripcion, id }) => (
-              <div key={id} className="fotoElemento">
-                <figure>
-                  <img
-                    src={url}
-                    alt="Image"
-                    className="img-fluid fotoImagen"
-                  />
-                </figure>
-                <center>
-                  <span className="position">{descripcion}</span>
-                </center>
+          <div id="contenedorAudio">
+                <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
               </div>
-            ))}
-            </div>
             <div id="tituloPregunta">
                 <h2>
                 {data.titulo}
@@ -93,7 +75,6 @@ export default ({
                 ))}
               </div>
             </div>
-          
         </div>
         <div className="modal-footer">
           <a
@@ -118,6 +99,7 @@ export default ({
           >
             Cerrar
           </a>
+        </div>
         </div>
       </div>
     </div>

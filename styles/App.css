@@ -91,3 +91,8 @@ main{
 .modal .modal-footer {
   background-color: #ffffff;
 }
+
+#modalPreguntaContenedor {
+  max-width: 100%;
+  width: 50%;
+}

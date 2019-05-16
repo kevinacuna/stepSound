@@ -4,21 +4,9 @@
       "id": 1,
       "titulo": "¿Cúal es el nombre de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/DuTtbIcTSgE",
+        "url": "https://www.youtube.com/embed/uiG2heh7VnU",
         "descripcion": "..."
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "p1f1.jpg",
-          "descripcion": "..."
-        },
-        {
-          "id": 2,
-          "url": "p1f2.jpg",
-          "descripcion": "..."
-        }
-      ],
       "audio": "p1a.mp3",
       "cancion": "p1c.mp3",
       "opciones": [
@@ -53,18 +41,6 @@
         "url": "https://www.youtube.com/embed/m5UcZ9thgPI”",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -89,7 +65,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "17/05/2019",
+      "fechaPublicacion": "18/05/2019",
       "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
     },
     {
@@ -99,18 +75,6 @@
         "url": "https://www.youtube.com/embed/wuCK-oiE3rM",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -145,18 +109,6 @@
         "url": "https://www.youtube.com/embed/xEu9lyn_rrg",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -191,18 +143,6 @@
         "url": "https://www.youtube.com/embed/zLxXqEZ5OoA",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -237,18 +177,6 @@
         "url": "https://www.youtube.com/embed/Yn6w6sbyzug",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -283,18 +211,6 @@
         "url": "https://www.youtube.com/embed/-gCe4WrmOIk",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -329,18 +245,6 @@
         "url": "https://www.youtube.com/embed/2idJRTd1tVc",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -375,18 +279,6 @@
         "url": "https://www.youtube.com/embed/Vy52v1v8B4o",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [
@@ -421,18 +313,6 @@
         "url": "https://www.youtube.com/embed/tYQ1Okyi3g4",
         "descripcion": "descripcion del video"
       },
-      "fotos": [
-        {
-          "id": 1,
-          "url": "guitar.png",
-          "descripcion": "detalle de la foto"
-        },
-        {
-          "id": 2,
-          "url": "look.png",
-          "descripcion": "detalle de la foto 2"
-        }
-      ],
       "audio": "lord-huron-the-night-we-met.mp3",
       "cancion": "",
       "opciones": [

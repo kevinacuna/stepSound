@@ -73,6 +73,7 @@ export default class Inicio extends Component {
     }
   */
     seleccionarPregunta(idPregunta) {
+        document.body.style.overflow = "hidden"
         const { preguntas } = Preguntas;
         const dataPregunta = preguntas.find( elementoPregunta => elementoPregunta.id == idPregunta);
 
@@ -195,6 +196,7 @@ export default class Inicio extends Component {
 
   // Cambiar estado para cerrar modal
   cerrarModal(event) {
+    document.body.style.overflow = ""
     const nombreModal = event.target.id;
     this.setState({ [nombreModal] : false });
   }
