@@ -24,7 +24,7 @@ export default ({
   >
     <div id="modalPreguntaContenedor" className="modal-dialog modal-lg" role="document">
       <div id="modalContenido" className="modal-content">
-      <div id="preguntaElemento">
+        <div id="preguntaElemento">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
           {`PREGUNTA ${data.id}`}
@@ -43,13 +43,10 @@ export default ({
         <div className="modal-body">
           <div id="contenedorVideo">
               <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
-              <div id="contenedorAudiolibro">
-                <audio src={data.audio} preload="auto" controls />
-                <p>{data.video.descripcion}</p>
-              </div>
-              
           </div>
-          
+          <div id="contenedorAudio">
+                <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
+              </div>
             <div id="tituloPregunta">
                 <h2>
                 {data.titulo}
@@ -104,8 +101,8 @@ export default ({
             Cerrar
           </a>
         </div>
+        </div>
       </div>
       </div>
     </div>
-  </div>
 );

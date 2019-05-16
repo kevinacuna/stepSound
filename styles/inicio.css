@@ -214,19 +214,15 @@
     justify-content: space-evenly;
 }
 
-#contenedorOpciones, .contenendorAudio, #contenedorVideo, #tituloPregunta {
+#contenedorOpciones, .contenendorAudio, #contenedorVideo, #contenedorAudio, #tituloPregunta {
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
 
-#contenedorAudiolibro{
-    text-align: center;
-    padding-top: 13%;
-}
-
 #modalContenido {
     background-image: url('../public/img/marcoPregunta.jpg');
+    background-size: 100%;
 }
 
 #preguntaElemento{
