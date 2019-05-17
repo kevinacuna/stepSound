@@ -48,9 +48,11 @@ export default ({
                 <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
               </div>
             <div id="tituloPregunta">
+              <center>
                 <h2>
                 {data.titulo}
                 </h2>
+              </center>
             </div>
             <div className="contenendorAudio">
               <audio src={data.cancion} style={{width: '420px'}} preload="auto" controls />
