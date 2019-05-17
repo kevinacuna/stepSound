@@ -32,7 +32,10 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "ayuda": "https://www.instagram.com/p/BxiaN1iocuq"
+      "ayuda": [
+        "https://stepsound.page.link/nivel1p1",
+        "https://stepsound.page.link/nivel1p2"
+      ]
     },
     {
       "id": 2,
@@ -65,8 +68,11 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "17/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "fechaPublicacion": "18/05/2019",
+      "ayuda": [
+        "https://stepsound.page.link/nivel2p1",
+        "https://stepsound.page.link/nivel2p2"
+      ]
     },
     {
       "id": 3,
@@ -100,7 +106,10 @@
         }
       ],
       "fechaPublicacion": "18/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel3p1",
+        "https://stepsound.page.link/nivel3p2"
+      ]
     },
     {
       "id": 4,
@@ -134,7 +143,10 @@
         }
       ],
       "fechaPublicacion": "19/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel4p1",
+        "https://stepsound.page.link/nivel4p2"
+      ]
     },
     {
       "id": 5,
@@ -168,7 +180,10 @@
         }
       ],
       "fechaPublicacion": "20/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel5p1",
+        "https://stepsound.page.link/nivel5p2"
+      ]
     },
     {
       "id": 6,
@@ -202,7 +217,10 @@
         }
       ],
       "fechaPublicacion": "21/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel6p1",
+        "https://stepsound.page.link/nivel6p2"
+      ]
     },
     {
       "id": 7,
@@ -236,7 +254,10 @@
         }
       ],
       "fechaPublicacion": "22/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel7p1",
+        "https://stepsound.page.link/nivel7p2"
+      ]
     },
     {
       "id": 8,
@@ -270,7 +291,10 @@
         }
       ],
       "fechaPublicacion": "23/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel8p1",
+        "https://stepsound.page.link/nivel8p2"
+      ]
     },
     {
       "id": 9,
@@ -304,7 +328,10 @@
         }
       ],
       "fechaPublicacion": "24/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel9p1",
+        "https://stepsound.page.link/nivel9p2"
+      ]
     },
     {
       "id": 10,
@@ -338,7 +365,10 @@
         }
       ],
       "fechaPublicacion": "25/05/2019",
-      "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
+      "ayuda": [
+        "https://stepsound.page.link/nivel10p1",
+        "https://stepsound.page.link/nivel10p2"
+      ]
     }
   ],
   "total": 10
