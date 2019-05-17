@@ -38,7 +38,7 @@
       "id": 2,
       "titulo": "¿Qué cantantes cantan la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/m5UcZ9thgPI”",
+        "url": "https://www.youtube.com/embed/y9YkLl9d5iY",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
@@ -65,7 +65,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "18/05/2019",
+      "fechaPublicacion": "17/05/2019",
       "ayuda": "https://www.instagram.com/stepsound_/?hl=es"
     },
     {
