@@ -262,7 +262,7 @@ export default class Inicio extends Component {
                                 disabled={index > posicionTablero ? true : false}
                                 className="timeline-content btn-hide "
                               >
-                                  <span className="timeline-year">{`Lugar ${id}`}</span>
+                                  <span className="timeline-year">{`Capítulo ${id}`}</span>
                                   <div className="content"/>
                               </button>
                           </div>

@@ -1588,7 +1588,7 @@ nav {
   text-transform: uppercase; }
 
 .section-title {
-  color: #FBB03B;
+  color: #000000;
   font-size: 40px;
   /*font-weight: 900;*/
 }
@@ -1946,12 +1946,6 @@ hr.light {
   background-color: rgba(83, 83, 83, 0.452) !important;
   border: transparent;
   color: rgba(255, 255, 255, 0.87);
-  font-size: x-large;
-  transition: transform .2s; /* Animation */
-  margin: 0 auto;
-  margin-top: 45%;
-  width: 70px;
-  height: 70px;
   padding: 10px 16px;
   border-radius: 35px;
   font-size: 24px;
@@ -1961,11 +1955,7 @@ hr.light {
 .zoom:hover {
   background-color:rgba(83, 83, 83, 0.452) !important;
   border: transparent;
-  font-size: xx-large;
   color: #c7b6bc;
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  width: 75px;
-  height: 75px;
   padding: 10px 16px;
   border-radius: 35px;
   font-size: 24px;
@@ -1974,8 +1964,17 @@ hr.light {
 
 a #v {
   color: rgba(255, 255, 255, 0.87) !important;
+  margin-top: 500px;
 }
 
 #move{  
   height: 50px;
+}
+
+#abajo {
+  padding-top: 35%;
+}
+
+#redirec{
+  background-color: #c7b6bc !important;
 }
