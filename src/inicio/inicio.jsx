@@ -27,6 +27,7 @@ export default class Inicio extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     try {
         const historialPreguntasRespondidas = JSON.parse(localStorage.getItem('historialPreguntasRespondidas'));
         if (historialPreguntasRespondidas != null) {

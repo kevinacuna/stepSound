@@ -9,6 +9,9 @@ export default class Participar extends Component {
     };
     this.btnHandler = this.btnHandler.bind(this);
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   btnHandler() {
     this.setState({ btnClicked: true });
   }
@@ -127,12 +130,12 @@ export default class Participar extends Component {
               contenido interesante acerca de cantantes y grupos de música que
               pueden servirte de inspiración.
             </p>
-          </center>
           <button
             onClick={this.btnHandler}
             className="btn btn-primary mr-2 mb-2">
             Comenzar
           </button>
+          </center>
         </div>
       </div>
     );
