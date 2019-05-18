@@ -26,19 +26,17 @@ export default class Portada extends Component {
   render() {
     const { btnClicked, down } = this.state;
     if (btnClicked) {
-      return <Redirect push from="/" to="/comenzar" />;
+      return <Redirect push from="/" to="/participar" />;
     }
     return (
       <div className="overlay base-portada animated slideInDown" data-aos="fade" id="home-section">
             <header className="main-header" id="header">
-              <div className="container text-center">
-              <form action="#move" className="animated bounce delay-2s" onClick={this.introduccionOnclick}>
-                  <input type="submit" value="V" className="zoom"/>
-              </form>
+              <div className="container text-center" id="abajo">
+                  <a href="#move" className="animated pulse zoom" id="v">V</a>
               </div>
             </header>
       <section id="move"/>
-      <section className={down}>
+      <section>
         <div className="container">
           <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
             <div className="col-lg-6 justify-content-center text-center" style={{paddingTop: '25px'}}>
@@ -67,7 +65,7 @@ export default class Portada extends Component {
                       </p>
                       <button
                         onClick={this.btnHandler}
-                        className="btn btn-primary mr-2 mb-2">
+                        className="btn mr-2 mb-2" id="redirec" >
                         Empezar el viaje
                       </button>
                     </div>

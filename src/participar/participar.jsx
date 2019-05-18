@@ -1,11 +1,23 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router";
 
 export default class Participar extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      btnClicked: false,
+    };
+    this.btnHandler = this.btnHandler.bind(this);
+  }
+  btnHandler() {
+    this.setState({ btnClicked: true });
   }
 
   render() {
+    const { btnClicked } = this.state;
+    if (btnClicked) {
+      return <Redirect push from="/participar" to="/comenzar" />;
+    }
     return (
       <div className="container mt-5 animated fadeIn slow">
         <h1 className="text-center section-title mb-3">¿Cómo participar?</h1>
@@ -116,6 +128,11 @@ export default class Participar extends Component {
               pueden servirte de inspiración.
             </p>
           </center>
+          <button
+            onClick={this.btnHandler}
+            className="btn btn-primary mr-2 mb-2">
+            Comenzar
+          </button>
         </div>
       </div>
     );
