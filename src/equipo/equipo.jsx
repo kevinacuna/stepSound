@@ -83,9 +83,9 @@ export default class Equipo extends Component {
             <figure>
               <img
                 id="team"
-                src="ines.jpg"
+                src="InesBN.jpg"
                 onMouseOver={e => (e.currentTarget.src = "ines2.jpg")}
-                onMouseOut={e => (e.currentTarget.src = "ines.jpg")}
+                onMouseOut={e => (e.currentTarget.src = "InesBN.jpg")}
                 alt="Image"
                 className="rounded-circle"
               />
