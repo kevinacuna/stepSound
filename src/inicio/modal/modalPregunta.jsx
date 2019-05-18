@@ -2,8 +2,6 @@ import React from "react";
 import "../../../public/img/guitar.png";
 import '../../../public/informacion/preguntasImport';
 
-const disabled = "disabled";
-
 export default ({
   hideModal,
   data,
@@ -66,9 +64,9 @@ export default ({
                       type="button"
                       key={id}
                       className={`btn btn-primary btn-lg btn-block ${
-                        respuestasHechas.bloqueada ? disabled : ''
+                        respuestasHechas.bloqueada ? "disabled" : ''
                       } ${
-                        idRespuestas.includes(id) ? disabled : ''
+                        idRespuestas.includes(id) ? "disabled" : ''
                       } ${esCorrecta(id)}`}
                     >
                       {descripcion}
@@ -83,9 +81,9 @@ export default ({
             type="button"
             target="_blank"
             rel="noopener noreferrer"
-            href={data.ayuda}
+            href={data.ayuda[0]}
             className={`btn btn-success mr-auto ${
-              respuestasHechas.correcta ? disabled : ""
+              respuestasHechas.correcta ? "disabled" : ""
             }`}
             onClick={ayudaClick}
           >
