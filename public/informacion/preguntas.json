@@ -189,11 +189,11 @@
       "id": 6,
       "titulo": "¿Cuál es el verdadero nombre del autor de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/Yn6w6sbyzug",
+        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p6c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -216,7 +216,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "21/05/20190",
+      "fechaPublicacion": "21/05/2019",
       "ayuda": [
         "https://www.instagram.com/stepsound_/?hl=es",
         "https://www.instagram.com/stepsound_/?hl=es"
@@ -226,11 +226,11 @@
       "id": 7,
       "titulo": "¿Original o remix? ¿Quién compuso la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/-gCe4WrmOIk",
+        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p7c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -253,7 +253,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "22/05/20190",
+      "fechaPublicacion": "22/05/2019",
       "ayuda": [
         "https://www.instagram.com/stepsound_/?hl=es",
         "https://www.instagram.com/stepsound_/?hl=es"
@@ -263,11 +263,11 @@
       "id": 8,
       "titulo": "“In the town where I was born, lived a man who sailed to sea” es el principio de una famosa canción… ¿Adivinas de cuál?",
       "video": {
-        "url": "https://www.youtube.com/embed/2idJRTd1tVc",
+        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p8c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -290,7 +290,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "23/05/20190",
+      "fechaPublicacion": "23/05/2019",
       "ayuda": [
         "https://www.instagram.com/stepsound_/?hl=es",
         "https://www.instagram.com/stepsound_/?hl=es"
@@ -300,11 +300,11 @@
       "id": 9,
       "titulo": "¿A quién está dedicada la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/Vy52v1v8B4o",
+        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p9c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -327,7 +327,7 @@
           "correcta": true
         }
       ],
-      "fechaPublicacion": "24/05/20190",
+      "fechaPublicacion": "24/05/2019",
       "ayuda": [
         "https://www.instagram.com/stepsound_/?hl=es",
         "https://www.instagram.com/stepsound_/?hl=es"
@@ -337,11 +337,11 @@
       "id": 10,
       "titulo": "La siguiente canción surge de la unión de dos hits de los 70… ¿Sabes de cuáles?",
       "video": {
-        "url": "https://www.youtube.com/embed/tYQ1Okyi3g4",
+        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p10c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -364,7 +364,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "25/05/20190",
+      "fechaPublicacion": "25/05/2019",
       "ayuda": [
         "https://www.instagram.com/stepsound_/?hl=es",
         "https://stepsound.page.link/nivel10p2"
