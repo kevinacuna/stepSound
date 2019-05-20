@@ -40,15 +40,15 @@ export default class Participar extends Component {
               continuación:
             </p>
           </center>
-          <div className="col" id="c1">
-            <div id="p1">
+          <div className="col" id="c4">
+            <div id="p4">
               <center>
                 <b>
                   <strong>Paso 1:</strong>
                 </b>
               </center>
             </div>
-            <div id="c1">
+            <div id="c4">
               <br />
               <p className="lead">
                 Dar click en la opción <strong>“Comenzar”</strong> e
@@ -57,15 +57,15 @@ export default class Participar extends Component {
               </p>
             </div>
           </div>
-          <div className="col" id="c2">
-            <div id="p2">
+          <div className="col" id="c4">
+            <div id="p4">
               <center>
                 <b>
                   <strong>Paso 2:</strong>
                 </b>
               </center>
             </div>
-            <div id="c2">
+            <div id="c4">
               <br />
               <p className="lead">
                 Dar click en la <strong>“Pregunta 1”.</strong> En ese momento se
@@ -77,15 +77,15 @@ export default class Participar extends Component {
               </p>
             </div>
           </div>
-          <div className="col" id="c3">
-            <div id="p3">
+          <div className="col" id="c4">
+            <div id="p4">
               <center>
                 <b>
                   <strong>Paso 3:</strong>
                 </b>
               </center>
             </div>
-            <div id="c3">
+            <div id="c4">
               <br />
               <p className="lead">
                 Para acertar la respuesta no hay tiempo límite. Así que tomate
@@ -132,7 +132,7 @@ export default class Participar extends Component {
             </p>
           <button
             onClick={this.btnHandler}
-            className="btn btn-primary mr-2 mb-2">
+            className="btn mr-2 mb-2" id="redirec">
             Comenzar
           </button>
           </center>

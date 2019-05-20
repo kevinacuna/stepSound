@@ -90,7 +90,7 @@ export default class App extends Component {
                 <div className="col l3 s12">
                   <h5 className="white-text">Step Sound</h5>
                   <p className="grey-text text-lighten-4">
-                   ¡No pauses tus sueños!
+                   #NoPausesTusSueños
                   </p>
                 </div>
                 <div className="col l3 s12">
