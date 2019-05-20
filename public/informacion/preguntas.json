@@ -115,11 +115,11 @@
       "id": 4,
       "titulo": "¿Quién es el autor (y no cantante) de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/xEu9lyn_rrg",
+        "url": "https://www.youtube.com/embed/fXnWeGVbf9Y",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p4c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -144,7 +144,7 @@
       ],
       "fechaPublicacion": "19/05/2019",
       "ayuda": [
-        "https://www.instagram.com/stepsound_/?hl=es",
+        "https://www.instagram.com/p/BxrpQ0HIC_R/",
         "https://www.instagram.com/stepsound_/?hl=es"
       ]
     },
@@ -152,11 +152,11 @@
       "id": 5,
       "titulo": "Otra pregunta sobre autores en la sombra… ¿Quién es el autor (y no cantante) de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/zLxXqEZ5OoA",
+        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
       "audio": "lord-huron-the-night-we-met.mp3",
-      "cancion": "",
+      "cancion": "p5c.mp3",
       "opciones": [
         {
           "id": 1,
@@ -216,7 +216,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "21/05/2019",
+      "fechaPublicacion": "21/05/20190",
       "ayuda": [
         "https://www.instagram.com/stepsound_/?hl=es",
         "https://www.instagram.com/stepsound_/?hl=es"
@@ -253,7 +253,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "22/05/2019",
+      "fechaPublicacion": "22/05/20190",
       "ayuda": [
         "https://stepsound.page.link/nivel7p1",
         "https://stepsound.page.link/nivel7p2"
@@ -290,7 +290,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "23/05/2019",
+      "fechaPublicacion": "23/05/20190",
       "ayuda": [
         "https://stepsound.page.link/nivel8p1",
         "https://stepsound.page.link/nivel8p2"
@@ -327,7 +327,7 @@
           "correcta": true
         }
       ],
-      "fechaPublicacion": "24/05/2019",
+      "fechaPublicacion": "24/05/20190",
       "ayuda": [
         "https://stepsound.page.link/nivel9p1",
         "https://stepsound.page.link/nivel9p2"
@@ -364,7 +364,7 @@
           "correcta": false
         }
       ],
-      "fechaPublicacion": "25/05/2019",
+      "fechaPublicacion": "25/05/20190",
       "ayuda": [
         "https://stepsound.page.link/nivel10p1",
         "https://stepsound.page.link/nivel10p2"
