@@ -189,7 +189,7 @@
       "id": 6,
       "titulo": "¿Cuál es el verdadero nombre del autor de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
+        "url": "https://www.youtube.com/embed/YS6G9cM-tHc",
         "descripcion": "descripcion del video"
       },
       "audio": "p6a.mp3",
@@ -266,7 +266,7 @@
         "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p8a.mp3",
       "cancion": "p8c.mp3",
       "opciones": [
         {
@@ -303,7 +303,7 @@
         "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p9a.mp3",
       "cancion": "p9c.mp3",
       "opciones": [
         {
@@ -340,7 +340,7 @@
         "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p10a.mp3",
       "cancion": "p10c.mp3",
       "opciones": [
         {
