@@ -39,7 +39,6 @@
 }
 .App-logo {
   height: 32px;
-  pointer-events: none;
 }
 
 .App-header {
@@ -66,12 +65,12 @@ main{
 
 @media (max-width: 575px) {
   #navbarToggler{
-    background-color: transparent;
+    background-color: #c7b6bc;
   }
 }
 
  #navbarToggler{
-    background-color: transparent;
+    background-color: #c7b6bc;
   }
   
 .navbar-toggler-icon{
@@ -82,6 +81,13 @@ main{
   padding-left: 10px;
   padding-top: 0px;
 }
+
+nav a {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  color: white !important;
+}
+
 .navbar-toggler:focus{
   background-color: transparent;
   border-color: transparent;

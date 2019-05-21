@@ -37,39 +37,37 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App">
-          <nav className="navbar fixed-top navbar-dark navbar-expand-lg justify-content-end" id="mainNav">
+          <nav className="navbar fixed-top navbar-light navbar-expand-lg justify-content-end" id="mainNav">
+            <a className="navbar-brand mx-auto" href="/">
+              <img src="oficial_logo.png" className="App-logo" alt="logo" />
+            </a>
             <button
               className="navbar-toggler navbar-toggler-right"
               type="button"
               data-toggle="collapse"
               data-target="#navbarToggler"
-              aria-controls="navbarTogglerDemo01"
-              aria-expanded="false"
+              aria-controls="navbarNavAltMarkup" 
+              aria-expanded="false" 
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon" />
             </button>
-
-            <a className="navbar-brand mx-auto" href="/">
-              <img src="oficial_logo.png" className="App-logo" alt="logo" />
-            </a>
-
-            <div className="collapse navbar-collapse" id="navbarToggler">
-              <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+            <div className="navbar-collapse collapse justify-content-end" id="navbarToggler">
+              <ul className="navbar-nav text-center">
                  <li className="nav-item navbar-text">
-                  <Link to="/">Inicio</Link>
+                  <Link className="nav-link" to="/">Inicio</Link>
                 </li>
                 <li className="nav-item navbar-text">
-                  <Link to="/comenzar">Comenzar</Link>
+                  <Link className="nav-link" to="/comenzar">Comenzar</Link>
                 </li>
                 <li className="nav-item navbar-text">
-                  <Link to="/participar">¿Cómo Participar?</Link>
+                  <Link className="nav-link" to="/participar">¿Cómo Participar?</Link>
                 </li>
                 <li className="nav-item navbar-text">
-                  <Link to="/equipo">¿Quiénes somos?</Link>
+                  <Link className="nav-link" to="/equipo">¿Quiénes somos?</Link>
                 </li>
                 <li className="nav-item navbar-text">
-                  <Link to="/exclusivo">Contenido exclusivo</Link>
+                  <Link className="nav-link" to="/exclusivo">Contenido exclusivo</Link>
                 </li>
               </ul>
             </div>
