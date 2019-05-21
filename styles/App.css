@@ -27,15 +27,15 @@
 
 .mapouter{
   position:relative;
-  text-align:right;
-  height:200px;
-  width:600px;
+
+  height:100%;
+  width:100%;
 }
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:200px;
-  width:600px;
+  height:100%;
+  width:100%;
 }
 .App-logo {
   height: 32px;

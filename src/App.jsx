@@ -139,12 +139,12 @@ export default class App extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col l6 s12">
+                <div className="col-16">
                   <div className="mapouter">
                     <div className="gmap_canvas">
                       <iframe
-                        width="600"
-                        height="200"
+                        width="350"
+                        height="150"
                         id="gmap_canvas"
                         src="https://maps.google.com/maps?q=uneatlantico&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameBorder="0"
