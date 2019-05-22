@@ -27,8 +27,6 @@ export default class Participar extends Component {
         <hr className="divider my-4" />
         <div className="row">
           <h2 className="text-center col-sm-12">
-            <b>Instrucciones</b>
-            <br />
             ¡BIENVENIDO A STEP SOUND!
           </h2>
           <center>

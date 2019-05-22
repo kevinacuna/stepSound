@@ -27,7 +27,7 @@ export default class Equipo extends Component {
               </p>
               <p className="lead">
                 Toda la información necesaria la podréis encontrar en nuestra
-                página web. Además podréis seguir los avances a través de
+                página web. Además, podréis seguir los avances a través de
                 nuestras redes sociales de Twitter, Instagram y Youtube en las
                 que también encontrareis contenido exclusivo. No olvidéis
                 contactar con nosotros en caso de cualquier duda a la hora de
