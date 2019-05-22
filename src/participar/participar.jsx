@@ -27,8 +27,6 @@ export default class Participar extends Component {
         <hr className="divider my-4" />
         <div className="row">
           <h2 className="text-center col-sm-12">
-            <b>Instrucciones</b>
-            <br />
             ¡BIENVENIDO A STEP SOUND!
           </h2>
           <center>
@@ -51,9 +49,10 @@ export default class Participar extends Component {
             <div id="c4">
               <br />
               <p className="lead">
-                Dar click en la opción <strong>“Comenzar”</strong> e
-                inmediatamente aparecerá en la pantalla el camino que tendrás
-                que recorren dividido en diez preguntas para llegar a la meta.
+                En la pantalla de Inicio visualiza el video introductorio y haz click en “Empezar el viaje”.
+                A continuación, aparecerán en la pantalla estas instrucciones para saber cómo participar. Una vez leídas,
+                haz click en “Comenzar”. Te llevará directamente al juego. Se trata de un camino con diez preguntas que
+                has de recorrer para llegar a la meta.
               </p>
             </div>
           </div>
@@ -68,12 +67,10 @@ export default class Participar extends Component {
             <div id="c4">
               <br />
               <p className="lead">
-                Dar click en la <strong>“Pregunta 1”.</strong> En ese momento se
-                abrirá una nueva pestaña con una pregunta general. Esta pestaña
-                incluye contenido multimedia y diferentes opciones para
-                responder a la pregunta. Si no estás seguro de la respuesta
-                escoge la opción de pista y te dirigirá a nuestras redes
-                sociales con ayuda para responder.
+                Haz click en el <strong>“Capítulo 1”</strong>. Al momento se abrirá una nueva pestaña con una pregunta y varias opciones de respuesta.
+                Esta pestaña incluye contenido multimedia para introducirte de lleno en la historia. Además, si no estás seguro o
+                desconoces cuál es la respuesta correcta, puedes escoger la opción de “Pistas” que te dirigirá a nuestras redes sociales para
+                encontrar ayuda.
               </p>
             </div>
           </div>
@@ -88,47 +85,27 @@ export default class Participar extends Component {
             <div id="c4">
               <br />
               <p className="lead">
-                Para acertar la respuesta no hay tiempo límite. Así que tomate
-                tu tiempo. No te preocupes si te equivocas siempre habrá una
-                segunda oportunidad para poder continuar. Una vez acertada
-                deberás de dar a la opción de “siguiente” y te dirigirá a la{" "}
-                <strong>“Pregunta 2”.</strong>
-              </p>
-              <p className="lead">
-                Recuerda que es un camino el que has de recorrer y sin la
-                Pregunta 1 no podrás avanzar a la siguiente.
-              </p>
-            </div>
-          </div>
-          <div className="col" id="c4">
-            <div id="p4">
-              <center>
-                <b>
-                  <strong>Paso 4:</strong>
-                </b>
-              </center>
-            </div>
-            <div id="c4">
-              <br />
-              <p className="lead">
-                A medida que vayas avanzando las preguntas irán aumentando su
-                dificultad. Por lo tanto te deseamos mucha suerte y ánimo en
-                esta aventura.
-              </p>
-              <p className="lead">
-                Ten en cuenta que debes estar pendiente de nuestras redes
-                sociales, ya que por medio de ellas subiremos contenido
-                exclusivo en el cual te brindaremos pistas para que puedas
-                lograr llegar a la meta de una manera más fácil y divertida.
+                Una vez acertada la primera pregunta, ciérrala. Automáticamente se desbloqueará el “Capítulo 2” con el mismo procedimiento que el primero.
+                Recuerda que es un camino que has de recorrer sin saltarte ningún capítulo, por lo que es necesario responder correctamente a las preguntas
+                para poder desbloquear las siguientes e ir avanzando. Estas preguntas se volverán más difíciles cuanto más cerca te encuentres de la meta.
               </p>
             </div>
           </div>
           <center>
             <p className="lead">
-              No olvides echar un vistazo en la opción
-              <strong>“contenido exclusivo”</strong> puesto que incluirá
-              contenido interesante acerca de cantantes y grupos de música que
-              pueden servirte de inspiración.
+              No te preocupes, no hay tiempo límite para acertar la respuesta. Tómate tu tiempo y visita nuestras redes sociales
+              para obtener más información acerca de la historia. Tampoco importa si te equivocas. Tienes más oportunidades haciendo
+              click de nuevo en “Pistas”.
+            </p>
+            <p className="lead">
+              Tampoco olvides echar un vistazo al “Contenido exclusivo”, ya que incluye información interesante acerca de los cantantes
+              y grupos del momento para hacer esta aventura aún más divertida.
+            </p>
+            <p className="lead">
+              Cualquier duda puedes escribirnos a nuestra dirección de correo o preguntarnos por las redes sociales. 
+            </p>
+            <p className="lead">
+              ¡MUCHA SUERTE STEPSOUNDER!
             </p>
           <button
             onClick={this.btnHandler}
