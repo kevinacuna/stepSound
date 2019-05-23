@@ -58,9 +58,6 @@ export default class Portada extends Component {
                      día lo hizo su abuelo. Desde el momento en el que emprende la búsqueda, lo hace 
                      acompañado de sus cascos. Si tú también quieres acompañar a Pablo y adentrarte en esta historia…
                       </p>
-                      <p className="font-weight-light blue-grey-text text-justify text-darken-3 mt-4">
-                      ¡No pauses tus sueños!
-                      </p>
                   </div>
                    <div className="col-lg-6 align-self-baseline">
                       <p className="blue-grey-text text-darken-3 font-weight-light mb-5">

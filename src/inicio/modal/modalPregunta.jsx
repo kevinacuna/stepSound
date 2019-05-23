@@ -20,9 +20,9 @@ export default ({
     aria-labelledby="exampleModalLongTitle"
     aria-hidden="true"
   >
-    <div id="" className="modal-dialog modal-lg"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div id="" class="modal-dialog" role="document">
-        <div id="" className="modal-content">
+    <div id="modalPreguntaContenedor" className="modal-dialog modal-lg" role="document">
+      <div id="modalContenido" className="modal-content">
+        <div id="preguntaElemento">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
           {`CAPÍTULO ${data.id}`}
@@ -40,7 +40,7 @@ export default ({
         </div>
         <div className="modal-body">
           <div id="contenedorVideo">
-              <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
+              <iframe id="video" src={data.video.url} />
           </div>
           <div id="contenedorAudio">
                 <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />

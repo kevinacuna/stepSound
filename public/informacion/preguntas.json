@@ -189,7 +189,7 @@
       "id": 6,
       "titulo": "¿Cuál es el verdadero nombre del autor de esta canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
+        "url": "https://www.youtube.com/embed/-ltyQLBKYWI",
         "descripcion": "descripcion del video"
       },
       "audio": "p6a.mp3",
@@ -197,28 +197,28 @@
       "opciones": [
         {
           "id": 1,
-          "descripcion": "Onika Tanya Maraj (Nicki Minaj)",
+          "descripcion": "Onika Tanya Maraj",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "Stefani Joanne Angelina Germanotta (Lady Gaga)",
+          "descripcion": "Stefani Joanne Angelina Germanotta",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "Elizabeth Woolridge Grant (Lana del Rey)",
+          "descripcion": "Elizabeth Woolridge Grant",
           "correcta": true
         },
         {
           "id": 4,
-          "descripcion": "Destiny Hope Cyrus (Miley Cyrus)",
+          "descripcion": "Destiny Hope Cyrus",
           "correcta": false
         }
       ],
       "fechaPublicacion": "21/05/2019",
       "ayuda": [
-        "https://www.instagram.com/stepsound_/?hl=es",
+        "https://www.instagram.com/p/Bxw1yBmILmB/",
         "https://www.instagram.com/stepsound_/?hl=es"
       ]
     },
@@ -226,7 +226,7 @@
       "id": 7,
       "titulo": "¿Original o remix? ¿Quién compuso la siguiente canción?",
       "video": {
-        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
+        "url": "https://www.youtube.com/embed/Uqft1dtytt8",
         "descripcion": "descripcion del video"
       },
       "audio": "p7a.mp3",
@@ -255,7 +255,7 @@
       ],
       "fechaPublicacion": "22/05/2019",
       "ayuda": [
-        "https://www.instagram.com/stepsound_/?hl=es",
+        "https://www.instagram.com/p/BxzZbYYo1jo/",
         "https://www.instagram.com/stepsound_/?hl=es"
       ]
     },
@@ -263,30 +263,30 @@
       "id": 8,
       "titulo": "“In the town where I was born, lived a man who sailed to sea” es el principio de una famosa canción… ¿Adivinas de cuál?",
       "video": {
-        "url": "https://www.youtube.com/embed/9YpNonzaNX8",
+        "url": "https://www.youtube.com/embed/MXiq3xKs8uM",
         "descripcion": "descripcion del video"
       },
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p8a.mp3",
       "cancion": "p8c.mp3",
       "opciones": [
         {
           "id": 1,
-          "descripcion": "Dust in the wind - Kansas",
+          "descripcion": "Dust in the wind",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "What a Wonderful World -  Louis Armstrong",
+          "descripcion": "What a Wonderful World",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "Yellow Submarine - The Beatles",
+          "descripcion": "Yellow Submarine",
           "correcta": true
         },
         {
           "id": 4,
-          "descripcion": "Who wants to live forever? - Queen",
+          "descripcion": "Who wants to live forever?",
           "correcta": false
         }
       ],
@@ -303,22 +303,22 @@
         "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p9a.mp3",
       "cancion": "p9c.mp3",
       "opciones": [
         {
           "id": 1,
-          "descripcion": "Pattie Boyd (George Harrison)",
+          "descripcion": "Pattie Boyd",
           "correcta": false
         },
         {
           "id": 2,
-          "descripcion": "Cindy Breakspeare (Bob Marley)",
+          "descripcion": "Cindy Breakspeare",
           "correcta": false
         },
         {
           "id": 3,
-          "descripcion": "Yoko Ono (John Lennon)",
+          "descripcion": "Yoko Ono",
           "correcta": false
         },
         {
@@ -340,7 +340,7 @@
         "url": "https://www.youtube.com/embed/9YpNonzaNX8",
         "descripcion": "descripcion del video"
       },
-      "audio": "lord-huron-the-night-we-met.mp3",
+      "audio": "p10a.mp3",
       "cancion": "p10c.mp3",
       "opciones": [
         {

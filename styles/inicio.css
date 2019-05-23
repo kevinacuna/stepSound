@@ -219,6 +219,11 @@
     justify-content: center;
     padding-top: 30px;
 }
+#video {
+    width: 100%;
+    max-width: 420px;
+    height: 315px;
+}
 
 #modalContenido {
     background-image: url('../public/img/marcoPregunta.jpg');

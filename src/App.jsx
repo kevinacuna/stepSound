@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import '../public/img/oficial_logo.png';
+import '../public/img/logo.png';
 import Portada from './portada/portada';
 import Inicio from './inicio/inicio';
 import Participar from './participar/participar';
@@ -61,7 +62,7 @@ export default class App extends Component {
                   <Link className="nav-link" to="/comenzar">Comenzar</Link>
                 </li>
                 <li className="nav-item navbar-text">
-                  <Link className="nav-link" to="/participar">¿Cómo Participar?</Link>
+                  <Link className="nav-link" to="/participar">¿Cómo participar?</Link>
                 </li>
                 <li className="nav-item navbar-text">
                   <Link className="nav-link" to="/equipo">¿Quiénes somos?</Link>

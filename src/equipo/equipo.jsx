@@ -24,14 +24,12 @@ export default class Equipo extends Component {
               desarrollado en nuestra página web un juego interactivo en base a una historia. 
               </p>
               <p className="lead">
-              Toda la información necesaria la puedes encontrar en nuestra  página web. Además, 
-              puedes seguir los avances a través de nuestras redes sociales de Twitter, 
-              Instagram y Youtube, en las que también encontrarás contenido exclusivo. 
-              </p>
-              <p className="lead">
-              No olvides contactar con nosotros en caso de cualquier duda a la hora de 
-              seguir el juego de nuestra página web. Esperamos que encuentres esta aventura 
-              igual de interesante que nosotrxs y que te diviertas hasta llegar a la meta. 
+                Toda la información necesaria la podréis encontrar en nuestra
+                página web. Además, podréis seguir los avances a través de
+                nuestras redes sociales de Twitter, Instagram y Youtube en las
+                que también encontrareis contenido exclusivo. No olvidéis
+                contactar con nosotros en caso de cualquier duda a la hora de
+                seguir el juego de nuestra página web.
               </p>
             </center>
           </div>
