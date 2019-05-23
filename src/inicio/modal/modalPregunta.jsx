@@ -40,7 +40,7 @@ export default ({
         </div>
         <div className="modal-body">
           <div id="contenedorVideo">
-              <iframe style={{ width: 420, height: 315 }} src={data.video.url} />
+              <iframe id="video" src={data.video.url} />
           </div>
           <div id="contenedorAudio">
                 <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
