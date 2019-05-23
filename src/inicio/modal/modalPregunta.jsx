@@ -20,9 +20,9 @@ export default ({
     aria-labelledby="exampleModalLongTitle"
     aria-hidden="true"
   >
-    <div id="modalPreguntaContenedor" className="modal-dialog modal-lg" role="document">
-      <div id="modalContenido" className="modal-content">
-        <div id="preguntaElemento">
+    <div id="" className="modal-dialog modal-lg"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div id="" class="modal-dialog" role="document">
+        <div id="" className="modal-content">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
           {`CAPÍTULO ${data.id}`}

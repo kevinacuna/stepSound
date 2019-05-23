@@ -49,14 +49,17 @@ export default class Portada extends Component {
                   </div>
                   <div className="col-lg-12 align-self-end">
                      <p className="font-weight-light blue-grey-text text-justify text-darken-3 mt-4">
-                      La historia comienza cuando el abuelo recuerda que tenía que dejar un libro a su nieto.
-                      Resulta que en ese libro había una foto donde aparece el abuelo en un misterioso lugar
-                      cuando era jóven, concretamente su lugar favorito.
+                     ¿Te imaginas que tu abuelo te hubiese dado un libro con una foto de su lugar favorito? 
+                     ¿Qué hubieses hecho tú? Olvidarte de ello o quizás… ¿emprender un viaje en busca de 
+                     ese lugar? La historia de Pablo comienza cuando recibe un libro de su abuelo junto con 
+                     una misteriosa foto. En ella aparece su abuelo y, al charlar con él, éste le confiesa 
+                     que se trata de su lugar favorito desde que era joven. A modo de sorpresa, Pablo pone 
+                     en marcha una aventura para encontrar el lugar y poder fotografiarse allí, como un 
+                     día lo hizo su abuelo. Desde el momento en el que emprende la búsqueda, lo hace 
+                     acompañado de sus cascos. Si tú también quieres acompañar a Pablo y adentrarte en esta historia…
                       </p>
-                      <p className="font-weight-light mb-5 blue-grey-text text-justify text-darken-3">
-                        A modo de sorpresa, el nieto pone en marcha una aventura para encontrar el lugar
-                        y poder fotografiarse allí, como un día lo hizo su abuelo.
-                        Desde el momento que emprende la búsqueda lo hace acompañado de sus cascos...
+                      <p className="font-weight-light blue-grey-text text-justify text-darken-3 mt-4">
+                      ¡No pauses tus sueños!
                       </p>
                   </div>
                    <div className="col-lg-6 align-self-baseline">
