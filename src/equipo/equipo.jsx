@@ -15,15 +15,13 @@ export default class Equipo extends Component {
               <h1 className="section-title mb-3">EQUIPO STEP SOUND</h1>
               <hr className="divider my-4" />
               <p className="lead">
-                Step Sound es una historia ficticia creada por alumnos de
-                Publicidad y Relaciones Públicas e Ingeniería Informática de la
-                Universidad Europea del Atlántico para la asignatura de Creación
-                de Productos Audiovisuales y Multimedia.
+              Step Sound es una historia ficticia creada por alumnos de Publicidad y Relaciones 
+              Públicas e Ingeniería Informática de la Universidad Europea del Atlántico para la 
+              asignatura de Creación de Productos Audiovisuales y Multimedia.
               </p>
               <p className="lead">
-                Step Sound surge con el fin de crear un producto transmedia y
-                para ello hemos desarrollado en nuestra página web un juego
-                interactivo en base a una historia.
+              Step Sound surge con el fin de crear un producto transmedia y para ello hemos 
+              desarrollado en nuestra página web un juego interactivo en base a una historia. 
               </p>
               <p className="lead">
                 Toda la información necesaria la podréis encontrar en nuestra

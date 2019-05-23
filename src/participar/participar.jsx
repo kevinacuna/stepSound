@@ -32,10 +32,8 @@ export default class Participar extends Component {
           <center>
             <p className="lead">
               <br />
-              Acabas de unirte a una nueva aventura en la que descubrirás una
-              apasionante historia llena de música y lugares extraordinarios.
-              Para ello deberás seguir los pasos que se mencionan a
-              continuación:
+              Acabas de unirte a una nueva aventura llena de música y lugares extraordinarios. 
+              Para descubrir la historia de Pablo deberás seguir los pasos que se mencionan a continuación:
             </p>
           </center>
           <div className="col" id="c4">
