@@ -18,7 +18,7 @@ const firebaseConfig = {
 export default class Exclusivo extends Component {
   constructor(props) {
     super(props);
-    this.state = { mensajes: [] }
+    this.state = { messages: [] }
 
     this.updateInput = this.updateInput.bind(this);
     this.addMessage = this.addMessage.bind(this);
@@ -53,10 +53,8 @@ export default class Exclusivo extends Component {
   }
 
   onAddItem(data){
-    // not allowed AND not working
     this.setState(state => {
-      const list = state.mensajes.push(data);
-
+      const list = state.messages.push(data);
       return {
         list
       };
