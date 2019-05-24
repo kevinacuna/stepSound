@@ -1939,3 +1939,34 @@ a #v {
 #redirec{
   background-color: #c7b6bc !important;
 }
+#txtMsj{ border: none;  
+  width: 100% !important;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+  line-height: normal;
+  overflow-y: hidden;
+  padding: .8rem 0 .8rem 0;
+  resize: vertical;
+  min-height: 5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border-bottom: 1px solid;
+  border-color: #c7b6bc;
+}
+#txtMsj:active, #txtMsj:focus{
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn-enviar{
+  background-color: #c7b6bc !important;
+  border: none;
+}
+
+.mensajes .title{
+  line-height: 48px;
+  font-size: 14px;
+  font-weight: 300;
+}
