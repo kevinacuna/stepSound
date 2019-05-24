@@ -88,12 +88,15 @@ export default class Exclusivo extends Component {
   render() {
     return (
       <div className="container">
+        <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
+        <div className="col-md-8 text-center">
+            <h2 className="section-title mb-3">Contenido Exclusivo</h2>
+            <hr className="divider my-4"/>
+          </div>
+        </div>
       <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fvh3bls97" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
           <div className="col-md-8 text-left">
-            <h2 className="section-title mb-3">Contenido Exclusivo</h2>
-            <hr className="divider my-4"/>
-            <p className="lead">Making Of.</p>
             <div>
               <p className="lead">Lista de Reproducciones.</p>
               <SpotifyPlayer
@@ -109,7 +112,7 @@ export default class Exclusivo extends Component {
            <div className="row">
 
            {
-            this.state.mensajes.map(item => (
+            this.state.messages.map(item => (
                <div className="col-md-4 mt-2">
                 <div class="card card blue-grey darken-1">
                   <div class="card-content white-text">
