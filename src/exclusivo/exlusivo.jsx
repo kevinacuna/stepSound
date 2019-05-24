@@ -96,15 +96,27 @@ export default class Exclusivo extends Component {
         </div>
       <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fvh3bls97" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
-          <div className="col-md-8 text-left">
-            <div>
-              <p className="lead">Lista de Reproducciones.</p>
+          <div id="listaSpotifyOficial" className="col-md-8 text-left">
+            <div className="tituloListaSpotify">
+              <center>
+                <h2 className="section-title mb-3">Listas de reproducciones</h2>
+              </center>
+              <hr className="divider my-4"/>
+            </div>
+            <div className="bodyListSpotify">
               <SpotifyPlayer
                 uri="spotify:playlist:4UGpp0J09HxYKDMhOV1HxW"
                 size={{width: '100%', height: 300}}
+                //size={{width: '600px', height: '300px'}}
                 view="coverart"
                 theme="black"
               />
+              <p className="lead">
+                ¡Esta es nuestra playlist de Spotify! En ella encontrarás todas las canciones que han ido
+                apareciendo en los capítulos de esta apasionante aventura. Además, hemos añadido más éxitos
+                de los grupos y cantantes que han acompañado a Pablo en su viaje y que también pueden
+                acompañarte en los tuyos.
+              </p>
             </div>
           </div>
 
