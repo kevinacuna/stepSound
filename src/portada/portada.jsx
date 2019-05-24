@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
-import "../../public/informacion/introduccion/Intro.mp4";
 import "../../public/img/portada.jpg";
 
 export default class Portada extends Component {
@@ -76,7 +75,7 @@ export default class Portada extends Component {
                 className="responsive-video"
                 controls
               >
-                <source src="Intro.mp4" type="video/mp4" />
+                <source src="https://firebasestorage.googleapis.com/v0/b/stepsound-23449.appspot.com/o/repositorio%2Fvideos%2FIntro.mp4?alt=media&token=111a33dd-bbda-40b9-b058-d6b7bc27ccfe" type="video/mp4" />
               </video>
             </div>
           </div>
