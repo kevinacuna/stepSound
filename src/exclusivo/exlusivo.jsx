@@ -28,6 +28,7 @@ export default class Exclusivo extends Component {
    const mensajes = firebase.firestore();
    let self = this;
     mensajes.collection("mensajes")
+    .orderBy('created', 'asc')
     .onSnapshot(function(snapshot) {
          snapshot.docChanges().forEach(function(change) {
               if (change.type === "added") {
@@ -112,14 +113,14 @@ export default class Exclusivo extends Component {
            <div className="row">
 
            {
-            this.state.messages.map(item => (
-               <div className="col-md-4 mt-2">
-                <div class="card card blue-grey darken-1">
-                  <div class="card-content white-text">
+            this.state.messages.map((item, i) => (
+               <div className="col-md-4 mt-2 d-flex" key={i}>
+                <div className="card card blue-grey darken-1 flex-fill">
+                  <div className="card-content white-text">
 
-                    <h5 class="card-title">  <i class="fa fa-user-circle" aria-hidden="true"></i> {item.name}</h5>
-                    <p class="card-text">{item.body}</p>
-                    <p class="card-text"><small class="text-muted">{item.email}</small></p>
+                    <h5 className="card-title">  <i className="fa fa-user-circle" aria-hidden="true"></i> {item.name}</h5>
+                    <p className="card-text flex-fill">{item.body}</p>
+                    <p className="card-text"><small className="text-muted">{item.email}</small></p>
                   </div>
                 </div>
               </div>
