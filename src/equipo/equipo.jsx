@@ -14,21 +14,20 @@ export default class Equipo extends Component {
               <h1 className="section-title mb-3">EQUIPO STEP SOUND</h1>
               <hr className="divider my-4" />
               <p className="lead">
-              Step Sound es una historia ficticia creada por alumnos de Publicidad y Relaciones 
-              Públicas e Ingeniería Informática de la Universidad Europea del Atlántico para la 
-              asignatura de Creación de Productos Audiovisuales y Multimedia.
+              Step Sound es una historia ficticia creada por alumnos de Publicidad y Relaciones Públicas e Ingeniería Informática de la 
+              Universidad Europea del Atlántico para la asignatura de Creación de Productos Audiovisuales y Multimedia.
               </p>
               <p className="lead">
-              Step Sound surge con el fin de crear un producto transmedia y para ello hemos 
-              desarrollado en nuestra página web un juego interactivo en base a una historia. 
+              Step Sound surge con el fin de crear un producto transmedia y para ello hemos desarrollado en nuestra página web un 
+              juego interactivo en base a una historia. 
               </p>
               <p className="lead">
-                Toda la información necesaria la podréis encontrar en nuestra
-                página web. Además, podréis seguir los avances a través de
-                nuestras redes sociales de Twitter, Instagram y Youtube en las
-                que también encontrareis contenido exclusivo. No olvidéis
-                contactar con nosotros en caso de cualquier duda a la hora de
-                seguir el juego de nuestra página web.
+              Toda la información necesaria la puedes encontrar en nuestra  página web. Además, puedes seguir los avances a través 
+              de nuestras redes sociales de Twitter, Instagram y Youtube, en las que también encontrarás contenido exclusivo. 
+              </p>
+              <p className="lead">
+              No olvides contactar con nosotros en caso de cualquier duda a la hora de seguir el juego de nuestra página web. 
+              Esperamos que encuentres esta aventura igual de interesante que nosotrxs y que te diviertas hasta llegar a la meta. 
               </p>
             </center>
           </div>
