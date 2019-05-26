@@ -4,7 +4,6 @@ import ModalPregunta from './modal/modalPregunta';
 import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
-import '../../public/audios/audiosImport.jsx';
 
 export default class Inicio extends Component {
   constructor(props) {
