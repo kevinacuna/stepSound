@@ -90,22 +90,43 @@ export default class Exclusivo extends Component {
       <div className="container">
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
         <div className="col-md-8 text-center">
-            <h2 className="section-title mb-3">Contenido Exclusivo</h2>
+            <h2 className="section-title mb-3">CONTENIDO EXCLUSIVO</h2>
             <hr className="divider my-4"/>
           </div>
         </div>
-      <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fvh3bls97" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fxjqdey8h" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen id="revista"></iframe>
+
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
-          <div className="col-md-8 text-left">
-            <div>
-              <p className="lead">Lista de Reproducciones.</p>
+        <div className="col-lg-12 justify-content-center text-center">
+          <h5 className="section-title mb-3">LISTAS DE REPRODUCCIONES</h5>
+          <hr className="divider my-4"/>
+        </div>
+          <div className="col-6 text-justify" id="spoty">
+                ¡Esta es nuestra playlist de Spotify! En ella encontrarás todas las canciones que han ido apareciendo en los 
+                capítulos de esta apasionante aventura. Además, hemos añadido más éxitos de los grupos y cantantes que han acompañado 
+                a Pablo en su viaje y que también pueden acompañarte en los tuyos.
+          </div>
+          <div className="col-6" id="rep">  
               <SpotifyPlayer
                 uri="spotify:playlist:4UGpp0J09HxYKDMhOV1HxW"
+                size={{width: '100%', height: '100%'}}
+                view="coverart"
+                theme="black"
+              />
+          </div>
+
+          <div className="col-6" id="rep">  
+          <SpotifyPlayer
+                uri="spotify:playlist:71Iaje2kejiQI1Vmd2nj7H"
                 size={{width: '100%', height: 300}}
                 view="coverart"
                 theme="black"
               />
-            </div>
+
+          </div>          
+          <div className="col-6 text-justify" id="spoty">
+          ¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento! Te dejamos esta playlist colaborativa en la que puedes 
+          ir añadiendo tus canciones favoritas para compartirlas con todos los stepsounders. 
           </div>
 
            <div className="col-md-12 mt-2">
