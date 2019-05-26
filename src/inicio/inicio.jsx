@@ -4,6 +4,7 @@ import ModalPregunta from './modal/modalPregunta';
 import ModalNoDisponible from './modal/modalNoDisponible';
 import '../../styles/inicio.css';
 import Preguntas from '../../public/informacion/preguntas.json';
+import Confetti from 'react-confetti';
 
 export default class Inicio extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ export default class Inicio extends Component {
         dataPregunta: {},
         historialPreguntasRespondidas: [],
         posicionTablero: 0,
-        audio: null
+        terminadoFlag: false
     };
     this.seleccionarPregunta = this.seleccionarPregunta.bind(this);
     this.cerrarModal = this.cerrarModal.bind(this);
@@ -36,6 +37,8 @@ export default class Inicio extends Component {
               posicionTablero = historialPreguntasRespondidas.length;
               if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
                 const { showExclusivo } = this.props;
+                this.setState({terminadoFlag: true});
+                setTimeout(() => (this.setState({terminadoFlag: false})), 5000);
                 showExclusivo();
               }
             } else {
@@ -93,6 +96,8 @@ export default class Inicio extends Component {
       this.setState( prevStates => ({posicionTablero: prevStates.posicionTablero+1}));
       if (posicionTablero === 9) {
         const { showExclusivo } = this.props;
+        this.setState({terminadoFlag: true});
+        setTimeout(() => (this.setState({terminadoFlag: false})), 5000);
         showExclusivo();
       }
     }
@@ -228,7 +233,7 @@ export default class Inicio extends Component {
   
   render() {
     const { preguntas } = Preguntas;
-    const { mostrarModalPreguntaFlag, dataPregunta, mostrarModalNoDisponibleFlag, posicionTablero } = this.state;
+    const { mostrarModalPreguntaFlag, dataPregunta, mostrarModalNoDisponibleFlag, posicionTablero, terminadoFlag } = this.state;
 
     const modalPregunta = mostrarModalPreguntaFlag ? (
       <Modal>
@@ -252,8 +257,15 @@ export default class Inicio extends Component {
           />
       </Modal>
   ) : null;
+  const terminado = terminadoFlag ? (
+    <Confetti
+      width="1500px"
+      height="1100px"
+    />
+  ) : null;
     return (
     <div className="container">
+        {terminado}
         <div className="row align-items-center justify-content-center text-center mt-5" key="0">
             <div className="col-md-8" key="0">
                 <div className="main-timeline animated slideInDown slow">
