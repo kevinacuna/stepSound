@@ -245,6 +245,12 @@
     height: 170px;
 }
 
+.bodyListSpotify{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .fotoElemento > figure {
     margin: 0px 0px 0px;
     height: 100%;

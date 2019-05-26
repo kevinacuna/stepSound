@@ -109,7 +109,7 @@ export default class Exclusivo extends Component {
           <div className="col-6" id="rep">  
               <SpotifyPlayer
                 uri="spotify:playlist:4UGpp0J09HxYKDMhOV1HxW"
-                size={{width: '100%', height: '100%'}}
+                size={{width: '100%', height: 300}}
                 view="coverart"
                 theme="black"
               />
