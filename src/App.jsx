@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import '../public/img/logo.jpg';
-import '../public/img/logo.png';
+import '../public/img/logo.jpg';
+import '../public/img/oficial_logo.png';
 import Portada from './portada/portada';
 import Inicio from './inicio/inicio';
 import Participar from './participar/participar';

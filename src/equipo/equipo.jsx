@@ -158,9 +158,9 @@ export default class Equipo extends Component {
             <figure>
               <img
                 id="team"
-                src="https://firebasestorage.googleapis.com/v0/b/stepsound-23449.appspot.com/o/repositorio%2Fimg%2Fequipo%2FInesBN.jpg?alt=media&token=3a109bef-bc91-435b-acb7-0a6470131390"
+                src="https://firebasestorage.googleapis.com/v0/b/stepsound-23449.appspot.com/o/repositorio%2Fimg%2Fequipo%2FKevinBN.jpg?alt=media&token=d2086835-7a5a-43d4-ab1c-c7e37f27ef7e"
                 onMouseOver={e => (e.currentTarget.src = "https://firebasestorage.googleapis.com/v0/b/stepsound-23449.appspot.com/o/repositorio%2Fimg%2Fequipo%2Fkevin2.jpg?alt=media&token=06b7248e-c77a-4075-af6d-a6d27ca532dd")}
-                onMouseOut={e => (e.currentTarget.src = "https://firebasestorage.googleapis.com/v0/b/stepsound-23449.appspot.com/o/repositorio%2Fimg%2Fequipo%2FInesBN.jpg?alt=media&token=3a109bef-bc91-435b-acb7-0a6470131390")}
+                onMouseOut={e => (e.currentTarget.src = "https://firebasestorage.googleapis.com/v0/b/stepsound-23449.appspot.com/o/repositorio%2Fimg%2Fequipo%2FKevinBN.jpg?alt=media&token=d2086835-7a5a-43d4-ab1c-c7e37f27ef7e")}
                 alt="Image"
                 className="rounded-circle"
               />
