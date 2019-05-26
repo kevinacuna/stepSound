@@ -90,7 +90,7 @@ export default class Exclusivo extends Component {
       <div className="container">
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
         <div className="col-md-8 text-center">
-            <h2 className="section-title mb-3">Contenido Exclusivo</h2>
+            <h2 className="section-title mb-3">Contenido exclusivo</h2>
             <hr className="divider my-4"/>
           </div>
         </div>

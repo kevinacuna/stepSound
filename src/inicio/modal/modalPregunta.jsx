@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../public/img/guitar.png";
 import '../../../public/informacion/preguntasImport';
 
 export default ({
