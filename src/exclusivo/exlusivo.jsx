@@ -88,46 +88,86 @@ export default class Exclusivo extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
+        <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
         <div className="col-md-8 text-center">
-            <h2 className="section-title mb-3">CONTENIDO EXCLUSIVO</h2>
+            <h2 className="section-title mb-3" style={{paddingTop:"50px"}}>CONTENIDO EXCLUSIVO</h2>
             <hr className="divider my-4"/>
           </div>
         </div>
-        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fxjqdey8h" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen id="revista"></iframe>
+        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fxjqdey8h" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen  id="revista"></iframe>
 
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
         <div className="col-lg-12 justify-content-center text-center">
           <h5 className="section-title mb-3">LISTAS DE REPRODUCCIONES</h5>
           <hr className="divider my-4"/>
         </div>
-          <div className="col-6 text-justify" id="spoty">
-                ¡Esta es nuestra playlist de Spotify! En ella encontrarás todas las canciones que han ido apareciendo en los 
+          <div className="col-lg-6 text-justify" id="spoty">
+                <p className="lead" style={{paddingTop: "50px", fontSize: "25px"}}>¡Esta es nuestra playlist de Spotify! En ella encontrarás todas las canciones que han ido apareciendo en los 
                 capítulos de esta apasionante aventura. Además, hemos añadido más éxitos de los grupos y cantantes que han acompañado 
                 a Pablo en su viaje y que también pueden acompañarte en los tuyos.
+                </p>
           </div>
-          <div className="col-6" id="rep">  
+          <div className="col-lg-6" id="rep" style={{paddingTop:"30px"}}>  
               <SpotifyPlayer
                 uri="spotify:playlist:4UGpp0J09HxYKDMhOV1HxW"
-                size={{width: '100%', height: 300}}
+                size={{width: '100%', height: '300'}}
                 view="coverart"
                 theme="black"
               />
           </div>
 
-          <div className="col-6" id="rep">  
+          <div className="col-lg-6" id="rep" style={{paddingTop:"30px"}}>  
           <SpotifyPlayer
                 uri="spotify:playlist:71Iaje2kejiQI1Vmd2nj7H"
-                size={{width: '100%', height: 300}}
+                size={{width: '100%', height: '300'}}
                 view="coverart"
                 theme="black"
               />
+          </div> 
+          <div className="col-lg-6 text-justify" id="spoty">
+            <p className="lead" style={{paddingTop: "50px", fontSize: "25px"}}>
+              ¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento! Te dejamos esta playlist colaborativa en la que puedes 
+              ir añadiendo tus canciones favoritas para compartirlas con todos los stepsounders. 
+            </p>
+          </div>         
 
-          </div>          
-          <div className="col-6 text-justify" id="spoty">
-          ¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento! Te dejamos esta playlist colaborativa en la que puedes 
-          ir añadiendo tus canciones favoritas para compartirlas con todos los stepsounders. 
+        <div className="col-lg-12 justify-content-center text-center">
+          <h5 className="section-title mb-3" style={{paddingTop:"100px"}}>MAKING OF</h5>
+          <hr className="divider my-4"/>
+        </div>
+          <div className="col-lg-6 text-justify" id="spoty">
+          ¡Dale al play y descubre todo el proceso de esta historia! Nos acompañarás en el desarrollo de este 
+          proyecto desde el principio hasta el final, viendo como hemos grabado en cada uno de los diez 
+          lugares en los que ha estado Pablo. De esta manera, descubrirás quién se encuentra detrás de las 
+          cámaras y cómo nos hemos desplazado hasta esos lugares. 
+          <p>
+          Hemos de confesar que, aún teniendo planeado el rodaje, han surgido inconvenientes como cambios 
+          inesperados de tiempo o agotamientos de batería antes de lo previsto, que hemos conseguido resolver 
+          con éxito. Además, en nuestro making of, podrás ver quién ha ido creando la página web desde 
+          cero y cómo se llevan las redes sociales. Por último, hemos añadido “bloopers” divertidos y 
+          tomas falsas para cerrar este proyecto entre risas, con el que hemos aprendido y descubierto 
+          habilidades que teníamos escondidas. 
+          </p>
+          <p className="lead text-center">
+          ¿ESTÁS PREPARADO/A?
+          </p>
           </div>
+            <div className="col-lg-6" id="rep">
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="https://www.youtube.com/embed/GgWF6YkifNI" 
+              frameborder="0" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen>
+            </iframe>
+            </div>
+
+          <div className="col-lg-12 justify-content-center text-center">
+            <h5 className="section-title mb-3" style={{paddingTop:"100px"}}>COMENTARIOS</h5>
+            <hr className="divider my-4"/>
+        </div>
+
 
            <div className="col-md-12 mt-2">
            <div className="row">
