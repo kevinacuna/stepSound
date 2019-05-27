@@ -236,6 +236,10 @@
     margin: 0 auto;
 }
 
+.headerTitlePortada{
+    width: 100%;
+}
+
 /*
     Elementos css necesarios para mostrar las fotos 
     de las preguntas

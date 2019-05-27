@@ -38,10 +38,13 @@ export default class Portada extends Component {
       <section>
         <div className="container">
           <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
-          <h1 className="text-uppercase blue-grey-text text-darken-4 font-weight-bold">
-            Step Sound
-            <hr className="divider my-3" />
-          </h1>
+            <div className="headerTitlePortada">
+              <h1 className="text-uppercase blue-grey-text text-darken-4 font-weight-bold">
+                Step Sound
+                <hr className="divider my-3" />
+              </h1>
+            </div>
+          
           <p className="text-uppercase blue-grey-text text-darken-4 font-weight-bold" id="subtitulo2">
                      ¿Te imaginas que tu abuelo te hubiese dado un libro con una foto de su lugar favorito? 
                      ¿Qué hubieses hecho tú? 
