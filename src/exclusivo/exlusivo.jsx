@@ -94,17 +94,21 @@ export default class Exclusivo extends Component {
             <hr className="divider my-4"/>
           </div>
         </div>
-        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fxjqdey8h" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen  id="revista"></iframe>
-
+        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fdk5ecpzy" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+        <p className="text-uppercase blue-grey-text text-darken-4 font-weight-bold" style={{paddingBottom: "30px"}}>
+        ¡Echa un vistazo a la revista Step Sound en la que encontrarás todo sobre los cantantes y grupos que han protagonizado esta 
+        aventura! Cómo surgieron, curiosidades, éxitos… ¡No te lo pierdas!
+        </p>
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
         <div className="col-lg-12 justify-content-center text-center">
           <h5 className="section-title mb-3">LISTAS DE REPRODUCCIONES</h5>
           <hr className="divider my-4"/>
         </div>
           <div className="col-lg-6 text-justify" id="spoty">
-                <p className="lead" style={{paddingTop: "50px", fontSize: "25px"}}>¡Esta es nuestra playlist de Spotify! En ella encontrarás todas las canciones que han ido apareciendo en los 
-                capítulos de esta apasionante aventura. Además, hemos añadido más éxitos de los grupos y cantantes que han acompañado 
-                a Pablo en su viaje y que también pueden acompañarte en los tuyos.
+                <p className="lead" style={{paddingTop: "50px", fontSize: "20px"}}>¡Esta es nuestra playlist de Spotify! 
+                En ella encontrarás todas las canciones que han ido apareciendo en los capítulos de esta apasionante aventura. 
+                Además, hemos añadido más éxitos de los grupos y cantantes que han acompañado a Pablo en su viaje y que también 
+                pueden acompañarte en los tuyos.
                 </p>
           </div>
           <div className="col-lg-6" id="rep" style={{paddingTop:"30px"}}>  
@@ -125,7 +129,7 @@ export default class Exclusivo extends Component {
               />
           </div> 
           <div className="col-lg-6 text-justify" id="spoty">
-            <p className="lead" style={{paddingTop: "50px", fontSize: "25px"}}>
+            <p className="lead" style={{paddingTop: "50px", fontSize: "20px"}}>
               ¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento! Te dejamos esta playlist colaborativa en la que puedes 
               ir añadiendo tus canciones favoritas para compartirlas con todos los stepsounders. 
             </p>
@@ -134,22 +138,24 @@ export default class Exclusivo extends Component {
         <div className="col-lg-12 justify-content-center text-center">
           <h5 className="section-title mb-3" style={{paddingTop:"100px"}}>MAKING OF</h5>
           <hr className="divider my-4"/>
+          <p className="text-uppercase blue-grey-text text-darken-4 font-weight-bold" >
+              ¡Dale al play y descubre todo el proceso de esta historia! 
+        </p>
         </div>
-          <div className="col-lg-6 text-justify" id="spoty">
-          ¡Dale al play y descubre todo el proceso de esta historia! Nos acompañarás en el desarrollo de este 
-          proyecto desde el principio hasta el final, viendo como hemos grabado en cada uno de los diez 
-          lugares en los que ha estado Pablo. De esta manera, descubrirás quién se encuentra detrás de las 
-          cámaras y cómo nos hemos desplazado hasta esos lugares. 
+
+          <div className="col-lg-6 justify-content-center text-center"  style={{paddingTop: "20px", fontSize: "15px"}}>
+          Nos acompañarás en el desarrollo de este proyecto desde el principio hasta el final. De esta manera, 
+          descubrirás quién se encuentra detrás de las cámaras. Además, podrás ver quién ha ido creando la página web 
+          desde cero y cómo se llevan las redes sociales. 
           <p>
-          Hemos de confesar que, aún teniendo planeado el rodaje, han surgido inconvenientes como cambios 
-          inesperados de tiempo o agotamientos de batería antes de lo previsto, que hemos conseguido resolver 
-          con éxito. Además, en nuestro making of, podrás ver quién ha ido creando la página web desde 
-          cero y cómo se llevan las redes sociales. Por último, hemos añadido “bloopers” divertidos y 
-          tomas falsas para cerrar este proyecto entre risas, con el que hemos aprendido y descubierto 
-          habilidades que teníamos escondidas. 
+          Hemos de confesar que han surgido inconvenientes pero hemos conseguido resolverlos con éxito.
+          </p>
+          <p>
+          Por último, hemos añadido “bloopers” divertidos y tomas falsas para cerrar este proyecto entre risas, 
+          con el que hemos aprendido y descubierto habilidades que teníamos escondidas. 
           </p>
           <p className="lead text-center">
-          ¿ESTÁS PREPARADO/A?
+          ¿ESTÁS PREPARADX?
           </p>
           </div>
             <div className="col-lg-6" id="rep">
