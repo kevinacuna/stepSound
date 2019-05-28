@@ -36,18 +36,17 @@ export default class Exclusivo extends Component {
                 let newMessage = {email, body, name};
 
                   self.onAddItem(newMessage);
-                  console.log("New message: ", data);
                 }
               
               if (change.type === "modified") {
-                  console.log("Modified message: ", change.doc.data());
+                  console.info("Modified message: ", change.doc.data());
               }
               if (change.type === "removed") {
-                  console.log("Removed message: ", change.doc.data());
+                  console.info("Removed message: ", change.doc.data());
               }
           });
     },function(error) {
-       console.log("Ha sucedido algo", error);
+       console.error("Ha sucedido algo", error);
     });
 
   }
@@ -67,13 +66,13 @@ export default class Exclusivo extends Component {
     });
   }
   addMessage(e){
-
+    const {txtName, txtMsj, txtEmail} = this.state;
      e.preventDefault();
      const db = firebase.firestore();
-      const userRef = db.collection("mensajes").add({
-        name: this.state.txtName,
-        body: this.state.txtMsj,
-        email: this.state.txtEmail,
+      b.collection("mensajes").add({
+        name: txtName,
+        body: txtMsj,
+        email: txtEmail,
         created: firebase.firestore.Timestamp.fromDate(new Date())
       });  
 
@@ -86,6 +85,7 @@ export default class Exclusivo extends Component {
   }
 
   render() {
+    const {messages, txtName, txtEmail, txtMsj} = this.state;
     return (
       <div className="container">
         <div className="row h-100 align-items-center justify-content-center text-center animated fadeIn slow">
@@ -94,24 +94,35 @@ export default class Exclusivo extends Component {
             <hr className="divider my-4"/>
           </div>
         </div>
-        <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fdk5ecpzy" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
-        <p className="text-uppercase blue-grey-text text-darken-4 font-weight-bold" style={{paddingBottom: "30px"}}>
-        ¡Echa un vistazo a la revista Step Sound en la que encontrarás todo sobre los cantantes y grupos que han protagonizado esta 
-        aventura! Cómo surgieron, curiosidades, éxitos… ¡No te lo pierdas!
-        </p>
+        <center>
+          <p className="subtitle">
+            ¡Echa un vistazo a la revista Step Sound en la que encontrarás todo sobre los cantantes y grupos que han protagonizado esta 
+            aventura! Cómo surgieron, curiosidades, éxitos… ¡No te lo pierdas!
+          </p>
+        </center>
+        <iframe
+          src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fdk5ecpzy"
+          width="100%"
+          height="480"
+          seamless="seamless"
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen
+        />
         <div className="row mb-5 mt-5 justify-content-center animated fadeIn slow">
         <div className="col-lg-12 justify-content-center text-center">
           <h5 className="section-title mb-3">LISTAS DE REPRODUCCIONES</h5>
           <hr className="divider my-4"/>
         </div>
-          <div className="col-lg-6 text-justify" id="spoty">
-                <p className="lead" style={{paddingTop: "50px", fontSize: "20px"}}>¡Esta es nuestra playlist de Spotify! 
+          <div className="col-lg-6 text-justify spoty" >
+                <p className="lead" style={{fontSize: "20px"}}>
+                ¡Esta es nuestra playlist de Spotify! 
                 En ella encontrarás todas las canciones que han ido apareciendo en los capítulos de esta apasionante aventura. 
                 Además, hemos añadido más éxitos de los grupos y cantantes que han acompañado a Pablo en su viaje y que también 
                 pueden acompañarte en los tuyos.
                 </p>
           </div>
-          <div className="col-lg-6" id="rep" style={{paddingTop:"30px"}}>  
+          <div className="col-lg-6 rep" >  
               <SpotifyPlayer
                 uri="spotify:playlist:4UGpp0J09HxYKDMhOV1HxW"
                 size={{width: '100%', height: '300'}}
@@ -120,7 +131,7 @@ export default class Exclusivo extends Component {
               />
           </div>
 
-          <div className="col-lg-6" id="rep" style={{paddingTop:"30px"}}>  
+          <div className="col-lg-6 rep" >  
           <SpotifyPlayer
                 uri="spotify:playlist:71Iaje2kejiQI1Vmd2nj7H"
                 size={{width: '100%', height: '300'}}
@@ -128,8 +139,8 @@ export default class Exclusivo extends Component {
                 theme="black"
               />
           </div> 
-          <div className="col-lg-6 text-justify" id="spoty">
-            <p className="lead" style={{paddingTop: "50px", fontSize: "20px"}}>
+          <div className="col-lg-6 text-justify spoty">
+            <p className="lead" style={{fontSize: "20px"}}>
               ¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento! Te dejamos esta playlist colaborativa en la que puedes 
               ir añadiendo tus canciones favoritas para compartirlas con todos los stepsounders. 
             </p>
@@ -138,30 +149,30 @@ export default class Exclusivo extends Component {
         <div className="col-lg-12 justify-content-center text-center">
           <h5 className="section-title mb-3" style={{paddingTop:"100px"}}>MAKING OF</h5>
           <hr className="divider my-4"/>
-          <p className="text-uppercase blue-grey-text text-darken-4 font-weight-bold" >
+          <p className="subtitle" >
               ¡Dale al play y descubre todo el proceso de esta historia! 
         </p>
         </div>
 
-          <div className="col-lg-6 justify-content-center text-center"  style={{paddingTop: "20px", fontSize: "15px"}}>
+          <div className="col-lg-6 text-center" id="makingOf">
           Nos acompañarás en el desarrollo de este proyecto desde el principio hasta el final. De esta manera, 
           descubrirás quién se encuentra detrás de las cámaras. Además, podrás ver quién ha ido creando la página web 
           desde cero y cómo se llevan las redes sociales. 
-          <p>
+          <br/>
           Hemos de confesar que han surgido inconvenientes pero hemos conseguido resolverlos con éxito.
-          </p>
-          <p>
+          <br/>
           Por último, hemos añadido “bloopers” divertidos y tomas falsas para cerrar este proyecto entre risas, 
           con el que hemos aprendido y descubierto habilidades que teníamos escondidas. 
-          </p>
-          <p className="lead text-center">
+          <br/>
           ¿ESTÁS PREPARADX?
-          </p>
           </div>
-            <div className="col-lg-6" id="rep">
-            <iframe 
-              width="100%" 
-              height="100%" 
+            <div className="col-lg-6 rep" >
+            <iframe
+              style={{
+                width:"100%",
+                height:"100%",
+                minHeight: "400px"
+              }}
               src="https://www.youtube.com/embed/GgWF6YkifNI" 
               frameborder="0" 
               allow="autoplay; encrypted-media" 
@@ -179,14 +190,14 @@ export default class Exclusivo extends Component {
            <div className="row">
 
            {
-            this.state.messages.map(item => (
+            messages.map(item => (
                <div className="col-md-4 mt-2">
-                <div class="card card blue-grey darken-1">
-                  <div class="card-content white-text">
+                <div className="card card blue-grey darken-1">
+                  <div className="card-content white-text">
 
-                    <h5 class="card-title">  <i class="fa fa-user-circle" aria-hidden="true"></i> {item.name}</h5>
-                    <p class="card-text">{item.body}</p>
-                    <p class="card-text"><small class="text-muted">{item.email}</small></p>
+                    <h5 className="card-title">  <i className="fa fa-user-circle" aria-hidden="true"></i> {item.name}</h5>
+                    <p className="card-text">{item.body}</p>
+                    <p className="card-text"><small className="text-muted">{item.email}</small></p>
                   </div>
                 </div>
               </div>
@@ -202,15 +213,15 @@ export default class Exclusivo extends Component {
               <form onSubmit={this.addMessage}>
                 <div className="form-group">
                   <label htmlFor="txtName">¡Tú opinión nos interesa mucho! </label>
-                  <input required value={this.state.txtName || ''} onChange={this.updateInput} className="form-control" name="txtName" type="text" id="txtName" placeholder="Nombre"/>
+                  <input required value={txtName || ''} onChange={this.updateInput} className="form-control" name="txtName" type="text" id="txtName" placeholder="Nombre"/>
                   </div>
 
                 <div className="form-group">
-                  <input required value={this.state.txtEmail || ''} onChange={this.updateInput} className="form-control" name="txtEmail" type="email" id="txtEmail" placeholder="Correo"/>
+                  <input required value={txtEmail || ''} onChange={this.updateInput} className="form-control" name="txtEmail" type="email" id="txtEmail" placeholder="Correo"/>
                   </div>
                 <div className="form-group">
                   <label htmlFor="txtMsj">¡Cuéntanos!</label>
-                  <textarea required value={this.state.txtMsj || ''} onChange={this.updateInput} className="" name="txtMsj" id="txtMsj" placeholder="Escribe aquí..." />
+                  <textarea required value={txtMsj || ''} onChange={this.updateInput} className="" name="txtMsj" id="txtMsj" placeholder="Escribe aquí..." />
                 </div>
                  <div className="form-group d-flex align-items-center flex-column">
                       <input type="submit" value="Enviar" className="btn btn-primary btn-enviar mt-2"/>
