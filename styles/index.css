@@ -1987,7 +1987,9 @@ a #v {
   margin-bottom: 0%
 }
 
-#spoty{
+.spoty{
+  display: flex;
+  align-items: center;
   font-size: 15px;
 }
 
@@ -1995,6 +1997,22 @@ a #v {
   padding-bottom: 50px;
 }
 
-#rep{
+.rep{
+  padding-top: 30px;
   padding-bottom: 50px;
+}
+
+#makingOf{
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  font-size: 20px;
+}
+
+.subtitle{
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #263238 !important;
+  font-weight: 700!important;
+  text-transform: uppercase!important;
 }

@@ -112,7 +112,18 @@ export default class App extends Component {
                         rel="noopener noreferrer"
                       >
                         <i className="fab fa-instagram" />
-                        {` Instagram`}
+                        {` Instagram Principal`}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/stepsoundpablo/?hl=es"
+                        className="grey-text text-lighten-3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-instagram" />
+                        {` Instagram de Pablo`}
                       </a>
                     </li>
                     <li>
