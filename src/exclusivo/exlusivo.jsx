@@ -191,7 +191,7 @@ export default class Exclusivo extends Component {
            <div className="row">
 
            {
-            this.state.messages.map((item, i) => (
+            messages.map((item, i) => (
                <div className="col-md-4 mt-2 d-flex" key={i}>
                 <div className="card card blue-grey darken-1 flex-fill">
                   <div className="card-content white-text">
@@ -202,7 +202,8 @@ export default class Exclusivo extends Component {
                   </div>
                 </div>
               </div>
-          ))}
+            ))
+          }
           </div>
           </div>
 
