@@ -2,13 +2,11 @@
   "preguntas": [
     {
       "id": 1,
-      "titulo": "¿Cúal es el nombre de esta canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/uiG2heh7VnU",
-        "descripcion": "..."
-      },
+      "titulo": "COMIENZO DE LA AVENTURA",
+      "video": "https://www.youtube.com/embed/uiG2heh7VnU",
       "audio": "p1a.mp3",
       "cancion": "p1c.mp3",
+      "pregunta": "¿Cúal es el nombre de esta canción?",
       "opciones": [
         {
           "id": 1,
@@ -32,20 +30,15 @@
         }
       ],
       "fechaPublicacion": "15/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/BxiaN1iocuq/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/BxiaN1iocuq/"
     },
     {
       "id": 2,
-      "titulo": "¿Qué cantantes cantan la siguiente canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/y9YkLl9d5iY",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "LAS CASAS DE COLORES",
+      "video": "https://www.youtube.com/embed/y9YkLl9d5iY",
       "audio": "p2a.mp3",
       "cancion": "p2c.mp3",
+      "pregunta": "¿Qué cantantes cantan la siguiente canción?",
       "opciones": [
         {
           "id": 1,
@@ -69,20 +62,15 @@
         }
       ],
       "fechaPublicacion": "17/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/BxkVLFHodl3/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/BxkVLFHodl3/"
     },
     {
       "id": 3,
-      "titulo": "“Money's the motivation, money's the conversation” es el principio de una canción que fue añadida en una famosa película. ¿Sabes de cual?",
-      "video": {
-        "url": "https://www.youtube.com/embed/5kV0NtFrgQ8",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "EL MERCADO",
+      "video": "https://www.youtube.com/embed/5kV0NtFrgQ8",
       "audio": "p3a.mp3",
       "cancion": "p3c.mp3",
+      "pregunta": "“Money's the motivation, money's the conversation” es el principio de una canción que fue añadida en una famosa película. ¿Sabes de cual?",
       "opciones": [
         {
           "id": 1,
@@ -106,20 +94,15 @@
         }
       ],
       "fechaPublicacion": "18/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/BxmyeMvo54E/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/BxmyeMvo54E/"
     },
     {
       "id": 4,
-      "titulo": "¿Quién es el autor (y no cantante) de esta canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/fXnWeGVbf9Y",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "EL KIOSKO",
+      "video": "https://www.youtube.com/embed/fXnWeGVbf9Y",
       "audio": "p4a.mp3",
       "cancion": "p4c.mp3",
+      "pregunta": "¿Quién es el autor (y no cantante) de esta canción?",
       "opciones": [
         {
           "id": 1,
@@ -143,20 +126,15 @@
         }
       ],
       "fechaPublicacion": "19/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/BxrpQ0HIC_R/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/BxrpQ0HIC_R/"
     },
     {
       "id": 5,
-      "titulo": "Otra pregunta sobre autores en la sombra… ¿Quién es el autor (y no cantante) de esta canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/hU5eFZED0tw",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "EL EMBARCADERO",
+      "video": "https://www.youtube.com/embed/hU5eFZED0tw",
       "audio": "p5a.mp3",
       "cancion": "p5c.mp3",
+      "pregunta": "Otra pregunta sobre autores en la sombra… ¿Quién es el autor (y no cantante) de esta canción?",
       "opciones": [
         {
           "id": 1,
@@ -180,20 +158,15 @@
         }
       ],
       "fechaPublicacion": "20/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/BxuIfZxogbq/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/BxuIfZxogbq/"
     },
     {
       "id": 6,
-      "titulo": "¿Cuál es el verdadero nombre del autor de esta canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/-ltyQLBKYWI",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "EL ATRACO",
+      "video": "https://www.youtube.com/embed/-ltyQLBKYWI",
       "audio": "p6a.mp3",
       "cancion": "p6c.mp3",
+      "pregunta": "¿Cuál es el verdadero nombre del autor de esta canción?",
       "opciones": [
         {
           "id": 1,
@@ -217,20 +190,15 @@
         }
       ],
       "fechaPublicacion": "21/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/Bxw1yBmILmB/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/Bxw1yBmILmB/"
     },
     {
       "id": 7,
-      "titulo": "¿Original o remix? ¿Quién compuso la siguiente canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/Uqft1dtytt8",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "LEONES DE MAR",
+      "video": "https://www.youtube.com/embed/Uqft1dtytt8",
       "audio": "p7a.mp3",
       "cancion": "p7c.mp3",
+      "pregunta": "¿Original o remix? ¿Quién compuso la siguiente canción?",
       "opciones": [
         {
           "id": 1,
@@ -254,20 +222,15 @@
         }
       ],
       "fechaPublicacion": "22/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/BxzZbYYo1jo/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/BxzZbYYo1jo/"
     },
     {
       "id": 8,
-      "titulo": "“In the town where I was born, lived a man who sailed to sea” es el principio de una famosa canción… ¿Adivinas de cuál?",
-      "video": {
-        "url": "https://www.youtube.com/embed/MXiq3xKs8uM",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "ARENA (EL MAR LEJANO)",
+      "video": "https://www.youtube.com/embed/MXiq3xKs8uM",
       "audio": "p8a.mp3",
       "cancion": "p8c.mp3",
+      "pregunta": "“In the town where I was born, lived a man who sailed to sea” es el principio de una famosa canción… ¿Adivinas de cuál?",
       "opciones": [
         {
           "id": 1,
@@ -291,20 +254,15 @@
         }
       ],
       "fechaPublicacion": "23/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/Bx1_aqyopZl/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/Bx1_aqyopZl/"
     },
     {
       "id": 9,
-      "titulo": "¿A quién está dedicada la siguiente canción?",
-      "video": {
-        "url": "https://www.youtube.com/embed/Fr7K1QU-ed4",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "EL FARO",
+      "video": "https://www.youtube.com/embed/Fr7K1QU-ed4",
       "audio": "p9a.mp3",
       "cancion": "p9c.mp3",
+      "pregunta": "¿A quién está dedicada la siguiente canción?",
       "opciones": [
         {
           "id": 1,
@@ -328,20 +286,15 @@
         }
       ],
       "fechaPublicacion": "24/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/Bx4h1yqo88U/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/Bx4h1yqo88U/"
     },
     {
       "id": 10,
-      "titulo": "La siguiente canción surge de la unión de dos hits de los 70… ¿Sabes de cuáles?",
-      "video": {
-        "url": "https://www.youtube.com/embed/KnGkAzjjuFM",
-        "descripcion": "descripcion del video"
-      },
+      "titulo": "DESTINO FINAL",
+      "video": "https://www.youtube.com/embed/KnGkAzjjuFM",
       "audio": "p10a.mp3",
       "cancion": "p10c.mp3",
+      "pregunta": "La siguiente canción surge de la unión de dos hits de los 70… ¿Sabes de cuáles?",
       "opciones": [
         {
           "id": 1,
@@ -365,10 +318,7 @@
         }
       ],
       "fechaPublicacion": "25/05/2019",
-      "ayuda": [
-        "https://www.instagram.com/p/Bx7L_hgFXu8/",
-        "https://www.instagram.com/stepsound_/?hl=es"
-      ]
+      "ayuda": "https://www.instagram.com/p/Bx7L_hgFXu8/"
     }
   ],
   "total": 10
