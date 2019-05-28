@@ -74,6 +74,9 @@ export default ({
                 ))}
               </div>
             </div>
+            <p style={{ color: "#007bff" }}>
+              *Si tienes alguna duda consulta las instrucciones en  <b>“¿Cómo participar?”</b>
+            </p>
         </div>
         <div className="modal-footer">
           <a
