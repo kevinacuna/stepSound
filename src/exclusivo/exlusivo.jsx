@@ -117,7 +117,7 @@ export default class Exclusivo extends Component {
         </div>
           <div className="col-lg-6 text-justify spoty" >
                 <p className="lead" style={{fontSize: "20px"}}>
-                ¡Esta es nuestra playlist de Spotify! 
+                <b>¡Esta es nuestra playlist de Spotify!</b> 
                 En ella encontrarás todas las canciones que han ido apareciendo en los capítulos de esta apasionante aventura. 
                 Además, hemos añadido más éxitos de los grupos y cantantes que han acompañado a Pablo en su viaje y que también 
                 pueden acompañarte en los tuyos.
@@ -142,7 +142,7 @@ export default class Exclusivo extends Component {
           </div> 
           <div className="col-lg-6 text-justify spoty">
             <p className="lead" style={{fontSize: "20px"}}>
-              ¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento! Te dejamos esta playlist colaborativa en la que puedes 
+              <b>¿Quieres crear una playlist pero no sabes cuándo? ¡Este es el momento</b>! Te dejamos esta playlist colaborativa en la que puedes 
               ir añadiendo tus canciones favoritas para compartirlas con todos los stepsounders. 
             </p>
           </div>         
@@ -154,18 +154,18 @@ export default class Exclusivo extends Component {
               ¡Dale al play y descubre todo el proceso de esta historia! 
         </p>
         </div>
-
-          <div className="col-lg-6 text-center" id="makingOf">
-          Nos acompañarás en el desarrollo de este proyecto desde el principio hasta el final. De esta manera, 
-          descubrirás quién se encuentra detrás de las cámaras. Además, podrás ver quién ha ido creando la página web 
-          desde cero y cómo se llevan las redes sociales. 
-          <br/>
-          Hemos de confesar que han surgido inconvenientes pero hemos conseguido resolverlos con éxito.
-          <br/>
-          Por último, hemos añadido “bloopers” divertidos y tomas falsas para cerrar este proyecto entre risas, 
-          con el que hemos aprendido y descubierto habilidades que teníamos escondidas. 
-          <br/>
-          ¿ESTÁS PREPARADX?
+          <div className="col-lg-6">
+            <div className="col-lg-12 text-justify" id="makingOf">
+            Nos acompañarás en el desarrollo de este proyecto desde el principio hasta el final. De esta manera, 
+            descubrirás quién se encuentra detrás de las cámaras. Además, podrás ver quién ha ido creando la página web 
+            desde cero y cómo se llevan las redes sociales. 
+            Hemos de confesar que han surgido inconvenientes pero hemos conseguido resolverlos con éxito.
+            Por último, hemos añadido “bloopers” divertidos y tomas falsas para cerrar este proyecto entre risas, 
+            con el que hemos aprendido y descubierto habilidades que teníamos escondidas. 
+            </div>
+            <center>
+              ¿ESTÁS PREPARADX?
+            </center>
           </div>
             <div className="col-lg-6 rep" >
             <iframe

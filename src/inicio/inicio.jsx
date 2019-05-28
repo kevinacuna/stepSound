@@ -38,7 +38,7 @@ export default class Inicio extends Component {
               if (historialPreguntasRespondidas[historialPreguntasRespondidas.length - 1].correcta && historialPreguntasRespondidas.length == 10) {
                 const { showExclusivo } = this.props;
                 this.setState({terminadoFlag: true});
-                setTimeout(() => (this.setState({terminadoFlag: false})), 15000);
+                setTimeout(() => (this.setState({terminadoFlag: false})), 5000);
                 showExclusivo();
               }
             } else {
@@ -97,7 +97,7 @@ export default class Inicio extends Component {
       if (posicionTablero === 9) {
         const { showExclusivo } = this.props;
         this.setState({terminadoFlag: true});
-        setTimeout(() => (this.setState({terminadoFlag: false})), 15000);
+        setTimeout(() => (this.setState({terminadoFlag: false})), 5000);
         showExclusivo();
       }
     }
