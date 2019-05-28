@@ -23,7 +23,7 @@ export default ({
         <div id="preguntaElemento">
         <div className="modal-header text-center">
           <h5 className="modal-title w-100" id="exampleModal">
-          {`CAPÍTULO ${data.id}`}
+          {data.titulo}
           </h5>
           <button
             type="button"
@@ -38,7 +38,7 @@ export default ({
         </div>
         <div className="modal-body">
           <div id="contenedorVideo">
-              <iframe id="video" src={data.video.url} />
+              <iframe id="video" src={data.video} />
           </div>
           <div id="contenedorAudio">
                 <audio src={data.audio} style={{width: '420px'}} preload="auto" controls />
@@ -46,7 +46,7 @@ export default ({
             <div id="tituloPregunta">
               <center>
                 <h2>
-                {data.titulo}
+                {data.pregunta}
                 </h2>
               </center>
             </div>
@@ -73,13 +73,16 @@ export default ({
                 ))}
               </div>
             </div>
+            <p style={{ color: "#007bff" }}>
+              *Si tienes alguna duda consulta las instrucciones en  <b>“¿Cómo participar?”</b>
+            </p>
         </div>
         <div className="modal-footer">
           <a
             type="button"
             target="_blank"
             rel="noopener noreferrer"
-            href={data.ayuda[0]}
+            href={data.ayuda}
             className={`btn btn-success mr-auto ${
               respuestasHechas.correcta ? "disabled" : ""
             }`}

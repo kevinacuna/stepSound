@@ -7,23 +7,14 @@ export default class Portada extends Component {
     super(props);
     this.state = {
       btnClicked: false,
-      down: ''      
     };
     this.btnHandler = this.btnHandler.bind(this);
-    this.introduccionOnclick = this.introduccionOnclick.bind(this);
   }
   btnHandler() {
     this.setState({ btnClicked: true });
   }
-  introduccionOnclick(e) {
-    
-    this.setState({down:''});
-    setTimeout(() => {
-      this.setState({down:'animated pulse'});
-    }, 100);
-  }
   render() {
-    const { btnClicked, down } = this.state;
+    const { btnClicked } = this.state;
     if (btnClicked) {
       return <Redirect push from="/" to="/participar" />;
     }
